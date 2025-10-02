@@ -13,9 +13,9 @@ const HeroBackground = () => {
                 muted
                 playsInline>
                 <source src='/STUDENT.mp4' type='video/mp4' />
+                <img className='absolute top-0 left-0 w-full object-cover' src='/undraw_certification_i2m0.svg' />
             </video>
             {/* </div> */}
-            {/* <img className='absolute top-0 left-0 w-full object-cover' src='/undraw_certification_i2m0.svg' /> */}
 
             {/* dark text overlay */}
             {/* <div className='absolute top-0 left-0 w-full h-full bg-black/40 rounded'> */}
