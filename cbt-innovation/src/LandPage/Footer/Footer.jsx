@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <div className="flex flex-col gap-7 sm:grid sm:grid-cols-2 py-20">
+        <div className="flex flex-col gap-8 sm:grid sm:grid-cols-2 py-20">
             <div>
                 <h4 className="font-bold sm:text-2xl lg:text-3xl">TestPrep</h4>
                 <p>©2025 TestPrep. All rights reserved.</p>
