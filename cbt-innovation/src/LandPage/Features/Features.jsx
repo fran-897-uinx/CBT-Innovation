@@ -72,7 +72,7 @@ const Features = () => {
                         <span className="text-blue-600 font-semibold text-lg">FEATURES</span>
                         <span className="w-12 h-1 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full"></span>
                     </div>
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-800 to-blue-600 bg-clip-text text-transparent mb-6">
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-blue-600 mb-6">
                         Powerful Learning Features
                     </h1>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
