@@ -1,39 +1,36 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, memo, useMemo } from 'react';
 
-const TestimonialLists = [
+
+const TESTIMONIAL_LISTS = [
     {
-        userAvatar: '',
         userName: 'Sophia Clerk',
         userReview: '⭐⭐⭐⭐',
         userTestimony: 'The platform has been instrumental in my exam preparation. The practice tests are well structured, and the performance analysis helped me identify my weaknesses'
     },
     {
-        userAvatar: '',
         userName: 'Ethan Bennet',
         userReview: '⭐⭐⭐',
         userTestimony: 'I found the timed exam feature very useful for improving my speed. The platform is user-friendly and offers a great learning experience.'
     },
     {
-        userAvatar: '',
         userName: 'Olivia Carter',
         userReview: '⭐⭐⭐⭐⭐',
         userTestimony: 'The personalized study plans are a great game-changer. They helped me focus on the right topics and significantly improved my scores. Highly recommended.'
     },
     {
-        userAvatar: '',
         userName: 'Michael Rodriguez',
         userReview: '⭐⭐⭐⭐',
         userTestimony: 'Excellent platform with comprehensive study materials. The progress tracking feature kept me motivated throughout my preparation journey.'
     },
     {
-        userAvatar: '',
         userName: 'Emma Thompson',
         userReview: '⭐⭐⭐⭐⭐',
         userTestimony: 'The mobile app integration is seamless. I could study on the go and sync my progress across all devices effortlessly.'
     }
 ];
 
-const TestimonialCard = ({ item }) => (
+// Use React.memo for the Card to prevent re-renders unless the 'item' prop changes
+const TestimonialCard = memo(({ item }) => (
     <div className="flex-shrink-0 w-80 bg-white rounded-xl shadow-lg p-6 mx-4 border border-gray-100 hover:shadow-xl transition-shadow duration-300">
         <div className="flex items-center gap-4 mb-4">
             <div className="w-12 h-12 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center">
@@ -50,30 +47,35 @@ const TestimonialCard = ({ item }) => (
             "{item.userTestimony}"
         </p>
     </div>
-);
+));
+TestimonialCard.displayName = 'TestimonialCard';
 
 const MarqueeRow = ({ items, direction = 'left', speed = 40 }) => {
-    const marqueeRef = useRef(null);
     const scrollerRef = useRef(null);
 
-    useEffect(() => {
-        if (!marqueeRef.current || !scrollerRef.current) return;
+    // FIX 1: Move cloning logic into a function called only ONCE on mount
+    const initializeMarquee = () => {
+        if (!scrollerRef.current) return;
 
+        // Clone and append children to the same parent for the seamless loop
         const scrollerContent = Array.from(scrollerRef.current.children);
 
-        // Duplicate content for seamless loop
         scrollerContent.forEach(item => {
             const duplicatedItem = item.cloneNode(true);
             duplicatedItem.setAttribute('aria-hidden', 'true');
             scrollerRef.current.appendChild(duplicatedItem);
         });
+    };
 
-        // Cleanup function to remove duplicated items
-        return () => {
-            const duplicatedItems = scrollerRef.current?.querySelectorAll('[aria-hidden="true"]');
-            duplicatedItems?.forEach(item => item.remove());
-        };
-    }, [items]);
+    // FIX 1: Run the cloning logic only on mount
+    useEffect(() => {
+        initializeMarquee();
+
+        // NO cleanup needed here since we only run once and the component unmounts fully
+    }, []);
+
+    // We can remove the `items` dependency from useEffect because we only run on mount.
+    // However, if we needed the items to change, we'd memoize them in the parent.
 
     return (
         <div className="relative overflow-hidden py-4">
@@ -84,15 +86,19 @@ const MarqueeRow = ({ items, direction = 'left', speed = 40 }) => {
             <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-10" />
 
             <div
-                ref={marqueeRef}
-                className="flex"
+                className={`flex marquee-container ${direction === 'right' ? 'right' : 'left'}`}
                 style={{
-                    animation: `marquee-${direction} ${speed}s linear infinite`
+                    // Use a CSS variable for speed. Note: Requires the global CSS to be defined.
+                    '--speed': `${speed}s`,
+                    // The animation is now controlled by the CSS classes and variables
                 }}
             >
-                <div ref={scrollerRef} className="flex">
+                {/* The initial list of items is rendered here. 
+                  The cloning happens in useEffect on the children of scrollerRef.
+                */}
+                <div ref={scrollerRef} className="flex flex-row">
                     {items.map((item, index) => (
-                        <TestimonialCard key={index} item={item} index={index} />
+                        <TestimonialCard key={index} item={item} />
                     ))}
                 </div>
             </div>
@@ -101,9 +107,12 @@ const MarqueeRow = ({ items, direction = 'left', speed = 40 }) => {
 };
 
 const Testimonials = () => {
-    // Split testimonials into two groups for the two rows
-    const firstRowItems = [...TestimonialLists];
-    const secondRowItems = [...TestimonialLists].reverse(); // Reverse for visual variety
+    // FIX 2: Use useMemo to memoize the item arrays. 
+    // This ensures the array reference remains stable across renders, 
+    // which is a good practice, though not strictly required after removing the 
+    // array dependency from MarqueeRow's useEffect.
+    const firstRowItems = useMemo(() => [...TESTIMONIAL_LISTS], []);
+    const secondRowItems = useMemo(() => [...TESTIMONIAL_LISTS].reverse(), []);
 
     return (
         <div className="my-20 px-4">
@@ -130,25 +139,6 @@ const Testimonials = () => {
                 speed={45}
             />
 
-            <style jsx>{`
-                @keyframes marquee-left {
-                    0% {
-                        transform: translateX(0);
-                    }
-                    100% {
-                        transform: translateX(-50%);
-                    }
-                }
-
-                @keyframes marquee-right {
-                    0% {
-                        transform: translateX(-50%);
-                    }
-                    100% {
-                        transform: translateX(0);
-                    }
-                }
-            `}</style>
         </div>
     );
 };
