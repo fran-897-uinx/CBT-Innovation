@@ -15,6 +15,7 @@ import Pricing from "../LandPage/Pricing/Pricing";
 import { Searchpage } from "./pages/Searchpage";
 import Grouppage from "./pages/Grouppage";
 import ChatRoom from "./pages/chatroom";
+import VideoListPage from "./pages/videosession/Videolist";
 
 export default function PrivateApp() {
   return (
@@ -24,17 +25,18 @@ export default function PrivateApp() {
         <Route path="dashboard" element={<DashboardPage />} />
         <Route path="courses" element={<CoursesPage />} />
         <Route path="search" element={<Searchpage />} />
-        <Route path="groups" element={<Grouppage/>}/>
+        <Route path="groups" element={<Grouppage />} />
         <Route path="exams" element={<ExamsPage />} />
         <Route path="registration" element={<RegistrationPage />} />
         <Route path="messages" element={<MessagesPage />} />
-        <Route path="video-sessions" element={<VideoSessionsPage />} />
+        <Route path="video-sessions" element={<VideoListPage />} />
+        <Route path="video-sessions/:id" element={<VideoSessionsPage />} />
         <Route path="settings" element={<SettingsPage />} />
         <Route path="profile" element={<ProfilePage />} />
         <Route path="daliy-news" element={<BlogPage />} />
         <Route path="pricing" element={<Pricing />} />
         {/* Messages Routing  */}
-        <Route path="messages/:id" element={<ChatRoom/>}/>
+        <Route path="messages/:id" element={<ChatRoom />} />
       </Route>
     </Routes>
   );
