@@ -1,24 +1,32 @@
-import React from 'react'
-import Hero from '../Hero/Hero'
-import Nav from '../Navigation/Nav'
-import Features from '../Features/Features'
-import Pricing from '../Pricing/Pricing'
-import Testimonials from '../Testimonials/Testimonials'
-import CTA from '../CTA/CTA'
-import Footer from '../Footer/Footer'
+import React from "react";
+import Hero from "../Hero/Hero";
+import Nav from "../Navigation/Nav";
+import Features from "../Features/Features";
+import Pricing from "../Pricing/Pricing";
+import Testimonials from "../Testimonials/Testimonials";
+import CTA from "../CTA/CTA";
+import Footer from "../Footer/Footer";
+import { Helmet } from "react-helmet-async";
 
 const Land = () => {
-    return (
-        <>
-            <Nav />
-            <Hero />
-            <Features />
-            <Pricing />
-            <Testimonials />
-            <CTA />
-            <Footer />
-        </>
-    )
-}
+  return (
+    <>
+      <Helmet>
+        <title>TestPrep Academy | Home</title>
+        <meta
+          name="description"
+          content="Prepare for exams with TestPrep Academy"
+        />
+      </Helmet>
+      <Nav />
+      <Hero />
+      <Features />
+      <Pricing />
+      <Testimonials />
+      <CTA />
+      <Footer />
+    </>
+  );
+};
 
-export default Land
+export default Land;

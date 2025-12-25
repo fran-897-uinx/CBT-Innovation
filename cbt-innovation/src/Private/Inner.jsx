@@ -1,0 +1,149 @@
+import React, { useState, useEffect } from "react";
+import { Outlet, Navigate, Link, useLocation } from "react-router-dom";
+import {
+  Menu,
+  SearchIcon,
+  X,
+  MessageSquareTextIcon,
+  Home,
+  Newspaper,
+  FileText,
+  BellRingIcon,
+} from "lucide-react";
+import AppSidebar from "./Navigation";
+import BottomNav from "./Bottomnav";
+
+const titles = {
+  "/app/dashboard": "Home",
+  "/app/search": "Search",
+  "/app/messages": "Chat",
+  "/app/daliy-news": "Daliy News",
+  "/app/registration": "Registration",
+  "/app/courses": "Course Library",
+  "/app/exams": "examination Board",
+  "/app/Groups": "Groups & Communitys",
+  "/app/video-sessions": "video Sessions",
+  "/app/profile": "My Profile",
+  "/app/settings": "Settings",
+};
+
+const Navbelow = () => (
+  <nav className="grid grid-cols-5 gap-3 border-t border-t-gray-600 bg-white h-14 items-center">
+    <Link to="/app/dashboard" className="flex justify-center">
+      <Home size={25} className="z-10 transition-all duration-300" />
+    </Link>
+    <Link to="/app/search" className="flex justify-center">
+      <SearchIcon size={25} className="z-10 transition-all duration-300" />
+    </Link>
+    <Link to="/app/messages" className="flex justify-center">
+      <MessageSquareTextIcon
+        size={25}
+        className="z-10 transition-all duration-300"
+      />
+    </Link>
+    <Link to="/app/daliy-news" className="flex justify-center">
+      <Newspaper size={25} className="z-10 transition-all duration-300" />
+    </Link>
+    <Link to="/app/registration" className="flex justify-center">
+      <FileText size={25} className="z-10 transition-all duration-300" />
+    </Link>
+  </nav>
+);
+
+function TopNav({ onMenu }) {
+  const { pathname } = useLocation();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  const heads = titles[pathname] || "TestPrep Academy";
+  return (
+    <header className="fixed top-0 left-0 right-0 z-40 md:ml-64">
+      <div
+        className={`h-14 px-4 bg-white/80 backdrop-blur-md border-b border-gray-200 flex items-center justify-between ${
+          isScrolled
+            ? "bg-white shadow-md py-2"
+            : "bg-white/90 backdrop-blur-sm py-4"
+        }`}
+      >
+        {/* {Left} */}
+        <div className="flex items-center gap-3">
+          <button className="md:hidden" onClick={onMenu}>
+            <Menu size={25} />
+          </button>
+          <h1 className="font-semibold text-gray-900 text-base capitalize text-balance">
+            {heads}
+          </h1>
+          {/* {Right Actions} */}
+          <div className="flex items-center gap-3">
+            <button className="relative ">
+              <BellRingIcon size={20} />
+              <span className="absolute top-0 right-0 w-2 h-2 bg-red-500 rounded-full" />
+            </button>
+            <div className="w-8 h-8 rounded-full bg-gray-900 text-white flex items-center justify-center text-sm font-semibold">
+              TP
+            </div>
+          </div>
+        </div>
+        <Link to="/app/pricing/" className=" bg-gradient-to-tr from-10% from-blue-700 to-blue-950 rounded-2xl px-4 py-1 mr-2 font-bold italic capitalize text-white cursor-pointer">Upgrade</Link>
+      </div>
+      <div className="absolute inset-x-0 bottom-0 h-[4px] bg-gradient-to-r from-transparent via-gray-900 to-transparent" />
+    </header>
+  );
+}
+export default function PrivateLayout() {
+  const isAuthenticated = true; // replace later with real auth
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  // const [isSearch, setIsSearch] = useState(false);
+
+  if (!isAuthenticated) {
+    return <Navigate to="/" />;
+  }
+  return (
+    <div className="min-h-screen bg-gray-50">
+      {/* ===== TOPBAR ===== */}
+      <TopNav onMenu={() => setSidebarOpen(true)} />
+      {/* ===== SIDEBAR (DESKTOP) ===== */}
+      <div className="hidden md:block">
+        <AppSidebar />
+      </div>
+
+      {/* ===== SIDEBAR (MOBILE OVERLAY) ===== */}
+      {sidebarOpen && (
+        <>
+          <div
+            className="fixed inset-0 bg-black/40 z-40"
+            onClick={() => setSidebarOpen(false)}
+          />
+          <div className="fixed inset-y-0 left-0 w-64 bg-white z-50 shadow-lg">
+            <div className="flex items-center justify-between p-4">
+              <div className="w-10 h-10 bg-gray-900 rounded-xl flex items-center justify-center">
+                <span className="text-white font-bold text-sm">TP</span>
+              </div>
+              <button onClick={() => setSidebarOpen(false)}>
+                <X size={20} />
+              </button>
+            </div>
+            <AppSidebar />
+          </div>
+        </>
+      )}
+
+      {/* ===== MAIN CONTENT ===== */}
+      <main className="pt-16 md:ml-64 p-4 min-h-screen mb-7">
+        <Outlet />
+      </main>
+
+      <footer className="fixed bottom-0 left-0 right-0 md:hidden z-50">
+        {/* <Navbelow /> */}
+        <BottomNav/>
+      </footer>
+    </div>
+  );
+}

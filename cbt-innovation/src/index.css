@@ -51,3 +51,7 @@
 .marquee-container.right {
     animation-name: marquee-right;
 }
+
+body{
+    scrollbar-width: none;
+}
