@@ -1,4 +1,3 @@
-import React from "react";
 import {
   AccessibilityIcon,
   BellRingIcon,
@@ -13,142 +12,146 @@ import {
   PlusCircle,
   QrCode,
   User,
-  UserSquare2,
   UsersRound,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const SettingsItem = [
+const SETTINGS_ITEMS = [
   {
     id: 1,
-    icon: <Key size={19} />,
-    name: "acount",
+    icon: Key,
+    name: "Account",
     note: "Edit profile, add account and change number",
-    to: "/app/settings/account/",
+    to: "/app/settings/account",
   },
   {
     id: 2,
-    icon: <LockKeyhole size={19} />,
-    name: "privacy",
+    icon: LockKeyhole,
+    name: "Privacy",
     note: "Block contacts, disappearing messages",
-    to: "/app/settings/privacy/",
+    to: "/app/settings/privacy",
   },
   {
     id: 3,
-    icon: <User size={19} />,
-    name: "avatar",
-    note: "create, edit, profile Photo",
-    to: "/app/settings/avatar/",
+    icon: User,
+    name: "Avatar",
+    note: "Create, edit profile photo",
+    to: "/app/settings/avatar",
   },
   {
     id: 4,
-    icon: <LayoutList size={19} />,
+    icon: LayoutList,
     name: "Lists",
     note: "Manage people and groups",
-    to: "/app/settings/lists/",
+    to: "/app/settings/lists",
   },
   {
     id: 5,
-    icon: <MessageSquareTextIcon size={19} />,
+    icon: MessageSquareTextIcon,
     name: "Chat",
     note: "Theme, wallpapers, chat history",
-    to: "/app/settings/chatSystem/",
+    to: "/app/settings/chat-system",
   },
   {
     id: 6,
-    icon: <BellRingIcon size={19} />,
-    name: "notification",
+    icon: BellRingIcon,
+    name: "Notifications",
     note: "Message, group & call tones",
-    to: "/app/settings/notification/",
+    to: "/app/settings/notification",
   },
   {
     id: 7,
-    icon: <DatabaseZapIcon size={19} />,
-    name: "Storage and data",
+    icon: DatabaseZapIcon,
+    name: "Storage & Data",
     note: "Network usage, auto-download",
-    to: "/app/settings/storage/",
+    to: "/app/settings/storage",
   },
   {
     id: 8,
-    icon: <AccessibilityIcon size={19} />,
+    icon: AccessibilityIcon,
     name: "Accessibility",
-    note: "Increase contrast, animation",
-    to: "/app/settings/accessibilty/",
+    note: "Contrast, animation and motion",
+    to: "/app/settings/accessibility",
   },
   {
     id: 9,
-    icon: <LanguagesIcon size={19} />,
+    icon: LanguagesIcon,
     name: "App Language",
-    note: "English (device Language)",
-    to: "/app/settings/language/",
+    note: "English (device language)",
+    to: "/app/settings/language",
   },
   {
     id: 10,
-    icon: <CircleQuestionMarkIcon size={19} />,
-    name: "Help and feedback",
-    note: "Help centre, contact us, privavy policy",
-    to: "/app/settings/help/",
+    icon: CircleQuestionMarkIcon,
+    name: "Help & Feedback",
+    note: "Help centre, contact us, privacy policy",
+    to: "/app/settings/help",
   },
   {
     id: 11,
-    icon: <UsersRound size={19} />,
-    name: "Invite A Friend",
-    to: "/app/settings/invite/",
+    icon: UsersRound,
+    name: "Invite a Friend",
+    to: "/app/settings/invite",
   },
   {
     id: 12,
-    icon: <CheckCheck size={19} />,
-    name: "App Update",
-    to: "/app/settings/update/",
+    icon: CheckCheck,
+    name: "App Updates",
+    to: "/app/settings/update",
   },
 ];
 
-const SettingsPage = () => {
+const SettingsRow = ({ icon: Icon, name, note, to }) => (
+  <Link
+    to={to}
+    className="flex items-center justify-between px-4 py-3 rounded-lg bg-stone-100 hover:bg-stone-200 transition"
+  >
+    <div className="flex items-center gap-3">
+      <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-white">
+        {Icon && <Icon size={18} />}
+      </div>
+      <div>
+        <p className="text-sm font-medium text-gray-900">{name}</p>
+        {note && <p className="text-xs text-gray-600 leading-snug">{note}</p>}
+      </div>
+    </div>
+  </Link>
+);
+
+export default function SettingsPage() {
   return (
-    <>
-      {/* User Profile bar */}
-      <Link to="/app/settings/profileedit/">
-        <div className="px-3 py-6 flex items-center gap-3 p-2 rounded-md hover:bg-gray-100 transition bg-gray-100 border border-gray-200 mb-5">
-          {/* Avatar */}
-          <div className="w-9 h-9 rounded-full bg-blue-600 text-gray-300 flex items-center justify-center text-sm font-semibold">
-            DF
-          </div>
+    <section className="space-y-4">
+      {/* Profile Card */}
+      <div className="bg-gray-100 border rounded-lg p-4 flex items-center gap-3">
+        <div className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center text-sm font-semibold">
+          DF
+        </div>
 
-          {/* User Info */}
-          <div className="flex-1 leading-tight">
-            <p className="text-sm font-medium text-gray-800">David Francis</p>
-            <p className="text-xs text-gray-500">
-              Always Online and ready to attend to your problems{" "}
-            </p>
-          </div>
+        <Link to="/app/settings/profileedit" className="flex-1">
+          <p className="text-sm font-medium text-gray-900">David Francis</p>
+          <p className="text-xs text-gray-500">
+            Always online and ready to help
+          </p>
+        </Link>
 
-          {/* Icon */}
-          <Link to="/app/settings/adddevicewithQRcode/">
-            <QrCode size={20} className="text-stone-900" />
+        <div className="flex gap-3">
+          <Link
+            to="/app/settings/adddevicewithQRcode"
+            aria-label="Add device with QR code"
+          >
+            <QrCode size={20} />
           </Link>
-          <Link to="/app/settings/adddevice/">
-            <PlusCircle size={20} className="text-stone-900" />
+
+          <Link to="/app/settings/adddevice" aria-label="Add new device">
+            <PlusCircle size={20} />
           </Link>
         </div>
-      </Link>
-      {/* Other Settngs features  */}
-      {SettingsItem.map((value) => (
-        <Link key={value.id} to={value.to}>
-          <div className="group flex items-center justify-between px-4 py-2.5 rounded-md transition bg-stone-200 mt-3 cursor-pointer">
-            <div className="flex items-center gap-3">
-              <span className="w-10 h-10 rounded-xl flex items-center justify-center">
-                {value.icon}
-              </span>
-              <div>
-                <span className="text-sm font-medium">{value.name}</span>
-                <p className="text-xs grayscale text-stone-800">{value.note}</p>
-              </div>
-            </div>
-          </div>
-        </Link>
-      ))}
-    </>
-  );
-};
+      </div>
 
-export default SettingsPage;
+      {/* Settings Items */}
+      {SETTINGS_ITEMS.map((item) => (
+        <SettingsRow key={item.id} {...item} />
+      ))}
+    </section>
+  );
+}

@@ -25,6 +25,7 @@ const titles = {
   "/app/video-sessions": "video Sessions",
   "/app/profile": "My Profile",
   "/app/settings": "Settings",
+  "/app/groups/:id":"Groupchat"
 };
 
 const Navbelow = () => (
@@ -61,7 +62,7 @@ function TopNav({ onMenu }) {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  const heads = titles[pathname] || "TestPrep Academy";
+  const heads = titles[pathname] || "";
   return (
     <header className="fixed top-0 left-0 right-0 z-40 md:ml-64">
       <div
@@ -88,61 +89,61 @@ function TopNav({ onMenu }) {
             <div className="w-8 h-8 rounded-full bg-gray-900 text-white flex items-center justify-center text-sm font-semibold">
               TP
             </div>
+            <Link to="/app/search" className="hidden md:inline-block">
+              <SearchIcon size={20} />
+            </Link>
           </div>
         </div>
-        <Link to="/app/pricing/" className=" bg-gradient-to-tr from-10% from-blue-700 to-blue-950 rounded-2xl px-4 py-1 mr-2 font-bold italic capitalize text-white cursor-pointer">Upgrade</Link>
+        <Link
+          to="/app/pricing/"
+          className=" bg-gradient-to-tr from-10% from-blue-700 to-blue-950 rounded-2xl px-4 py-1 mr-2 font-bold italic capitalize text-white cursor-pointer"
+        >
+          Upgrade
+        </Link>
       </div>
       <div className="absolute inset-x-0 bottom-0 h-[4px] bg-gradient-to-r from-transparent via-gray-900 to-transparent" />
     </header>
   );
-}
-export default function PrivateLayout() {
-  const isAuthenticated = true; // replace later with real auth
+}export default function PrivateLayout() {
+  const isAuthenticated = true;
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [collapsed, setCollapsed] = useState(false);
 
-  // const [isSearch, setIsSearch] = useState(false);
+  if (!isAuthenticated) return <Navigate to="/" />;
 
-  if (!isAuthenticated) {
-    return <Navigate to="/" />;
-  }
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* ===== TOPBAR ===== */}
       <TopNav onMenu={() => setSidebarOpen(true)} />
-      {/* ===== SIDEBAR (DESKTOP) ===== */}
+
+      {/* Desktop Sidebar */}
       <div className="hidden md:block">
-        <AppSidebar />
+        <AppSidebar
+          collapsed={collapsed}
+          onToggle={() => setCollapsed(!collapsed)}
+        />
       </div>
 
-      {/* ===== SIDEBAR (MOBILE OVERLAY) ===== */}
+      {/* Mobile Sidebar */}
       {sidebarOpen && (
         <>
-          <div
-            className="fixed inset-0 bg-black/40 z-40"
-            onClick={() => setSidebarOpen(false)}
-          />
-          <div className="fixed inset-y-0 left-0 w-64 bg-white z-50 shadow-lg">
-            <div className="flex items-center justify-between p-4">
-              <div className="w-10 h-10 bg-gray-900 rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold text-sm">TP</span>
-              </div>
-              <button onClick={() => setSidebarOpen(false)}>
-                <X size={20} />
-              </button>
-            </div>
-            <AppSidebar />
+          <div className="fixed inset-0 bg-black/40 z-40" onClick={() => setSidebarOpen(false)} />
+          <div className="fixed inset-y-0 left-0 w-64 bg-white z-50">
+            <AppSidebar collapsed={false} />
           </div>
         </>
       )}
 
-      {/* ===== MAIN CONTENT ===== */}
-      <main className="pt-16 md:ml-64 p-4 min-h-screen mb-7">
+      {/* Main */}
+      <main
+        className={`pt-16 p-4 transition-all duration-300 ${
+          collapsed ? "md:ml-20" : "md:ml-64"
+        }`}
+      >
         <Outlet />
       </main>
 
-      <footer className="fixed bottom-0 left-0 right-0 md:hidden z-50">
-        {/* <Navbelow /> */}
-        <BottomNav/>
+      <footer className="fixed bottom-0 left-0 right-0 md:hidden">
+        <BottomNav />
       </footer>
     </div>
   );

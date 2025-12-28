@@ -28,7 +28,7 @@ const RegistrationPage = () => {
   return (
     <div className="p-4 pb-20">
       <h1 className="text-lg font-semibold mb-4">Exam Registration</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 md:grid-cols-2 gap-4">
         {registrations.map((reg, index) => (
           <div key={index} className="border rounded-2xl p-4 bg-white/70">
             <h3 className="font-semibold">{reg.name}</h3>
