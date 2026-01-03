@@ -17,12 +17,15 @@ export default function CreateGroupModal({ onClose, onCreate }) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center">
+    <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center p-4">
       <div className="bg-white w-full max-w-md rounded-2xl shadow-xl overflow-hidden">
         {/* Header */}
         <div className="flex items-center justify-between px-5 py-4 border-b">
           <h3 className="font-semibold text-gray-800">Create Group</h3>
-          <button onClick={onClose} className="text-gray-500 hover:text-gray-800">
+          <button
+            onClick={onClose}
+            className="text-gray-500 hover:text-gray-800"
+          >
             <X size={18} />
           </button>
         </div>
@@ -33,9 +36,7 @@ export default function CreateGroupModal({ onClose, onCreate }) {
             <div className="w-16 h-16 rounded-full bg-amber-900 text-white flex items-center justify-center mb-3">
               <Users size={28} />
             </div>
-            <p className="text-xs text-gray-500">
-              You will be the group admin
-            </p>
+            <p className="text-xs text-gray-500">You will be the group admin</p>
           </div>
 
           <input

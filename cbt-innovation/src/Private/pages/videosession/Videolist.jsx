@@ -57,9 +57,9 @@ export default function VideoListPage() {
         </div>
         <button
           onClick={() => setShowCreate(true)}
-          className="flex items-center gap-1 px-3 py-1 rounded-xl bg-gray-900 text-white"
+          className="flex items-center gap-1 px-4 py-4 rounded-xl bg-gray-900 text-white"
         >
-          <Plus size={16} /> New Session
+          <Plus size={16} />
         </button>
       </div>
 

@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-// import { useState } from "react";
 import {
   Home,
   BookOpen,
@@ -8,31 +7,33 @@ import {
   MessageCircle,
   Video,
   Settings,
-  LogOut,
-  // GraduationCap,
-  LucideNewspaper,
   GroupIcon,
   ChevronRight,
   Newspaper,
+  X,
 } from "lucide-react";
-import { UserSquare2 } from "lucide-react";
 
-const SidebarLink = ({ to, label, icon, badge, collapsed }) => {
-  const location = useLocation();
-  const isActive = location.pathname === to;
+/* ----------------------------------
+   Sidebar Link Component
+----------------------------------- */
+const SidebarLink = ({ to, label, icon, badge = 0, collapsed, onClick }) => {
+  const { pathname } = useLocation();
+  const isActive = pathname.startsWith(to);
 
   return (
     <Link
       to={to}
-      className={`group flex items-center ${
-        collapsed ? "justify-center" : "justify-between"
-      } px-4 py-2.5 rounded-md transition
-      ${
-        isActive
-          ? "bg-blue-50 text-blue-700 border-l-4 border-blue-600"
-          : "text-gray-700 hover:bg-gray-100"
-      }`}
-      title={collapsed ? label : ""}
+      onClick={onClick}
+      aria-current={isActive ? "page" : undefined}
+      title={collapsed ? label : undefined}
+      className={`group flex items-center rounded-md px-3 py-2.5 transition
+        ${collapsed ? "justify-center" : "justify-between"}
+        ${
+          isActive
+            ? "bg-blue-50 text-blue-700 border-l-4 border-blue-600"
+            : "text-gray-700 hover:bg-gray-100"
+        }
+      `}
     >
       <div className="flex items-center gap-3">
         <span
@@ -44,10 +45,7 @@ const SidebarLink = ({ to, label, icon, badge, collapsed }) => {
         >
           {icon}
         </span>
-
-        {!collapsed && (
-          <span className="text-sm font-medium">{label}</span>
-        )}
+        {!collapsed && <span className="text-sm font-medium">{label}</span>}
       </div>
 
       {!collapsed && badge > 0 && (
@@ -58,39 +56,50 @@ const SidebarLink = ({ to, label, icon, badge, collapsed }) => {
     </Link>
   );
 };
-export default function AppSidebar({ collapsed, onToggle }) {
+
+/* ----------------------------------
+   Sidebar
+----------------------------------- */
+export default function AppSidebar({ collapsed, onToggle, handleNavClick }) {
   return (
     <aside
-      className={`fixed left-0 top-0 h-full ${
-        collapsed ? "w-20" : "w-64"
-      } bg-gray-300 flex flex-col transition-all duration-300`}
+      className={`fixed inset-y-0 left-0 z-50 bg-white shadow-lg transition-all duration-300
+        ${collapsed ? "w-20" : "w-64"}
+      `}
     >
-      {/* Brand */}
-      <div className="flex items-center justify-between px-4 pt-4 mb-6">
+      {/* Header */}
+      <div className="flex items-center justify-between px-4 py-4 border-b">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-gray-900 rounded-xl flex items-center justify-center">
-            <span className="text-white font-bold">TP</span>
+          <div className="w-9 h-9 bg-gray-900 rounded-xl flex items-center justify-center text-white font-bold">
+            TP
           </div>
           {!collapsed && (
-            <h1 className="text-xl font-bold text-gray-900">TestPrep</h1>
+            <h1 className="text-lg font-bold text-gray-900">TestPrep</h1>
           )}
         </div>
 
-        {/* Collapse Button */}
+        {/* Desktop Collapse */}
         <button
           onClick={onToggle}
-          className="hidden md:flex p-1 rounded-md hover:bg-gray-900 bg-gray-700 text-gray-500 cursor-pointer ml-2"
+          className="hidden md:flex p-1 rounded-md hover:bg-gray-100"
+          aria-label="Toggle sidebar"
         >
           <ChevronRight
-            className={`transition-transform ${
-              collapsed ? "rotate-180" : ""
-            }`}
+            className={`transition-transform ${collapsed ? "rotate-180" : ""}`}
           />
+        </button>
+
+        {/* Mobile Close */}
+        <button
+          onClick={handleNavClick}
+          className="md:hidden p-1 rounded-md hover:bg-gray-100"
+        >
+          <X size={20} />
         </button>
       </div>
 
-      {/* Nav */}
-      <nav className="flex-1 px-2 space-y-6 overflow-y-auto">
+      {/* Navigation */}
+      <nav className="flex-1 px-2 py-4 space-y-6 overflow-y-auto">
         {/* MAIN */}
         <div>
           {!collapsed && (
@@ -98,9 +107,34 @@ export default function AppSidebar({ collapsed, onToggle }) {
               Main
             </p>
           )}
-          <SidebarLink to="/app/dashboard" label="Dashboard" icon={<Home size={18} />} collapsed={collapsed} />
-          <SidebarLink to="/app/courses" label="Courses library" icon={<BookOpen size={18} />} collapsed={collapsed} />
-          <SidebarLink to="/app/exams" label="Exams" icon={<FileText size={18} />} collapsed={collapsed} />
+          <SidebarLink
+            to="/app/dashboard"
+            label="Dashboard"
+            icon={<Home size={18} />}
+            collapsed={collapsed}
+            onClick={handleNavClick}
+          />
+          <SidebarLink
+            to="/app/courses"
+            label="Courses Library"
+            icon={<BookOpen size={18} />}
+            collapsed={collapsed}
+            onClick={handleNavClick}
+          />
+          <SidebarLink
+            to="/app/exams"
+            label="Exams"
+            icon={<FileText size={18} />}
+            collapsed={collapsed}
+            onClick={handleNavClick}
+          />
+          <SidebarLink
+            to="/app/registration"
+            label="Registration"
+            icon={<FileText size={18} />}
+            collapsed={collapsed}
+            onClick={handleNavClick}
+          />
         </div>
 
         {/* COMMUNICATION */}
@@ -110,21 +144,55 @@ export default function AppSidebar({ collapsed, onToggle }) {
               Communication
             </p>
           )}
-          <SidebarLink to="/app/messages" label="Messages" icon={<MessageCircle size={18} />} badge={3} collapsed={collapsed} />
-          <SidebarLink to="/app/Groups" label="Groups" icon={<GroupIcon size={20} />} badge={13} collapsed={collapsed} />
-          <SidebarLink to="/app/video-sessions" label="Video Sessions" icon={<Video size={18} />} collapsed={collapsed} />
-          <SidebarLink to="/app/daily-news" label="Daliy News" icon={<Newspaper size={18} />} collapsed={collapsed} />
+          <SidebarLink
+            to="/app/messages"
+            label="Messages"
+            icon={<MessageCircle size={18} />}
+            badge={3}
+            collapsed={collapsed}
+            onClick={handleNavClick}
+          />
+          <SidebarLink
+            to="/app/groups"
+            label="Groups"
+            icon={<GroupIcon size={18} />}
+            badge={13}
+            collapsed={collapsed}
+            onClick={handleNavClick}
+          />
+          <SidebarLink
+            to="/app/video-sessions"
+            label="Video Sessions"
+            icon={<Video size={18} />}
+            collapsed={collapsed}
+            onClick={handleNavClick}
+          />
+          <SidebarLink
+            to="/app/daily-news"
+            label="Daily News"
+            icon={<Newspaper size={18} />}
+            collapsed={collapsed}
+            onClick={handleNavClick}
+          />
         </div>
 
         {/* SETTINGS */}
-        <div>
-          <SidebarLink to="/app/settings" label="Settings" icon={<Settings size={18} />} collapsed={collapsed} />
-        </div>
+        <SidebarLink
+          to="/app/settings"
+          label="Settings"
+          icon={<Settings size={18} />}
+          collapsed={collapsed}
+          onClick={handleNavClick}
+        />
       </nav>
 
       {/* Profile */}
-      <div className="px-3 py-4">
-        <Link to="/app/profile" className="flex items-center justify-center gap-3">
+      <div className="px-3 py-4 border-t">
+        <Link
+          to="/app/profile"
+          onClick={handleNavClick}
+          className="flex items-center gap-3"
+        >
           <div className="w-9 h-9 rounded-full bg-blue-600 text-white flex items-center justify-center text-sm font-semibold">
             DF
           </div>

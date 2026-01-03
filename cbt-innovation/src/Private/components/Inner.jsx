@@ -25,7 +25,7 @@ const titles = {
   "/app/video-sessions": "video Sessions",
   "/app/profile": "My Profile",
   "/app/settings": "Settings",
-  "/app/groups/:id":"Groupchat"
+  "/app/groups/:id": "Groupchat",
 };
 
 const Navbelow = () => (
@@ -104,10 +104,12 @@ function TopNav({ onMenu }) {
       <div className="absolute inset-x-0 bottom-0 h-[4px] bg-gradient-to-r from-transparent via-gray-900 to-transparent" />
     </header>
   );
-}export default function PrivateLayout() {
+}
+export default function PrivateLayout() {
   const isAuthenticated = true;
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [collapsed, setCollapsed] = useState(false);
+  const handleNavClick = () => setSidebarOpen(false);
 
   if (!isAuthenticated) return <Navigate to="/" />;
 
@@ -126,9 +128,16 @@ function TopNav({ onMenu }) {
       {/* Mobile Sidebar */}
       {sidebarOpen && (
         <>
-          <div className="fixed inset-0 bg-black/40 z-40" onClick={() => setSidebarOpen(false)} />
-          <div className="fixed inset-y-0 left-0 w-64 bg-white z-50">
-            <AppSidebar collapsed={false} />
+          <div
+            className="fixed inset-0 bg-black/40 z-40"
+            onClick={() => setSidebarOpen(false)}
+          />
+          <div
+            className={`fixed inset-y-0 left-0 w-64 bg-white shadow-lg z-50 transform transition-transform duration-300 ${
+              sidebarOpen ? "translate-x-0" : "-translate-x-full"
+            }`}
+          >
+            <AppSidebar collapsed={false} handleNavClick={handleNavClick} />
           </div>
         </>
       )}

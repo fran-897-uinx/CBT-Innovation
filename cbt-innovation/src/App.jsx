@@ -2,7 +2,7 @@ import React from "react";
 import Land from "./LandPage/Land/Land";
 import AuthPage from "./App/pages/AuthPage";
 import { Route, Routes } from "react-router-dom";
-import PrivateApp from "./Private/Apps";
+import PrivateApp from "./Private/components/Private";
 
 const App = () => {
   return (

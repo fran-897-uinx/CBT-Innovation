@@ -43,7 +43,7 @@ export default function VideoSessionPage() {
   return (
     <div className="h-screen bg-black text-white flex flex-col relative">
       {/* ===== TOP BAR ===== */}
-      <div className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-4 py-3 bg-black/60 backdrop-blur">
+      <div className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-4 py-3 bg-black/60 backdrop-blur caption-bottom">
         <span className="text-sm font-semibold">Live Video Session</span>
 
         <button

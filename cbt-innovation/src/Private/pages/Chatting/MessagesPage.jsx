@@ -7,10 +7,10 @@ const initialChats = [
 ];
 
 const allUsers = [
-  { id: 1, name: "John Doe" },
-  { id: 2, name: "Alice Johnson" },
-  { id: 3, name: "Michael Smith" },
-  { id: 4, name: "Grace Lee" },
+  { id: 1, name: "John Doe", role: "Tutor" },
+  { id: 2, name: "Alice Johnson", role: "Tutor" },
+  { id: 3, name: "Michael Smith", role: "Student" },
+  { id: 4, name: "Grace Lee", role: "Student" },
 ];
 
 export default function Messages() {
@@ -70,7 +70,7 @@ export default function Messages() {
 
       {/* New Chat Modal */}
       {showModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
+        <div className="fixed inset-0 z-50 flex items-start justify-end bg-black/50 p-4 scroll-auto overflow-auto">
           <div className="bg-white w-full max-w-sm rounded-xl p-6 relative">
             <button
               onClick={() => setShowModal(false)}
@@ -79,9 +79,7 @@ export default function Messages() {
               <X size={18} />
             </button>
 
-            <h2 className="text-lg font-semibold mb-3">
-              Start a new chat
-            </h2>
+            <h2 className="text-lg font-semibold mb-3">Start a new chat</h2>
 
             <div className="space-y-2 max-h-72 overflow-y-auto">
               {availableUsers.length === 0 && (
@@ -94,12 +92,15 @@ export default function Messages() {
                 <button
                   key={user.id}
                   onClick={() => startChat(user)}
-                  className="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition text-left"
+                  className="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition text-left cursor-pointer"
                 >
                   <div className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center font-semibold">
                     {user.name[0]}
                   </div>
-                  <span className="font-medium">{user.name}</span>
+                  <div className="grid gap-0.5">
+                    <span className="font-medium">{user.name}</span>
+                    <span className="text-xs text-gray-600 ">{user.role}</span>
+                  </div>
                 </button>
               ))}
             </div>

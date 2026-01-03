@@ -1,64 +1,89 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const registrations = [
   {
     name: "UTME (JAMB)",
     country: "Nigeria",
     status: "open",
+    internal: true,
+    link: "/app/registration/utme",
   },
   {
     name: "WAEC",
     country: "West Africa",
-    status: "Closed",
+    status: "closed",
+    internal: false,
+    link: "#",
   },
   {
     name: "IELTS",
-    country: "GLObal",
+    country: "Global",
     status: "open",
+    internal: true,
+    link: "/app/registration/ielts",
   },
   {
     name: "TPA Internal Exam",
     country: "Online",
-    status: "Always Open",
+    status: "always open",
     internal: true,
+    link: "/app/registration/tpa",
   },
 ];
 
 const RegistrationPage = () => {
   return (
-    <div className="p-4 pb-20">
-      <h1 className="text-lg font-semibold mb-4">Exam Registration</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 md:grid-cols-2 gap-4">
-        {registrations.map((reg, index) => (
-          <div key={index} className="border rounded-2xl p-4 bg-white/70">
-            <h3 className="font-semibold">{reg.name}</h3>
-            <p className="text-sm text-gray-500">{reg.country}</p>
+    <div className="p-4 pb-20 bg-gray-50 min-h-screen">
+      {/* Registered Exams Section */}
+      <h1 className="text-xl font-semibold mb-4">Registered Exams</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
+        <p className="text-sm text-gray-500 col-span-full">
+          No registered exams yet.
+        </p>
+      </div>
 
-            <span
-              className={`inline-flex gap-1 mt-2 text-sm px-2 py-0.5 rounded-full font-bold capitalize items-center ${
-                reg.status === "open"
-                  ? "bg-green-200 text-green-800"
-                  : "bg-gray-400 text-gray-800"
-              }`}
-            >
+      {/* Exam Registration Section */}
+      <h1 className="text-xl font-semibold mb-4">Exam Registration</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {registrations.map((reg, index) => (
+          <div
+            key={index}
+            className="border rounded-2xl p-4 bg-white shadow-sm hover:shadow-md transition flex flex-col justify-between"
+          >
+            <div>
+              <h3 className="font-semibold text-gray-900">{reg.name}</h3>
+              <p className="text-sm text-gray-500">{reg.country}</p>
+
+              {/* Status Badge */}
               <span
-                className={`rounded-full w-2 p-1 transition-all inset-x-0 h-2 relative ${
-                  reg.status.toLowerCase() === "open"
-                    ? "bg-green-800 bg-gradient-to-r from-transparent via-green-900 to-transparent"
-                    : "bg-gray-700 bg-gradient-to-r from-transparent via-gray-700 to-transparent"
+                className={`inline-flex gap-2 mt-3 text-sm px-3 py-1 rounded-full font-semibold capitalize items-center ${
+                  reg.status.toLowerCase() === "open" ||
+                  reg.status.toLowerCase() === "always open"
+                    ? "bg-green-100 text-green-800"
+                    : "bg-gray-200 text-gray-800"
                 }`}
-              />
-              {reg.status}
-            </span>
-            <button
-              className={`mt-4 w-full py-2 rounded-xl text-sm cursor-pointer ${
-                reg.internal
-                  ? "bg-blue-600 text-white/80"
-                  : "bg-gray-900 text-white"
-              }`}
-            >
-              {reg.internal ? "Register Now" : "View Guide"}
-            </button>
+              >
+                {reg.status}
+              </span>
+            </div>
+
+            {/* Action Button */}
+            {reg.internal ? (
+              <Link
+                to={reg.link}
+                className="mt-4 w-full py-2 text-sm rounded-xl bg-blue-600 text-white text-center hover:bg-blue-700 transition"
+              >
+                Register Now
+              </Link>
+            ) : (
+              <a
+                href={reg.link}
+                className="mt-4 w-full py-2 text-sm rounded-xl bg-gray-900 text-white text-center hover:bg-gray-800 transition"
+              >
+                View Guide
+              </a>
+            )}
           </div>
         ))}
       </div>

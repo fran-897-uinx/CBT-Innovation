@@ -1,0 +1,91 @@
+{
+  "courses": [
+    {
+      "name": "Udemy",
+      "type": "paid",
+      "baseUrl": "https://www.udemy.com/api-2.0/courses/",
+      "authRequired": true,
+      "authType": "API Key (Basic Auth)",
+      "exampleQuery": "?search=python",
+      "notes": "Search courses, get details, rating, price",
+      "responseFields": ["id", "title", "url", "price", "rating", "visible_instructors"]
+    },
+    {
+      "name": "Coursera",
+      "type": "public",
+      "baseUrl": "https://api.coursera.org/api/courses.v1",
+      "authRequired": false,
+      "exampleQuery": "?query=python",
+      "notes": "Search courses, get instructors, institutions, descriptions",
+      "responseFields": ["id", "name", "slug", "partnerIds", "description"]
+    },
+    {
+      "name": "edX",
+      "type": "public",
+      "baseUrl": "https://www.edx.org/api/v1/catalog",
+      "authRequired": false,
+      "exampleQuery": "",
+      "notes": "edX course catalog",
+      "responseFields": ["key", "title", "short_description", "subjects", "start_date"]
+    },
+    {
+      "name": "OpenLearning",
+      "type": "public",
+      "baseUrl": "https://www.openlearning.com/api/v1/courses",
+      "authRequired": true,
+      "authType": "OAuth Token",
+      "exampleQuery": "",
+      "notes": "Requires OAuth token to fetch courses",
+      "responseFields": ["id", "title", "summary", "enrollment_count"]
+    }
+  ],
+  "books": [
+    {
+      "name": "Google Books",
+      "type": "public",
+      "baseUrl": "https://www.googleapis.com/books/v1/volumes?q=",
+      "authRequired": false,
+      "exampleQuery": "python",
+      "notes": "Search by keyword, author, ISBN; returns book info, thumbnails",
+      "responseFields": ["id", "volumeInfo.title", "volumeInfo.authors", "volumeInfo.publishedDate", "volumeInfo.imageLinks.thumbnail", "volumeInfo.infoLink"]
+    },
+    {
+      "name": "Open Library",
+      "type": "public",
+      "baseUrl": "https://openlibrary.org/search.json?q=",
+      "authRequired": false,
+      "exampleQuery": "javascript",
+      "notes": "Free and public domain books",
+      "responseFields": ["key", "title", "author_name", "first_publish_year", "cover_i"]
+    },
+    {
+      "name": "Gutendex",
+      "type": "public",
+      "baseUrl": "https://gutendex.com/books/?search=",
+      "authRequired": false,
+      "exampleQuery": "python",
+      "notes": "Public domain books, multiple formats",
+      "responseFields": ["id", "title", "authors", "formats"]
+    },
+    {
+      "name": "NYT Books",
+      "type": "paid",
+      "baseUrl": "https://api.nytimes.com/svc/books/v3/lists.json",
+      "authRequired": true,
+      "authType": "API Key",
+      "exampleQuery": "?list=hardcover-fiction",
+      "notes": "Bestsellers, reviews",
+      "responseFields": ["list_name", "book_details", "published_date"]
+    },
+    {
+      "name": "ISBNdb",
+      "type": "paid",
+      "baseUrl": "https://api.isbndb.com/books/",
+      "authRequired": true,
+      "authType": "API Key",
+      "exampleQuery": "9780134190440",
+      "notes": "Search by ISBN; book details, pricing, availability",
+      "responseFields": ["isbn", "title", "authors", "publisher", "date_published", "image"]
+    }
+  ]
+}

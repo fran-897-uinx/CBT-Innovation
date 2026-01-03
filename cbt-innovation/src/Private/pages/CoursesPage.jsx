@@ -1,56 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Search, Filter, Heart, Check } from "lucide-react";
-
-const courses = [
-  {
-    id: "c1",
-    type: "course",
-    title: "Computer Science",
-    institution: "University of Lagos",
-    country: "Nigeria",
-    level: "Degree",
-    mode: "Exam",
-    desc: "Nearly every command installed on the system.",
-    price: 17,
-  },
-  {
-    id: "c2",
-    type: "course",
-    title: "Computer Science",
-    institution: "University of Lagos",
-    country: "Nigeria",
-    level: "Degree",
-    mode: "Exam",
-    desc: "Documentation more closely aligned to packages.",
-    price: 27,
-  },
-];
-
-const books = [
-  {
-    id: "b1",
-    type: "book",
-    img: "/undraw_certification_i2m0.svg",
-    writer: "Markel Benson",
-    name: "Wise Man Taught",
-    study: "Python",
-    price: null,
-  },
-  {
-    id: "b2",
-    type: "book",
-    img: "/undraw_certification_i2m0.svg",
-    writer: "Markel Benson",
-    name: "Wise Man Taught",
-    study: "Python",
-    price: 21,
-  },
-];
+import { loadMarketplace } from "../service/marketplace";
 
 export default function CoursesPage() {
   const [query, setQuery] = useState("");
-  const [selected, setSelected] = useState([]); // purchased
+  const [selected, setSelected] = useState([]);
   const [wishlist, setWishlist] = useState([]);
+  const [courses, setCourses] = useState([]);
+  const [books, setBooks] = useState([]);
+
+  // Load marketplace
+  useEffect(() => {
+    loadMarketplace().then(({ courses, books }) => {
+      setCourses(courses);
+      setBooks(books);
+    });
+  }, []);
 
   const filterFn = (item) =>
     JSON.stringify(item).toLowerCase().includes(query.toLowerCase());
@@ -92,124 +57,119 @@ export default function CoursesPage() {
       </div>
 
       {/* Purchased */}
-      <h2 className="px-4 mt-4 font-bold">Purchased</h2>
-      <div className="p-4 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {selected.length === 0 && (
-          <p className="text-sm text-gray-500">No purchases yet</p>
-        )}
+      <Section title="Purchased">
+        {selected.length === 0 && <Empty text="No purchases yet" />}
         {selected.map((item) => (
-          <div key={item.id} className="border p-3 rounded-xl bg-gray-50">
-            <p className="font-medium">{item.title || item.name}</p>
-            <span className="text-xs text-green-700 flex items-center gap-1">
-              <Check size={14} /> Purchased
-            </span>
-          </div>
+          <PurchasedCard key={item.id} item={item} />
         ))}
-      </div>
+      </Section>
 
       {/* Wishlist */}
-      <h2 className="px-4 mt-4 font-bold">Wishlist</h2>
-      <div className="p-4 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {wishlist.length === 0 && (
-          <p className="text-sm text-gray-500">Nothing saved yet</p>
-        )}
+      <Section title="Wishlist">
+        {wishlist.length === 0 && <Empty text="Nothing saved yet" />}
         {wishlist.map((item) => (
-          <div key={item.id} className="border p-3 rounded-xl">
-            <p className="font-medium">{item.title || item.name}</p>
-            <button
-              onClick={() => buyItem(item)}
-              className="mt-2 w-full bg-gray-900 text-white py-2 rounded-xl text-sm"
-            >
-              Buy Now
-            </button>
-          </div>
+          <WishlistCard key={item.id} item={item} buyItem={buyItem} />
         ))}
-      </div>
+      </Section>
 
       {/* Courses */}
-      <h2 className="px-4 mt-4 font-bold">Courses</h2>
-      <div className="p-4 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <Section title="Courses">
         {courses.filter(filterFn).map((course) => (
-          <div key={course.id} className="border rounded-2xl p-4 bg-white">
-            <h3 className="font-semibold">{course.title}</h3>
-            <p className="text-sm text-gray-500">
-              {course.institution}. {course.country}
-            </p>
-            <p className="text-sm text-gray-500 mt-4">{course.desc}</p>
-            <p className="text-sm text-gray-500 mt-4">
-              {course.level ? ` Level: ${course.level}` : ""}
-            </p>
-            <p className="text-sm text-gray-500 mt-1">
-              {course.mode ? ` mode: ${course.mode}` : ""}
-            </p>
-            <div className="flex gap-2 mt-4">
-              {isPurchased(course.id) ? (
-                <span className="text-green-700 flex items-center gap-1">
-                  <Check size={16} /> Purchased
-                </span>
-              ) : (
-                <>
-                  <button
-                    onClick={() => buyItem(course)}
-                    className="flex-1 bg-gray-900 text-white py-2 rounded-xl text-sm cursor-pointer"
-                  >
-                    Buy £{course.price}
-                  </button>
-                  <button
-                    onClick={() => toggleWishlist(course)}
-                    className={`p-2 rounded-xl border cursor-pointer ${
-                      isWishlisted(course.id) && "bg-red-500"
-                    }`}
-                  >
-                    <Heart size={16} />
-                  </button>
-                </>
-              )}
-            </div>
-          </div>
+          <ItemCard
+            key={course.id}
+            item={course}
+            isPurchased={isPurchased}
+            isWishlisted={isWishlisted}
+            buyItem={buyItem}
+            toggleWishlist={toggleWishlist}
+          />
         ))}
-      </div>
+      </Section>
 
       {/* Books */}
-      <h2 className="px-4 mt-6 font-bold">Books</h2>
-      <div className="p-4 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <Section title="Books">
         {books.filter(filterFn).map((book) => (
-          <div key={book.id} className="border rounded-2xl p-4 bg-white">
-            <h3 className="font-semibold">{book.name}</h3>
-
-            <img
-              src={book.img}
-              alt={book.name}
-              className="h-32 w-full object-contain my-3"
-            />
-
-            <div className="flex gap-2">
-              {isPurchased(book.id) ? (
-                <span className="text-green-700 flex items-center gap-1">
-                  <Check size={16} /> Purchased
-                </span>
-              ) : (
-                <>
-                  <button
-                    onClick={() => buyItem(book)}
-                    className="flex-1 bg-gray-900 text-white py-2 rounded-xl text-sm cursor-pointer"
-                  >
-                    {book.price ? `Buy £${book.price}` : "Free"}
-                  </button>
-                  <button
-                    onClick={() => toggleWishlist(book)}
-                    className={`p-2 rounded-xl border cursor-pointer ${
-                      isWishlisted(book.id) && "bg-red-500"
-                    }`}
-                  >
-                    <Heart size={16} />
-                  </button>
-                </>
-              )}
-            </div>
-          </div>
+          <ItemCard
+            key={book.id}
+            item={book}
+            isPurchased={isPurchased}
+            isWishlisted={isWishlisted}
+            buyItem={buyItem}
+            toggleWishlist={toggleWishlist}
+          />
         ))}
-      </div>
+      </Section>
     </div>
   );
 }
+
+/* ---------------- UI Helpers ---------------- */
+
+const Section = ({ title, children }) => (
+  <>
+    <h2 className="px-4 mt-6 font-bold">{title}</h2>
+    <div className="p-4 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      {children}
+    </div>
+  </>
+);
+
+const PurchasedCard = ({ item }) => (
+  <div className="border p-3 rounded-xl bg-gray-50">
+    <p className="font-medium">{item.title || item.name}</p>
+    <span className="text-xs text-green-700 flex items-center gap-1">
+      <Check size={14} /> Purchased
+    </span>
+  </div>
+);
+
+const WishlistCard = ({ item, buyItem }) => (
+  <div className="border p-3 rounded-xl">
+    <p className="font-medium">{item.title || item.name}</p>
+    <button
+      onClick={() => buyItem(item)}
+      className="mt-2 w-full bg-gray-900 text-white py-2 rounded-xl text-sm"
+    >
+      Buy Now
+    </button>
+  </div>
+);
+
+const ItemCard = ({
+  item,
+  isPurchased,
+  isWishlisted,
+  buyItem,
+  toggleWishlist,
+}) => (
+  <div className="border rounded-2xl p-4 bg-white">
+    <h3 className="font-semibold">{item.title || item.name}</h3>
+    {item.desc && <p className="text-sm mt-3">{item.desc}</p>}
+    <div className="flex gap-2 mt-4">
+      {isPurchased(item.id) ? (
+        <span className="text-green-700 flex items-center gap-1">
+          <Check size={16} /> Purchased
+        </span>
+      ) : (
+        <>
+          <button
+            onClick={() => buyItem(item)}
+            className="flex-1 bg-gray-900 text-white py-2 rounded-xl text-sm"
+          >
+            {item.price ? `Buy £${item.price}` : "Free"}
+          </button>
+          <button
+            onClick={() => toggleWishlist(item)}
+            className={`p-2 rounded-xl border ${
+              isWishlisted(item.id) && "bg-red-500 text-white"
+            }`}
+          >
+            <Heart size={16} />
+          </button>
+        </>
+      )}
+    </div>
+  </div>
+);
+
+const Empty = ({ text }) => <p className="text-sm text-gray-500">{text}</p>;

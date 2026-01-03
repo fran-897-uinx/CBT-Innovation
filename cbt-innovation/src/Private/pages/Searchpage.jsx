@@ -66,7 +66,7 @@ export default function SearchPage() {
           <button
             key={item.id}
             onClick={() => setFilter(item.id)}
-            className={`px-3 py-1.5 rounded-full text-sm border ${
+            className={`px-3 py-1.5 rounded-full text-sm  ${
               filter === item.id
                 ? "bg-blue-600 text-white border-blue-600"
                 : "bg-white text-gray-600 hover:bg-gray-50"
@@ -114,7 +114,7 @@ export default function SearchPage() {
                   <Link
                     key={item.id}
                     to={item.path}
-                    className="flex items-center justify-between p-3 rounded border hover:bg-gray-50"
+                    className="flex items-center  border-b justify-between p-3   hover:bg-gray-50"
                   >
                     <span className="text-sm">{item.title}</span>
                     {item.status === "live" && (
@@ -147,7 +147,7 @@ export default function SearchPage() {
 /* Reusable components */
 function Section({ title, icon, children }) {
   return (
-    <div className="bg-white border rounded-lg p-4 space-y-2">
+    <div className=" p-4 space-y-2">
       <div className="flex items-center gap-2 text-sm font-semibold text-gray-700">
         {icon}
         {title}
@@ -159,7 +159,7 @@ function Section({ title, icon, children }) {
 
 function ResultLink({ to, children }) {
   return (
-    <Link to={to} className="block p-3 rounded border hover:bg-gray-50 text-sm">
+    <Link to={to} className="block p-3 border-b hover:bg-gray-50 text-sm">
       {children}
     </Link>
   );

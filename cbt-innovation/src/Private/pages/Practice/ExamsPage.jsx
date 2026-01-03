@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const TABS = [
   { key: "overview", label: "Overview" },
@@ -9,13 +10,11 @@ const TABS = [
 
 export default function ExamPage() {
   const [activeTab, setActiveTab] = useState("overview");
-  const [stModal, setStModal] = useState(false);
-
 
   return (
-    <section className="pb-20">
+    <section className="pb-20 min-h-screen bg-gray-50">
       {/* Header */}
-      <header className="p-4 border-b bg-white sticky top-14 z-20">
+      <header className="p-4 border-b bg-white sticky top-0 z-20 shadow-sm">
         <h1 className="text-xl font-semibold">UTME</h1>
         <p className="text-sm text-gray-500 mt-1">
           Unified Tertiary Matriculation Examination
@@ -23,18 +22,17 @@ export default function ExamPage() {
 
         <div className="flex gap-2 mt-4">
           <button
-            className="flex-1 bg-gray-900 text-white py-2 rounded-xl text-sm hover:bg-gray-600 cursor-pointer"
-            aria-label="Practice exam"
+            className="flex-1 bg-gray-900 text-white py-2 rounded-xl text-sm hover:bg-gray-700 transition"
+            onClick={() => alert("Start Practice Mode")}
           >
             Practice
           </button>
-          <button
-            className="flex-1 border py-2 rounded-xl text-sm hover:bg-gray-600 cursor-pointer"
-            aria-label="Register for exam"
-            onClick={() => setStModal(true)}
+          <Link
+            to="/app/registration"
+            className="flex-1 border border-gray-300 py-2 rounded-xl text-sm hover:bg-gray-100 transition"
           >
             Register
-          </button>
+          </Link>
         </div>
       </header>
 
@@ -59,7 +57,7 @@ export default function ExamPage() {
         ))}
       </nav>
 
-      {/* Content */}
+      {/* Tab Content */}
       <main className="p-4 text-sm text-gray-700 leading-relaxed">
         {activeTab === "overview" && (
           <p>
@@ -92,31 +90,6 @@ export default function ExamPage() {
           </p>
         )}
       </main>
-
-       {/* Modal */}
-      {stModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
-          <div className="bg-white w-full max-w-sm rounded-xl p-6 relative">
-            <button
-              onClick={() => setStModal(false)}
-              className="absolute top-3 right-3 text-gray-500 hover:text-gray-800"
-            >
-              <X size={20} />
-            </button>
-            <h2 className="text-lg font-semibold mb-4">Add New Chat</h2>
-            <input
-              type="text"
-              placeholder="User or Group Name"
-              className="w-full p-3 border rounded-xl mb-4 focus:ring-1 focus:ring-gray-800"
-            />
-            <button
-              className="w-full bg-gray-900 text-white py-3 rounded-xl hover:bg-gray-800 transition"
-            >
-              Register
-            </button>
-          </div>
-        </div>
-      )}
     </section>
   );
 }
