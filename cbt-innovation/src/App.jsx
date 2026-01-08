@@ -6,13 +6,13 @@ import PrivateApp from "./Private/components/Private";
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-gray-200 p-2">
+    <>
       <Routes>
         <Route path="/" element={<Land />} />
         <Route path="/auth" element={<AuthPage />} />
         <Route path="/app/*" element={<PrivateApp />} />
       </Routes>
-    </div>
+    </>
   );
 };
 

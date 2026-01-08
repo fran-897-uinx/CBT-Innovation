@@ -41,7 +41,7 @@ export default function CoursesPage() {
   return (
     <div className="pb-20">
       {/* Search */}
-      <div className="sticky top-14 bg-white z-30 p-3 flex gap-2 border-b">
+      <div className="sticky top-14 bg-background z-30 p-3 flex gap-2 border-b">
         <div className="flex-1 relative">
           <Search className="absolute left-3 top-2.5 text-gray-400" size={18} />
           <input

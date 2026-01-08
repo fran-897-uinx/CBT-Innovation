@@ -164,18 +164,18 @@ export default function PersonalChatRoom({ recipient = "Alice" }) {
   }, [messages]);
 
   return (
-    <div className="flex flex-col h-screen bg-gray-50">
+    <div className="flex flex-col h-screen bg-background">
       {/* Header */}
-      <div className="flex justify-between items-center p-4 border-b bg-white sticky top-0 z-10">
+      <div className="flex justify-between items-center p-4 border-b bg-background sticky top-0 z-10">
         <div>
           <p className="font-semibold">{recipient}</p>
           <p className="text-xs text-green-500">Online</p>
         </div>
         <div className="flex gap-3">
-          <button className="p-2 bg-gray-100 rounded-full hover:bg-gray-200">
+          <button className="p-2 bg-background-100 rounded-full hover:bg-muted">
             <Video size={18} />
           </button>
-          <button className="p-2 bg-gray-100 rounded-full hover:bg-gray-200">
+          <button className="p-2 bg-background rounded-full hover:bg-muted">
             <Phone size={18} />
           </button>
         </div>
@@ -190,7 +190,7 @@ export default function PersonalChatRoom({ recipient = "Alice" }) {
           >
             <div
               className={`max-w-xs p-3 rounded-xl break-words ${
-                msg.self ? "bg-gray-900 text-white" : "bg-gray-100"
+                msg.self ? "bg-gray-900 text-foreground" : "bg-green-700"
               }`}
             >
               {!msg.self && (
@@ -204,7 +204,7 @@ export default function PersonalChatRoom({ recipient = "Alice" }) {
       </div>
 
       {/* Input */}
-      <div className="flex items-center p-3 border-t bg-white gap-2">
+      <div className="flex items-center p-3 border-t bg-background gap-2">
         <input
           type="text"
           placeholder="Type a message..."
@@ -219,7 +219,7 @@ export default function PersonalChatRoom({ recipient = "Alice" }) {
         >
           <Send size={18} />
         </button>
-        <button className="p-3 bg-gray-100 rounded-xl hover:bg-gray-200">
+        <button className="p-3 bg-background rounded-xl hover:bg-muted">
           <Mic size={18} />
         </button>
       </div>

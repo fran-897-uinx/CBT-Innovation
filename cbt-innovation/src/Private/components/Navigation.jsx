@@ -31,7 +31,7 @@ const SidebarLink = ({ to, label, icon, badge = 0, collapsed, onClick }) => {
         ${
           isActive
             ? "bg-blue-50 text-blue-700 border-l-4 border-blue-600"
-            : "text-gray-700 hover:bg-gray-100"
+            : "text-foregound hover:muted"
         }
       `}
     >
@@ -63,25 +63,25 @@ const SidebarLink = ({ to, label, icon, badge = 0, collapsed, onClick }) => {
 export default function AppSidebar({ collapsed, onToggle, handleNavClick }) {
   return (
     <aside
-      className={`fixed inset-y-0 left-0 z-50 bg-white shadow-lg transition-all duration-300
+      className={`fixed inset-y-0 left-0 z-50 bg-background shadow-lg transition-all duration-300 border
         ${collapsed ? "w-20" : "w-64"}
       `}
     >
       {/* Header */}
-      <div className="flex items-center justify-between px-4 py-4 border-b">
+      <div className="flex items-center justify-between px-4 py-4 border-b border">
         <div className="flex items-center gap-3">
           <div className="w-9 h-9 bg-gray-900 rounded-xl flex items-center justify-center text-white font-bold">
             TP
           </div>
           {!collapsed && (
-            <h1 className="text-lg font-bold text-gray-900">TestPrep</h1>
+            <h1 className="text-lg font-bold text-forground">TestPrep</h1>
           )}
         </div>
 
         {/* Desktop Collapse */}
         <button
           onClick={onToggle}
-          className="hidden md:flex p-1 rounded-md hover:bg-gray-100"
+          className="hidden md:flex p-1 rounded-md hover:muted"
           aria-label="Toggle sidebar"
         >
           <ChevronRight
@@ -92,7 +92,7 @@ export default function AppSidebar({ collapsed, onToggle, handleNavClick }) {
         {/* Mobile Close */}
         <button
           onClick={handleNavClick}
-          className="md:hidden p-1 rounded-md hover:bg-gray-100"
+          className="md:hidden p-1 rounded-md hover:bg-muted"
         >
           <X size={20} />
         </button>

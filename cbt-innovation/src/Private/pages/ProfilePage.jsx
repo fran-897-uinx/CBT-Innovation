@@ -9,6 +9,7 @@ import {
   Github,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { FaStackOverflow, FaTiktok, FaInstagramSquare } from "react-icons/fa";
 
 const Projects = [
   { id: 1, name: "Restaurant Website", link: "#" },
@@ -26,10 +27,10 @@ export default function ProfilePage() {
       </div>
 
       {/* Profile Card */}
-      <div className="bg-white border rounded-xl p-6">
+      <div className="bg-background border rounded-xl p-6">
         <div className="flex flex-col sm:flex-row gap-6">
           {/* Avatar */}
-          <div className="w-28 h-28 rounded-full bg-gray-200 flex items-center justify-center text-3xl font-bold text-gray-600">
+          <div className="w-28 h-28 rounded-full bg-background flex items-center justify-center text-3xl font-bold text-gray-600">
             DF
           </div>
 
@@ -51,10 +52,18 @@ export default function ProfilePage() {
 
             {/* Social Links */}
             <div className="flex gap-3">
-              {[Linkedin, Facebook, Twitter, Github].map((Icon, i) => (
+              {[
+                Linkedin,
+                Facebook,
+                Twitter,
+                Github,
+                FaStackOverflow,
+                FaTiktok,
+                FaInstagramSquare,
+              ].map((Icon, i) => (
                 <div
                   key={i}
-                  className="w-9 h-9 border rounded-full flex items-center justify-center hover:bg-gray-100 cursor-pointer"
+                  className="w-9 h-9 border rounded-full flex items-center justify-center hover:bg-muted cursor-pointer"
                 >
                   <Icon size={18} />
                 </div>
@@ -67,7 +76,7 @@ export default function ProfilePage() {
       {/* Details */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Contact */}
-        <div className="bg-white border rounded-xl p-5 space-y-3">
+        <div className="bg-background border rounded-xl p-5 space-y-3">
           <h3 className="font-semibold text-gray-800">Contact</h3>
 
           <div className="flex items-center gap-3 text-sm text-gray-600">
@@ -80,7 +89,7 @@ export default function ProfilePage() {
         </div>
 
         {/* Account Status */}
-        <div className="bg-white border rounded-xl p-5 space-y-3">
+        <div className="bg-background border rounded-xl p-5 space-y-3">
           <h3 className="font-semibold text-gray-800">Account Status</h3>
 
           <div className="flex items-center gap-3 text-sm text-gray-600">
@@ -94,7 +103,7 @@ export default function ProfilePage() {
         </div>
 
         {/* Experience & Projects */}
-        <div className="bg-white border rounded-xl p-5 space-y-4 md:col-span-2">
+        <div className="bg-background border rounded-xl p-5 space-y-4 md:col-span-2">
           <h3 className="font-semibold text-gray-800">Experience</h3>
 
           <p className="text-sm text-gray-700">
@@ -110,7 +119,7 @@ export default function ProfilePage() {
                 <Link
                   key={p.id}
                   to={p.link}
-                  className="px-3 py-1 text-xs border rounded-full text-gray-700 hover:bg-gray-100"
+                  className="px-3 py-1 text-xs border rounded-full text-gray-700 hover:bg-muted"
                 >
                   {p.name}
                 </Link>

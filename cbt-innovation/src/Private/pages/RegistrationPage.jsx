@@ -34,7 +34,7 @@ const registrations = [
 
 const RegistrationPage = () => {
   return (
-    <div className="p-4 pb-20 bg-gray-50 min-h-screen">
+    <div className="p-4 pb-20 bg-background min-h-screen">
       {/* Registered Exams Section */}
       <h1 className="text-xl font-semibold mb-4">Registered Exams</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">

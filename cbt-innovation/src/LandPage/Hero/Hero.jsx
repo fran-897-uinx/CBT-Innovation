@@ -4,7 +4,7 @@ import HeroBackground from './HeroBackground'
 
 const Hero = () => {
     return (
-      <>
+      <div id="home">
         <Helmet>
           <title>TestPrep Academy</title>
           <meta
@@ -24,7 +24,7 @@ const Hero = () => {
         {/* content goes here */}
         {/* <h1>Welcome to My Cool React App</h1> */}
         <HeroBackground />
-      </>
+      </div>
     );
 }
 

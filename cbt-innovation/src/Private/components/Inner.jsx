@@ -29,7 +29,7 @@ const titles = {
 };
 
 const Navbelow = () => (
-  <nav className="grid grid-cols-5 gap-3 border-t border-t-gray-600 bg-white h-14 items-center">
+  <nav className="grid grid-cols-5 gap-3 border-t border-t-gray-600 bg-card h-14 items-center test-foreground">
     <Link to="/app/dashboard" className="flex justify-center">
       <Home size={25} className="z-10 transition-all duration-300" />
     </Link>
@@ -66,10 +66,10 @@ function TopNav({ onMenu }) {
   return (
     <header className="fixed top-0 left-0 right-0 z-40 md:ml-64">
       <div
-        className={`h-14 px-4 bg-white/80 backdrop-blur-md border-b border-gray-200 flex items-center justify-between ${
+        className={`h-14 px-4 bg-background backdrop-blur-md border-b border-gray-200 flex items-center justify-between ${
           isScrolled
-            ? "bg-white shadow-md py-2"
-            : "bg-white/90 backdrop-blur-sm py-4"
+            ? "bg-background shadow-md py-2"
+            : "bg-background/90 backdrop-blur-sm py-4"
         }`}
       >
         {/* {Left} */}
@@ -77,7 +77,7 @@ function TopNav({ onMenu }) {
           <button className="md:hidden" onClick={onMenu}>
             <Menu size={25} />
           </button>
-          <h1 className="font-semibold text-gray-900 text-base capitalize text-balance">
+          <h1 className="font-semibold text-foreground text-base capitalize text-balance">
             {heads}
           </h1>
           {/* {Right Actions} */}
@@ -114,7 +114,7 @@ export default function PrivateLayout() {
   if (!isAuthenticated) return <Navigate to="/" />;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-background">
       <TopNav onMenu={() => setSidebarOpen(true)} />
 
       {/* Desktop Sidebar */}
@@ -129,11 +129,11 @@ export default function PrivateLayout() {
       {sidebarOpen && (
         <>
           <div
-            className="fixed inset-0 bg-black/40 z-40"
+            className="fixed inset-0 bg-background/40 z-40"
             onClick={() => setSidebarOpen(false)}
           />
           <div
-            className={`fixed inset-y-0 left-0 w-64 bg-white shadow-lg z-50 transform transition-transform duration-300 ${
+            className={`fixed inset-y-0 left-0 w-64 bg-background shadow-lg z-50 transform transition-transform duration-300 ${
               sidebarOpen ? "translate-x-0" : "-translate-x-full"
             }`}
           >

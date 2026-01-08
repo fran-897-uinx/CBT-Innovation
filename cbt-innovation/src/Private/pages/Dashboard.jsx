@@ -1,140 +1,181 @@
-import { BookOpen, FileText, MessageCircle, Video, Users } from "lucide-react";
+import {
+  BookOpen,
+  FileText,
+  MessageCircle,
+  Video,
+  Users,
+  ArrowRight,
+} from "lucide-react";
 
 const stats = [
-  { title: "Courses", value: 6, icon: BookOpen },
-  { title: "Exams", value: 3, icon: FileText },
-  { title: "Messages", value: 12, icon: MessageCircle },
-  { title: "Video Sessions", value: 2, icon: Video },
-  { title: "Study Groups", value: 4, icon: Users },
+  { title: "Courses", value: 6, Icon: BookOpen },
+  { title: "Exams", value: 3, Icon: FileText },
+  { title: "Messages", value: 12, Icon: MessageCircle },
+  { title: "Video Sessions", value: 2, Icon: Video },
+  { title: "Study Groups", value: 4, Icon: Users },
 ];
 
 const updates = [
   {
     title: "Mark Scholarship Upcoming",
-    startTime: "19-01-2026",
-    endTime: "20-03-2026",
+    startTime: "19 Jan 2026",
+    endTime: "20 Mar 2026",
     from: "Udemy",
     img: "/undraw_certification_i2m0.svg",
-    link: "https://www.com",
+    link: "#",
   },
   {
     title: "Christmas Study Platform",
     from: "Cursor",
     img: "/undraw_fill-the-blank_n29z.svg",
-    link: "https://www.com",
+    link: "#",
   },
 ];
+const StatCard = ({ title, value, Icon }) => {
+  return (
+    <div className="rounded-xl border bg-card p-4 flex items-center gap-4 hover:shadow-sm transition">
+      <div className="p-2 rounded-lg bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300">
+        {Icon && <Icon size={22} />}
+      </div>
 
-const StatCard = ({ title, value, Icon }) => (
-  <div className="bg-white rounded-lg p-4 flex items-center justify-between border hover:shadow-sm transition">
-    <div>
-      <p className="text-sm text-gray-500">{title}</p>
-      <p className="text-2xl font-semibold text-gray-900">{value}</p>
+      <div>
+        <p className="text-sm text-foreground">{title}</p>
+        <p className="text-xl font-semibold text-foreground">{value}</p>
+      </div>
     </div>
-    {Icon && <Icon className="text-blue-600" size={24} />}{" "}
-  </div>
-);
+  );
+};
 
-const UpcomingCard = ({ title, startTime, endTime, from, img, link }) => (
+const UpdateCard = ({ title, startTime, endTime, from, img, link }) => (
   <a
     href={link}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="block bg-gray-100 rounded-lg p-4 border hover:border-blue-700 transition"
+    className="group rounded-xl border bg-gray-50 p-4 flex justify-between items-center hover:border-blue-600 transition"
   >
-    <div className="flex justify-between items-center gap-4">
-      <div className="space-y-1">
-        <p className="font-semibold text-gray-800">{title}</p>
-        <p className="text-sm text-gray-600">{from}</p>
-        {startTime && (
-          <p className="text-xs text-blue-700">Starts: {startTime}</p>
-        )}
-        {endTime && <p className="text-xs text-red-700">Ends: {endTime}</p>}
-      </div>
-      <img
-        src={img}
-        alt={title}
-        loading="lazy"
-        className="w-16 h-16 object-contain"
-      />
+    <div className="space-y-1">
+      <p className="font-medium text-gray-900 group-hover:text-blue-700">
+        {title}
+      </p>
+      <p className="text-xs text-gray-500">{from}</p>
+      {startTime && (
+        <p className="text-xs text-blue-600">Starts: {startTime}</p>
+      )}
+      {endTime && <p className="text-xs text-red-600">Ends: {endTime}</p>}
     </div>
+
+    <img
+      src={img}
+      alt={title}
+      className="w-14 h-14 object-contain"
+      loading="lazy"
+    />
   </a>
 );
-
 export default function DashboardPage() {
   return (
-    <section className="space-y-6">
+    <section
+      className="space-y-8 p-4 sm:p-6 max-w-7xl mx-auto
+      bg-background
+      text-foreground
+    "
+    >
       {/* Header */}
-      <header>
-        <h1 className="text-xl font-semibold text-gray-900">Welcome back</h1>
-        <p className="text-sm text-gray-500">
-          Here’s your learning overview today.
+      <header className="space-y-1">
+        <h1 className="text-2xl font-semibold">Welcome back 👋</h1>
+        <p className="text-sm text-foreground">
+          Track your progress and continue learning.
         </p>
       </header>
 
       {/* Stats */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
         {stats.map((s) => (
-          <StatCard
-            key={s.title}
-            title={s.title}
-            value={s.value}
-            Icon={s.icon}
-          />
+          <StatCard key={s.title} {...s} />
         ))}
       </div>
 
       {/* Updates */}
-      <div>
-        <h2 className="text-lg font-semibold text-gray-800 mb-3">Updates</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-4">
+      <div className="space-y-3">
+        <h2 className="text-lg font-semibold">Updates</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {updates.map((u) => (
-            <UpcomingCard key={u.title} {...u} />
+            <UpdateCard key={u.title} {...u} />
           ))}
         </div>
       </div>
 
-      {/* Main Section */}
+      {/* Main Area */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Active Exams */}
-        <div className="lg:col-span-2 bg-white rounded-lg border p-5">
-          <h3 className="font-semibold mb-4">Active Exam Preparations</h3>
+        <div
+          className="
+          lg:col-span-2
+          rounded-xl border
+          bg-background
+          border-gray-200 dark:border-slate-800
+          p-5 space-y-4
+        "
+        >
+          <h3 className="font-semibold">Active Exam Preparation</h3>
 
-          <div className="space-y-3">
-            {["JAMB 2025", "WAEC SSCE", "UTME Mock"].map((exam) => (
-              <div
-                key={exam}
-                className="flex justify-between items-center p-3 border rounded hover:bg-gray-50 transition"
-              >
-                <div>
-                  <p className="font-medium text-gray-800">{exam}</p>
-                  <p className="text-xs text-gray-500">Progress: In progress</p>
-                </div>
-                <button className="text-sm text-blue-600 font-medium">
-                  Continue
-                </button>
+          {["JAMB 2025", "WAEC SSCE", "UTME Mock"].map((exam) => (
+            <div
+              key={exam}
+              className="
+                flex items-center justify-between
+                rounded-lg border
+                border-gray-200 dark:border-slate-800
+                p-3
+                hover:bg-muted cursor-pointer
+                transition
+              "
+            >
+              <div>
+                <p className="font-medium">{exam}</p>
+                <p className="text-xs text-gray-500 dark:text-slate-400">
+                  In progress
+                </p>
               </div>
-            ))}
-          </div>
+              <button
+                className="
+                flex items-center gap-1
+                text-sm font-medium
+                text-blue-600 dark:text-blue-400
+              "
+              >
+                Continue <ArrowRight size={16} />
+              </button>
+            </div>
+          ))}
         </div>
 
         {/* Quick Actions */}
-        <div className="bg-white rounded-lg border p-5">
-          <h3 className="font-semibold mb-4">Quick Actions</h3>
-          <div className="space-y-3">
-            {[
-              "Join Video Session",
-              "Start Practice Test",
-              "Message a Tutor",
-            ].map((action) => (
+        <div
+          className="
+          rounded-xl border
+          bg-background
+          border-gray-200 dark:border-slate-800
+          p-5 space-y-4
+        "
+        >
+          <h3 className="font-semibold">Quick Actions</h3>
+
+          {["Join Video Session", "Start Practice Test", "Message a Tutor"].map(
+            (action) => (
               <button
                 key={action}
-                className="w-full border rounded-md p-3 text-left hover:bg-gray-50 transition"
+                className="
+                w-full rounded-lg border
+                border-gray-200 dark:border-slate-800
+                px-4 py-3
+                text-left text-sm
+                hover:bg-muted
+                transition
+              "
               >
                 {action}
               </button>
-            ))}
-          </div>
+            )
+          )}
         </div>
       </div>
     </section>

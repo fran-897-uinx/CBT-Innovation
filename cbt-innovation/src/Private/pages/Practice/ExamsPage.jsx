@@ -12,9 +12,9 @@ export default function ExamPage() {
   const [activeTab, setActiveTab] = useState("overview");
 
   return (
-    <section className="pb-20 min-h-screen bg-gray-50">
+    <section className="pb-20 min-h-screen bg-background">
       {/* Header */}
-      <header className="p-4 border-b bg-white sticky top-0 z-20 shadow-sm">
+      <header className="p-4 border-b bg-background sticky top-0 z-20 shadow-sm">
         <h1 className="text-xl font-semibold">UTME</h1>
         <p className="text-sm text-gray-500 mt-1">
           Unified Tertiary Matriculation Examination
@@ -27,12 +27,9 @@ export default function ExamPage() {
           >
             Practice
           </button>
-          <Link
-            to="/app/registration"
-            className="flex-1 border border-gray-300 py-2 rounded-xl text-sm hover:bg-gray-100 transition"
-          >
-            Register
-          </Link>
+          <button className="flex-1 border border-gray-300 py-2 rounded-xl text-sm hover:bg-muted hover:text-foreground transition">
+            <Link to="/app/registration">Register</Link>
+          </button>
         </div>
       </header>
 

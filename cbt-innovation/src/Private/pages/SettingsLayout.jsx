@@ -19,6 +19,7 @@ import NewsSettings from "../Settings/NewsSettings";
 import ProfileSettings from "../Settings/ProfileSettings";
 import RoleSettings from "../Settings/RoleSettings";
 import ThemeSettings from "../Settings/ThemeSetting";
+import { SunMoon } from "lucide-react";
 
 const tabs = [
   { key: "course", icon: Book, label: "Courses" },
@@ -29,14 +30,14 @@ const tabs = [
   { key: "news", icon: Newspaper, label: "Daily News" },
   { key: "profile", icon: User, label: "Profile" },
   { key: "role", icon: KeyIcon, label: "Roles" },
-  { key: "theme", icon: Book, label: "Theme" },
+  { key: "theme", icon: SunMoon, label: "Theme" },
 ];
 
 export default function SettingsLayout() {
   const [active, setActive] = useState("course");
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col md:flex-row">
+    <div className="min-h-screen bg-background flex flex-col md:flex-row">
       {/* ===== Mobile Tabs ===== */}
       <div className="md:hidden border-b overflow-x-auto py-3 ">
         <div className="flex w-max">
@@ -64,8 +65,8 @@ export default function SettingsLayout() {
       </div>
 
       {/* ===== Desktop Sidebar ===== */}
-      <aside className="hidden md:block w-64 bg-white border-r">
-        <h2 className="px-6 py-4 font-semibold text-gray-900">Settings</h2>
+      <aside className="hidden md:block w-64 bg-background border-r">
+        <h2 className="px-6 py-4 font-semibold text-foreground">Settings</h2>
 
         <nav className="space-y-1">
           {tabs.map((tab) => {
@@ -80,10 +81,10 @@ export default function SettingsLayout() {
                   ${
                     isActive
                       ? "bg-blue-50 text-blue-600 border-r-4 border-blue-600"
-                      : "text-gray-600 hover:bg-gray-100"
+                      : "text-forground hover:bg-muted"
                   }`}
               >
-                <Icon size={18} />
+                <Icon size={20} />
                 {tab.label}
               </button>
             );

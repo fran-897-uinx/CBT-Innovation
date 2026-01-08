@@ -104,63 +104,75 @@ const FeatureCard = ({ item, index }) => {
     const colors = colorClasses[item.accentColor];
 
     return (
-        <div className={`
+      <div
+        id="features"
+        className={`
             group relative bg-white rounded-2xl border-2 ${colors.border} ${colors.hover}
             shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1
             overflow-hidden
-        `}>
-            {/* Index Badge */}
-            <div className={`absolute top-4 right-4 ${colors.badge} text-white text-sm font-semibold px-3 py-1 rounded-full z-10`}>
-                {String(index + 1).padStart(2, '0')}
-            </div>
-
-            {/* Icon Section */}
-            <div className={`p-8 ${colors.iconBg} border-b ${colors.border}`}>
-                <div className="flex items-center justify-between">
-                    <div className={`p-4 rounded-2xl bg-white border ${colors.border} shadow-sm`}>
-                        <div className={`text-2xl ${colors.iconColor}`}>
-                            {item.featureIcon}
-                        </div>
-                    </div>
-                    {/* Decorative Element */}
-                    <div className="w-12 h-12 rounded-full bg-white border border-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-                        <div className="w-2 h-2 bg-gray-400 rounded-full"></div>
-                    </div>
-                </div>
-            </div>
-
-            {/* Content Section */}
-            <div className="p-8">
-                <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-gray-800 transition-colors">
-                    {item.featureTitle}
-                </h3>
-
-                <p className="text-gray-600 mb-6 leading-relaxed text-sm">
-                    {item.featureDescription}
-                </p>
-
-                {/* Highlights List */}
-                <div className="space-y-3">
-                    {item.highlights.map((highlight, highlightIndex) => (
-                        <div key={highlightIndex} className="flex items-center gap-3 text-sm">
-                            <div className={`w-5 h-5 rounded-full ${colors.iconBg} flex items-center justify-center flex-shrink-0`}>
-                                <FaRegCheckCircle className={`text-xs ${colors.iconColor}`} />
-                            </div>
-                            <span className="text-gray-700">{highlight}</span>
-                        </div>
-                    ))}
-                </div>
-
-                {/* Hover Indicator */}
-                <div className="absolute bottom-0 left-0 w-full h-1 bg-transparent group-hover:bg-gray-900 transition-colors duration-500"></div>
-            </div>
-
-            {/* Background Pattern */}
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-5 transition-opacity duration-500">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gray-900 rounded-full -translate-y-16 translate-x-16"></div>
-                <div className="absolute bottom-0 left-0 w-24 h-24 bg-gray-900 rounded-full translate-y-12 -translate-x-12"></div>
-            </div>
+        `}
+      >
+        {/* Index Badge */}
+        <div
+          className={`absolute top-4 right-4 ${colors.badge} text-white text-sm font-semibold px-3 py-1 rounded-full z-10`}
+        >
+          {String(index + 1).padStart(2, "0")}
         </div>
+
+        {/* Icon Section */}
+        <div className={`p-8 ${colors.iconBg} border-b ${colors.border}`}>
+          <div className="flex items-center justify-between">
+            <div
+              className={`p-4 rounded-2xl bg-white border ${colors.border} shadow-sm`}
+            >
+              <div className={`text-2xl ${colors.iconColor}`}>
+                {item.featureIcon}
+              </div>
+            </div>
+            {/* Decorative Element */}
+            <div className="w-12 h-12 rounded-full bg-white border border-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+              <div className="w-2 h-2 bg-gray-400 rounded-full"></div>
+            </div>
+          </div>
+        </div>
+
+        {/* Content Section */}
+        <div className="p-8">
+          <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-gray-800 transition-colors">
+            {item.featureTitle}
+          </h3>
+
+          <p className="text-gray-600 mb-6 leading-relaxed text-sm">
+            {item.featureDescription}
+          </p>
+
+          {/* Highlights List */}
+          <div className="space-y-3">
+            {item.highlights.map((highlight, highlightIndex) => (
+              <div
+                key={highlightIndex}
+                className="flex items-center gap-3 text-sm"
+              >
+                <div
+                  className={`w-5 h-5 rounded-full ${colors.iconBg} flex items-center justify-center flex-shrink-0`}
+                >
+                  <FaRegCheckCircle className={`text-xs ${colors.iconColor}`} />
+                </div>
+                <span className="text-gray-700">{highlight}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* Hover Indicator */}
+          <div className="absolute bottom-0 left-0 w-full h-1 bg-transparent group-hover:bg-gray-900 transition-colors duration-500"></div>
+        </div>
+
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-0 group-hover:opacity-5 transition-opacity duration-500">
+          <div className="absolute top-0 right-0 w-32 h-32 bg-gray-900 rounded-full -translate-y-16 translate-x-16"></div>
+          <div className="absolute bottom-0 left-0 w-24 h-24 bg-gray-900 rounded-full translate-y-12 -translate-x-12"></div>
+        </div>
+      </div>
     );
 };
 

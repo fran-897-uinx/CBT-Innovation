@@ -72,9 +72,9 @@ export default function DailyNews() {
   const loadMore = () => setVisibleCount((prev) => prev + 3);
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50">
+    <div className="flex flex-col min-h-screen bg-background">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-white/70 backdrop-blur-sm p-4 flex justify-center shadow-md max-w-xl">
+      <header className="sticky top-0 z-30 bg-background backdrop-blur-sm p-4 flex justify-center shadow-md max-w-xl">
         <h1 className="text-xl font-bold">Daily News</h1>
       </header>
 
@@ -96,7 +96,7 @@ export default function DailyNews() {
           {videos.map((video) => (
             <div
               key={video.id}
-              className="flex-shrink-0 w-64 rounded-xl overflow-hidden shadow-md cursor-pointer"
+              className="flex-shrink-0 w-64 rounded-xl overflow-hidden shadow-md cursor-pointer bg-gray-300"
               onClick={() => setSelectedVideo(video)}
             >
               <div className="relative h-40">
@@ -105,11 +105,11 @@ export default function DailyNews() {
                   alt={video.title}
                   className="w-full h-full object-cover"
                 />
-                <Play className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl" />
+                <Play className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-forground text-3xl" />
               </div>
-              <div className="p-3 bg-white">
+              <div className="p-3 text-gray-950">
                 <h3 className="font-semibold">{video.title}</h3>
-                <p className="text-xs text-gray-500">
+                <p className="text-xs ">
                   {video.author} • {video.time}
                 </p>
               </div>
@@ -119,13 +119,13 @@ export default function DailyNews() {
       </section>
 
       {/* Articles Section */}
-      <section className="p-4 flex-1">
+      <section className="p-4 flex-1 mb-20">
         <h2 className="font-semibold text-lg mb-3">Articles</h2>
         <div className="flex flex-col gap-4">
           {filteredArticles.slice(0, visibleCount).map((article) => (
             <div
               key={article.id}
-              className="bg-white rounded-xl shadow-md overflow-hidden cursor-pointer"
+              className="bg-background rounded-xl shadow-md overflow-hidden cursor-pointer border"
               onClick={() =>
                 article.link && window.open(article.link, "_blank")
               }
@@ -139,8 +139,8 @@ export default function DailyNews() {
               )}
               <div className="p-4">
                 <h3 className="font-semibold text-base">{article.title}</h3>
-                <p className="text-sm text-gray-600 mt-1">{article.desc}</p>
-                <p className="text-xs text-gray-500 mt-2">
+                <p className="text-sm text-foregound mt-1">{article.desc}</p>
+                <p className="text-xs text-foreground mt-2">
                   {article.author} • {article.time}
                 </p>
               </div>
@@ -151,7 +151,7 @@ export default function DailyNews() {
         {visibleCount < filteredArticles.length && (
           <button
             onClick={loadMore}
-            className="mt-4 w-full py-3 text-center bg-blue-600 text-white font-semibold rounded-xl"
+            className="mt-4 w-full py-3 text-center bg-blue-600 text-foreground font-semibold rounded-xl"
           >
             Load More
           </button>
@@ -161,7 +161,7 @@ export default function DailyNews() {
       {/* Video Modal */}
       {selectedVideo && (
         <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
-          <div className="bg-white p-4 rounded-xl w-11/12 max-w-md">
+          <div className="bg-background p-4 rounded-xl w-11/12 max-w-md">
             <video
               src={selectedVideo.url}
               controls

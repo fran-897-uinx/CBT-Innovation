@@ -7,6 +7,18 @@ import {
   Linkedin,
   Twitter,
 } from "lucide-react";
+import {
+  FaChrome,
+  FaChromecast,
+  FaFacebook,
+  FaFacebookF,
+  FaGithub,
+  FaInstagramSquare,
+  FaLinkedinIn,
+  FaStackOverflow,
+  FaTiktok,
+  FaTwitter,
+} from "react-icons/fa";
 
 export default function ProfileSettings() {
   const [isPublic, setIsPublic] = useState(true);
@@ -121,13 +133,32 @@ export default function ProfileSettings() {
         <h2 className="font-medium">Social Links</h2>
 
         {[
-          { icon: <Twitter />, label: "Twitter" },
-          { icon: <Facebook />, label: "Facebook" },
-          { icon: <Github />, label: "GitHub" },
-          { icon: <Linkedin />, label: "LinkedIn" },
-          { icon: "StackOverflow", label: "StackOverflow" },
-          { icon: "TikTok", label: "TikTok" },
-          { icon: <Chrome />, label: "Website" },
+          {
+            icon: <FaTwitter className="text-blue-700" size={23} />,
+            label: "Twitter",
+          },
+          {
+            icon: <FaFacebookF className="text-blue-800" size={23} />,
+            label: "Facebook",
+          },
+          {
+            icon: <FaGithub className="text-gray-900" size={20} />,
+            label: "GitHub",
+          },
+          {
+            icon: <FaLinkedinIn className="text-blue-700" size={20} />,
+            label: "LinkedIn",
+          },
+          {
+            icon: <FaStackOverflow size={23} className="text-orange-600" />,
+            label: "StackOverflow",
+          },
+          { icon: <FaTiktok size={23} />, label: "TikTok" },
+          { icon: <FaChrome className="text-green-600" />, label: "Website" },
+          {
+            icon: <FaInstagramSquare className="text-red-600" />,
+            label: "Instagram",
+          },
         ].map((item, idx) => (
           <div key={idx} className="flex items-center">
             <div className="w-12 h-12 border rounded-l-lg flex items-center justify-center bg-gray-50">

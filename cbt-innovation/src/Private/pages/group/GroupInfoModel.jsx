@@ -13,7 +13,7 @@ export default function GroupInfoModal({
       role="dialog"
       aria-modal="true"
     >
-      <div className="relative w-full max-w-md bg-white rounded-2xl shadow-xl overflow-hidden">
+      <div className="relative w-full max-w-md bg-background rounded-2xl shadow-xl overflow-hidden">
         {/* Header */}
         <div className="flex items-center justify-between px-5 py-4 border-b">
           <h3 className="text-sm font-semibold text-gray-800">
@@ -40,9 +40,7 @@ export default function GroupInfoModal({
               {group?.name}
             </h2>
 
-            <p className="text-xs text-gray-500">
-              {members.length} members
-            </p>
+            <p className="text-xs text-gray-500">{members.length} members</p>
 
             {currentUserRole === "admin" && (
               <span className="mt-1 inline-flex items-center gap-1 text-xs text-emerald-600">
@@ -71,9 +69,7 @@ export default function GroupInfoModal({
                   key={member.id}
                   className="px-4 py-2 flex items-center justify-between hover:bg-gray-50"
                 >
-                  <span className="text-sm text-gray-800">
-                    {member.name}
-                  </span>
+                  <span className="text-sm text-gray-800">{member.name}</span>
 
                   {member.role === "admin" && (
                     <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-700">

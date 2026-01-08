@@ -1,57 +1,185 @@
 @import "tailwindcss";
 
+/* =========================
+   Layout Utilities
+========================= */
 .center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+/* =========================
+   Animations
+========================= */
 @keyframes fade-in-up {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-fade-in-up {
-    animation: fade-in-up 1s ease-out;
+  animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in-up {
+    animation: none;
+  }
+}
 
+/* =========================
+   Marquee
+========================= */
 @keyframes marquee-left {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-50%);
-    }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 @keyframes marquee-right {
-    0% {
-        transform: translateX(-50%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .marquee-container {
-    animation: marquee-left var(--speed) linear infinite;
+  animation: marquee-left var(--speed, 25s) linear infinite;
+  will-change: transform;
 }
 
 .marquee-container.right {
-    animation-name: marquee-right;
+  animation-name: marquee-right;
 }
 
-body{
-    scrollbar-width: none;
+/* =========================
+   Scrollbar (Modern)
+========================= */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 999px;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+/* =========================
+   Theme Variables
+========================= */
+[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color: #0f172a;
+  --card-bg: #f8fafc;
+  --border-bg: #e2e8f0;
+
+  --muted-text: #64748b;
+  --hover-bg: rgba(15, 23, 42, 0.04);
+
+  --scrollbar-thumb: #cbd5e1;
+  --scrollbar-track: transparent;
+}
+
+[data-theme="dark"] {
+  --bg-color: #020617;
+  --text-color: #e5e7eb;
+  --card-bg: #020617;
+  --border-bg: #1e293b;
+
+  --muted-text: #94a3b8;
+  --hover-bg: rgba(148, 163, 184, 0.08);
+
+  --scrollbar-thumb: #334155;
+  --scrollbar-track: transparent;
+}
+
+/* =========================
+   Background Modes
+========================= */
+:root[data-bg="solid"] {
+  background-color: var(--bg-color);
+}
+
+[data-bg="gradient"] {
+  background: linear-gradient(
+    135deg,
+    #020617,
+    #020617 40%,
+    #020617
+  );
+}
+
+/* =========================
+   Global Styles
+========================= */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* =========================
+   Semantic Utility Classes
+========================= */
+.text-muted {
+  color: var(--muted-text);
+}
+
+.bg-background {
+  background-color: var(--bg-color);
+}
+
+.text-foreground {
+  color: var(--text-color);
+}
+
+.bg-card {
+  background-color: var(--card-bg);
+}
+
+.border {
+  border-color: var(--border-bg);
+}
+
+/* =========================
+   Interactive States
+========================= */
+.hover\:bg-muted:hover {
+  background-color: var(--hover-bg);
+}
+
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Dark mode card shadow */
+[data-theme="dark"] .card-hover:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
 }

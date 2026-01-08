@@ -8,7 +8,7 @@ export default function GroupMessages({ messages }) {
         >
           <div
             className={`max-w-xs p-3 rounded-xl ${
-              msg.self ? "bg-gray-900 text-white" : "bg-gray-100"
+              msg.self ? "bg-gray-900 text-white" : "bg-green-700"
             }`}
           >
             {!msg.self && (

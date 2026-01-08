@@ -18,7 +18,7 @@ export default function CreateGroupModal({ onClose, onCreate }) {
 
   return (
     <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center p-4">
-      <div className="bg-white w-full max-w-md rounded-2xl shadow-xl overflow-hidden">
+      <div className="bg-background w-full max-w-md rounded-2xl shadow-xl overflow-hidden">
         {/* Header */}
         <div className="flex items-center justify-between px-5 py-4 border-b">
           <h3 className="font-semibold text-gray-800">Create Group</h3>

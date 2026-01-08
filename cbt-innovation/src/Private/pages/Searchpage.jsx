@@ -69,7 +69,7 @@ export default function SearchPage() {
             className={`px-3 py-1.5 rounded-full text-sm  ${
               filter === item.id
                 ? "bg-blue-600 text-white border-blue-600"
-                : "bg-white text-gray-600 hover:bg-gray-50"
+                : "bg-background text-gray-600 hover:bg-muted border-gray-300"
             }`}
           >
             {item.label}
@@ -114,7 +114,7 @@ export default function SearchPage() {
                   <Link
                     key={item.id}
                     to={item.path}
-                    className="flex items-center  border-b justify-between p-3   hover:bg-gray-50"
+                    className="flex items-center  border-b justify-between p-3   hover:bg-muted"
                   >
                     <span className="text-sm">{item.title}</span>
                     {item.status === "live" && (

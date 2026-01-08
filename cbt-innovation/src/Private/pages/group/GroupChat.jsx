@@ -45,7 +45,7 @@ export default function GroupChatRoom() {
   };
 
   return (
-    <div className="flex flex-col h-screen bg-gray-50">
+    <div className="flex flex-col h-screen bg-background">
       {/* HEADER */}
       <GroupHeader
         groupName="UTME Group"
@@ -57,7 +57,7 @@ export default function GroupChatRoom() {
       <GroupMessages messages={messages} />
 
       {/* INPUT */}
-      <div className="flex gap-2 p-3 border-t bg-white">
+      <div className="flex gap-2 p-3 border-t bg-background">
         <input
           className="flex-1 border rounded-xl px-3 py-2"
           placeholder="Type a message..."

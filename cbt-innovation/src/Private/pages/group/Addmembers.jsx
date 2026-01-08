@@ -30,35 +30,24 @@ export default function AddMembersModal({
 
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
-      <div className="bg-white w-full max-w-md p-6 rounded-xl relative">
-        <button
-          onClick={onClose}
-          className="absolute top-3 right-3"
-        >
+      <div className="bg-background w-full max-w-md p-6 rounded-xl relative">
+        <button onClick={onClose} className="absolute top-3 right-3">
           <X size={18} />
         </button>
 
-        <h2 className="text-lg font-semibold mb-1">
-          Add members
-        </h2>
-        <p className="text-xs text-gray-500 mb-4">
-          Select users to add
-        </p>
+        <h2 className="text-lg font-semibold mb-1">Add members</h2>
+        <p className="text-xs text-gray-500 mb-4">Select users to add</p>
 
         <div className="max-h-60 overflow-y-auto space-y-1 mb-4">
           {availableUsers.map((user) => {
-            const isSelected = selected.some(
-              (u) => u.id === user.id
-            );
+            const isSelected = selected.some((u) => u.id === user.id);
 
             return (
               <button
                 key={user.id}
                 onClick={() => toggleUser(user)}
                 className={`w-full flex justify-between px-4 py-2 rounded-lg ${
-                  isSelected
-                    ? "bg-gray-900 text-white"
-                    : "hover:bg-gray-100"
+                  isSelected ? "bg-gray-900 text-white" : "hover:bg-muted"
                 }`}
               >
                 <span>{user.name}</span>

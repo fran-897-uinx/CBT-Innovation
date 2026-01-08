@@ -19,9 +19,9 @@ export default function ExamListPage() {
   };
 
   return (
-    <div className="min-h-screen pb-20 bg-gray-50">
+    <div className="min-h-screen pb-20 bg-background">
       {/* Header */}
-      <header className="flex justify-between items-center p-4 border-b sticky top-0 bg-white z-20 shadow-sm">
+      <header className="flex justify-between items-center p-4 border-b sticky top-0 bg-background z-20 shadow-sm">
         <h1 className="text-lg font-semibold">Exam Practices</h1>
       </header>
 
@@ -35,7 +35,7 @@ export default function ExamListPage() {
             {activatedExams.map((exam) => (
               <div
                 key={exam.id}
-                className="border p-3 rounded-xl bg-white shadow-sm flex flex-col gap-1"
+                className="border p-3 rounded-xl bg-background shadow-sm flex flex-col gap-1"
               >
                 <p className="font-medium truncate">{exam.examName}</p>
                 <span className="text-xs text-green-700 flex items-center gap-1">
@@ -54,7 +54,7 @@ export default function ExamListPage() {
             key={exam.id}
             to={`/app/exams/${exam.id}`}
             onClick={() => handleActivate(exam)}
-            className="flex items-center gap-3 py-3 px-4 border-b border-gray-300 hover:bg-gray-100 transition rounded-lg"
+            className="flex items-center gap-3 py-3 px-4 border-b border-gray-300 hover:bg-muted transition rounded-lg"
           >
             <div className="flex-1 min-w-0">
               <p className="font-medium truncate uppercase">{exam.examName}</p>

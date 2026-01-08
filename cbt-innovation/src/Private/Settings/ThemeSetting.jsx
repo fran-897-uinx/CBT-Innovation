@@ -1,117 +1,87 @@
-import { useState } from "react";
-
-const GRADIENTS = [
-  {
-    id: "blue",
-    value: "linear-gradient(135deg, #2563eb, #0f172a)",
-  },
-  {
-    id: "green",
-    value: "linear-gradient(135deg, #22c55e, #064e3b)",
-  },
-  {
-    id: "purple",
-    value: "linear-gradient(135deg, #7c3aed, #1e1b4b)",
-  },
-];
+import { Moon, Sun, Palette } from "lucide-react";
+import { useTheme } from "../../theme/theme.context";
 
 export default function ThemeSettings() {
-  const [mode, setMode] = useState("light");
-  const [bgType, setBgType] = useState("solid");
-  const [gradient, setGradient] = useState(GRADIENTS[0].value);
+  const { theme, toggleMode, toggleBackground } = useTheme();
 
   return (
-    <div className="max-w-2xl space-y-6">
-      <h1 className="text-xl font-semibold">Theme Settings</h1>
+    <div className="max-w-md mx-auto rounded-2xl border p-5 space-y-6 bg-background text-foreground shadow-sm">
+      <div>
+        <h2 className="text-lg font-semibold">Appearance</h2>
+        <p className="text-sm text-muted">
+          Customize how TestPrepAcademy looks on your device
+        </p>
+      </div>
 
       {/* Mode */}
-      <section className="bg-white border rounded-xl p-4 space-y-3">
-        <h2 className="font-medium">Theme Mode</h2>
-        <div className="flex gap-3">
-          {["light", "dark"].map((m) => (
-            <button
-              key={m}
-              onClick={() => setMode(m)}
-              className={`px-4 py-2 rounded-lg border ${
-                mode === m
-                  ? "bg-gray-900 text-white"
-                  : "bg-gray-100"
+      <div className="space-y-2">
+        <p className="text-sm font-medium">Color mode</p>
+
+        <div className="grid grid-cols-2 gap-3">
+          <button
+            onClick={toggleMode}
+            className={`flex items-center justify-center gap-2 rounded-xl border px-4 py-3 transition
+              ${
+                theme.mode === "light"
+                  ? "border-blue-600 bg-blue-50 text-blue-700"
+                  : "hover:bg-muted"
               }`}
-            >
-              {m}
-            </button>
-          ))}
-        </div>
-      </section>
+          >
+            <Sun size={18} />
+            Light
+          </button>
 
-      {/* Background Type */}
-      <section className="bg-white border rounded-xl p-4 space-y-3">
-        <h2 className="font-medium">Background Style</h2>
-
-        <div className="flex gap-3">
-          {["solid", "gradient"].map((type) => (
-            <button
-              key={type}
-              onClick={() => setBgType(type)}
-              className={`px-4 py-2 rounded-lg border ${
-                bgType === type
-                  ? "ring-2 ring-blue-600"
-                  : ""
+          <button
+            onClick={toggleMode}
+            className={`flex items-center justify-center gap-2 rounded-xl border px-4 py-3 transition
+              ${
+                theme.mode === "dark"
+                  ? "border-blue-600 bg-blue-50 text-blue-700"
+                  : "hover:bg-muted"
               }`}
-            >
-              {type.toUpperCase()}
-            </button>
-          ))}
+          >
+            <Moon size={18} />
+            Dark
+          </button>
         </div>
-      </section>
+      </div>
 
-      {/* Gradient Picker */}
-      {bgType === "gradient" && (
-        <section className="bg-white border rounded-xl p-4 space-y-3">
-          <h2 className="font-medium">Choose Gradient</h2>
+      {/* Background */}
+      <div className="space-y-2">
+        <p className="text-sm font-medium">Background style</p>
 
-          <div className="grid grid-cols-3 gap-3">
-            {GRADIENTS.map((g) => (
-              <button
-                key={g.id}
-                onClick={() => setGradient(g.value)}
-                className={`h-16 rounded-lg border ${
-                  gradient === g.value
-                    ? "ring-2 ring-blue-600"
-                    : ""
-                }`}
-                style={{ background: g.value }}
-              />
-            ))}
-          </div>
-        </section>
-      )}
+        <div className="grid grid-cols-2 gap-3">
+          <button
+            onClick={toggleBackground}
+            className={`flex items-center justify-center gap-2 rounded-xl border px-4 py-3 transition
+              ${
+                theme.background === "solid"
+                  ? "border-purple-600 bg-purple-50 text-purple-700"
+                  : "hover:bg-muted"
+              }`}
+          >
+            <Palette size={18} />
+            Solid
+          </button>
 
-      {/* Preview */}
-      <section className="border rounded-xl p-6">
-        <h3 className="text-sm font-medium mb-2">Preview</h3>
-
-        <div
-          className="h-40 rounded-lg flex items-center justify-center font-semibold"
-          style={{
-            background:
-              bgType === "solid"
-                ? mode === "dark"
-                  ? "#0f172a"
-                  : "#ffffff"
-                : gradient,
-            color: mode === "dark" ? "#ffffff" : "#111827",
-          }}
-        >
-          Theme Preview
+          <button
+            onClick={toggleBackground}
+            className={`flex items-center justify-center gap-2 rounded-xl border px-4 py-3 transition
+              ${
+                theme.background === "gradient"
+                  ? "border-purple-600 bg-purple-50 text-purple-700"
+                  : "hover:bg-muted"
+              }`}
+          >
+            <Palette size={18} />
+            Gradient
+          </button>
         </div>
-      </section>
+      </div>
 
-      {/* Save */}
-      <div className="flex justify-end">
-        <button className="bg-gray-900 text-white px-6 py-2 rounded-lg">
-          Save Theme
-        </button>
+      {/* Info */}
+      <div className="text-xs text-muted border-t pt-4">
+        Changes apply instantly and are saved automatically.
       </div>
     </div>
   );

@@ -115,31 +115,23 @@ const Testimonials = () => {
     const secondRowItems = useMemo(() => [...TESTIMONIAL_LISTS].reverse(), []);
 
     return (
-        <div className="my-20 px-4">
-            <div className="text-center mb-16">
-                <h1 className="font-bold text-3xl md:text-4xl text-gray-800 mb-4">
-                    What Our Users Say
-                </h1>
-                <p className="text-gray-600 max-w-2xl mx-auto">
-                    Don't just take our word for it. Here's what our community has to say about their learning experience.
-                </p>
-            </div>
-
-            {/* First row - scrolls left to right */}
-            <MarqueeRow
-                items={firstRowItems}
-                direction="left"
-                speed={50}
-            />
-
-            {/* Second row - scrolls right to left */}
-            <MarqueeRow
-                items={secondRowItems}
-                direction="right"
-                speed={45}
-            />
-
+      <div id="testimonials" className="my-20 px-4">
+        <div className="text-center mb-16">
+          <h1 className="font-bold text-3xl md:text-4xl text-gray-800 mb-4">
+            What Our Users Say
+          </h1>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Don't just take our word for it. Here's what our community has to
+            say about their learning experience.
+          </p>
         </div>
+
+        {/* First row - scrolls left to right */}
+        <MarqueeRow items={firstRowItems} direction="left" speed={50} />
+
+        {/* Second row - scrolls right to left */}
+        <MarqueeRow items={secondRowItems} direction="right" speed={45} />
+      </div>
     );
 };
 

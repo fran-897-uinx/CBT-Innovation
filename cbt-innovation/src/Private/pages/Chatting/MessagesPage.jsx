@@ -39,7 +39,7 @@ export default function Messages() {
   return (
     <div className="pb-20">
       {/* Header */}
-      <div className="flex justify-between items-center p-4 border-b sticky top-0 bg-white z-20">
+      <div className="flex justify-between items-center p-4 border-b sticky top-0 bg-background z-20">
         <h1 className="text-lg font-semibold">Messages</h1>
         <button
           onClick={() => setShowModal(true)}
@@ -55,7 +55,7 @@ export default function Messages() {
           <Link
             key={chat.id}
             to={`/app/messages/${chat.id}`}
-            className="flex items-center gap-3 p-3 rounded-xl hover:bg-gray-50 transition"
+            className="flex items-center gap-3 p-3 rounded-xl hover:bg-muted transition"
           >
             <div className="w-12 h-12 bg-gray-900 text-white rounded-full flex items-center justify-center font-semibold">
               {chat.name[0]}
@@ -71,7 +71,7 @@ export default function Messages() {
       {/* New Chat Modal */}
       {showModal && (
         <div className="fixed inset-0 z-50 flex items-start justify-end bg-black/50 p-4 scroll-auto overflow-auto">
-          <div className="bg-white w-full max-w-sm rounded-xl p-6 relative">
+          <div className="bg-background w-full max-w-sm rounded-xl p-6 relative">
             <button
               onClick={() => setShowModal(false)}
               className="absolute top-3 right-3 text-gray-500"
@@ -92,7 +92,7 @@ export default function Messages() {
                 <button
                   key={user.id}
                   onClick={() => startChat(user)}
-                  className="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition text-left cursor-pointer"
+                  className="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition text-left cursor-pointer"
                 >
                   <div className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center font-semibold">
                     {user.name[0]}
