@@ -69,7 +69,7 @@ export default function PersonalChatRoom({ recipient = "Alice" }) {
       </div>
 
       {/* Input */}
-      <div className="flex items-center p-3 border-t bg-background gap-2">
+      <div className="flex items-center p-3 border-t bg-background gap-2 mb-13">
         <input
           type="text"
           placeholder="Type a message..."
