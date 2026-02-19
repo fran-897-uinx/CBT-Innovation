@@ -57,7 +57,7 @@ export default function GroupChatRoom() {
       <GroupMessages messages={messages} />
 
       {/* INPUT */}
-      <div className="flex gap-2 p-3 border-t bg-background">
+      <div className="flex gap-2 p-3 border-t bg-background mb-16">
         <input
           className="flex-1 border rounded-xl px-3 py-2"
           placeholder="Type a message..."
