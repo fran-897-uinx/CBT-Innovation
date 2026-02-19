@@ -11,25 +11,35 @@ import {
 } from "react-icons/fa";
 import Nav from "../../LandPage/Navigation/Nav";
 import Footer from "../../LandPage/Footer/Footer";
+import { useNavigate } from "react-router-dom";
 
 const AuthPage = () => {
   const [activeModal, setActiveModal] = useState(null); // 'login' or 'signup'
   const [showPassword, setShowPassword] = useState(false);
   const Role = ["Tutor", "Student", "School Representative", "Proctor"];
-  const [formData, setFormData] = useState({
-    email: "",
-    password: "",
-    fullName: "",
-    role: "",
-  });
 
   const AuthModal = ({ type }) => {
     const isLogin = type === "login";
+    const navigate = useNavigate();
+    const [loading, setLoading] = useState(false);
+    const [formData, setFormData] = useState({
+      email: "",
+      password: "",
+      fullName: "",
+      role: "",
+    });
 
     const handleSubmit = (e) => {
       e.preventDefault();
-      console.log(`${type} with:`, formData);
-      // Handle auth logic here
+      setLoading(true);
+
+      console.log(`${type} (demo) with:`, formData);
+
+      // DEMO redirect (simulate API call)
+      setTimeout(() => {
+        setLoading(false);
+        navigate("/app/dashboard");
+      }, 1000);
     };
 
     const handleInputChange = (e) => {
@@ -146,6 +156,9 @@ const AuthPage = () => {
                     className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors duration-200"
                   >
                     {showPassword ? <FaEyeSlash /> : <FaEye />}
+                  </button>
+                  <button disabled={loading}>
+                    {loading ? "Signing in..." : "Continue"}
                   </button>
                 </div>
               </div>
