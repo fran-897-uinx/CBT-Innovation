@@ -6,6 +6,7 @@ import {
   Users,
   ArrowRight,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const stats = [
   { title: "Courses", value: 6, Icon: BookOpen },
@@ -30,6 +31,16 @@ const updates = [
     img: "/undraw_fill-the-blank_n29z.svg",
     link: "#",
   },
+];
+const exams = [
+  { title: "JAMB 2025", to: "" },
+  { title: "WAEC SSCE", to: "" },
+  { title: "UTME Mock", to: "" },
+];
+const actions = [
+  { title: "Join Video Session", to: "/app/video-sessions" },
+  { title: "Start Practice Test", to: "/app/exams" },
+  { title: "Message a Tutor", to: "/app/messages" },
 ];
 const StatCard = ({ title, value, Icon }) => {
   return (
@@ -117,9 +128,9 @@ export default function DashboardPage() {
         >
           <h3 className="font-semibold">Active Exam Preparation</h3>
 
-          {["JAMB 2025", "WAEC SSCE", "UTME Mock"].map((exam) => (
+          {exams.map((exam) => (
             <div
-              key={exam}
+              key={exam.title}
               className="
                 flex items-center justify-between
                 rounded-lg border
@@ -130,19 +141,21 @@ export default function DashboardPage() {
               "
             >
               <div>
-                <p className="font-medium">{exam}</p>
+                <p className="font-medium">{exam.title}</p>
                 <p className="text-xs text-gray-500 dark:text-slate-400">
                   In progress
                 </p>
               </div>
               <button
                 className="
-                flex items-center gap-1
+                gap-1
                 text-sm font-medium
                 text-blue-600 dark:text-blue-400
               "
               >
-                Continue <ArrowRight size={16} />
+                <Link to={exams.to} className=" flex items-center">
+                  Continue <ArrowRight size={16} />
+                </Link>
               </button>
             </div>
           ))}
@@ -159,11 +172,9 @@ export default function DashboardPage() {
         >
           <h3 className="font-semibold">Quick Actions</h3>
 
-          {["Join Video Session", "Start Practice Test", "Message a Tutor"].map(
-            (action) => (
-              <button
-                key={action}
-                className="
+          {actions.map((action) => (
+            <button
+              className="
                 w-full rounded-lg border
                 border-gray-200 dark:border-slate-800
                 px-4 py-3
@@ -171,11 +182,12 @@ export default function DashboardPage() {
                 hover:bg-muted
                 transition
               "
-              >
-                {action}
-              </button>
-            )
-          )}
+            >
+              <Link key={action.title} to={action.to}>
+                {action.title}
+              </Link>
+            </button>
+          ))}
         </div>
       </div>
     </section>

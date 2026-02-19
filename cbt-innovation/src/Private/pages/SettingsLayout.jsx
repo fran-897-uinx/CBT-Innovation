@@ -17,7 +17,6 @@ import GroupSettings from "../Settings/GroupSettings";
 import VideoSettings from "../Settings/VideoSettings";
 import NewsSettings from "../Settings/NewsSettings";
 import ProfileSettings from "../Settings/ProfileSettings";
-import RoleSettings from "../Settings/RoleSettings";
 import ThemeSettings from "../Settings/ThemeSetting";
 import { SunMoon } from "lucide-react";
 
@@ -29,7 +28,6 @@ const tabs = [
   { key: "video", icon: Video, label: "Video Sessions" },
   { key: "news", icon: Newspaper, label: "Daily News" },
   { key: "profile", icon: User, label: "Profile" },
-  { key: "role", icon: KeyIcon, label: "Roles" },
   { key: "theme", icon: SunMoon, label: "Theme" },
 ];
 
@@ -101,7 +99,6 @@ export default function SettingsLayout() {
         {active === "video" && <VideoSettings />}
         {active === "news" && <NewsSettings />}
         {active === "profile" && <ProfileSettings />}
-        {active === "role" && <RoleSettings />}
         {active === "theme" && <ThemeSettings />}
       </main>
     </div>

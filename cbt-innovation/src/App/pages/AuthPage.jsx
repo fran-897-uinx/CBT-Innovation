@@ -9,6 +9,8 @@ import {
   FaEyeSlash,
   FaUserCog,
 } from "react-icons/fa";
+import Nav from "../../LandPage/Navigation/Nav";
+import Footer from "../../LandPage/Footer/Footer";
 
 const AuthPage = () => {
   const [activeModal, setActiveModal] = useState(null); // 'login' or 'signup'
@@ -197,8 +199,10 @@ const AuthPage = () => {
 
   return (
     <div className="min-h-screen bg-white flex">
+      {/* Navigation  */}
+      <Nav />
       {/* Illustration Section */}
-      <div className="hidden lg:flex lg:flex-1 bg-gradient-to-br from-gray-50 to-blue-50 items-center justify-center p-12">
+      <div className="hidden lg:flex lg:flex-1 bg-gradient-to-br from-gray-50 to-blue-50 items-center justify-center p-12 mt-24">
         <div className="max-w-md text-center">
           {/* Abstract Auth Illustration */}
           <div className="relative mb-8">
@@ -236,7 +240,7 @@ const AuthPage = () => {
       </div>
 
       {/* Auth Section */}
-      <div className="flex-1 flex items-center justify-center p-8">
+      <div className="flex-1  flex items-center justify-center p-8">
         <div className="w-full max-w-md">
           {/* Header */}
           <div className="text-center mb-12">

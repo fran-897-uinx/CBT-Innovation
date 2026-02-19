@@ -59,7 +59,7 @@ export default function GroupPage() {
   const renderGroupCard = (group) => (
     <div
       key={group.id}
-      className="border rounded-xl p-4 bg-green-900 hover:shadow-md transition flex flex-col items-center text-center focus-within:ring-2 focus-within:ring-gray-900"
+      className="border rounded-xl p-4 bg-gray-400 hover:shadow-md transition flex flex-col items-center text-center focus-within:ring-2 focus-within:ring-gray-900"
     >
       {group.img ? (
         <img

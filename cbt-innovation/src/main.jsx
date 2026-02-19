@@ -17,11 +17,3 @@ createRoot(document.getElementById("root")).render(
     </HelmetProvider>
   </StrictMode>
 );
-
-// import { ThemeProvider } from "./ThemeProvider";
-
-// root.render(
-//   <ThemeProvider>
-//     <App />
-//   </ThemeProvider>
-// );

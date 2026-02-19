@@ -117,7 +117,7 @@ export default function VideoListPage() {
       {/* Create Modal */}
       {showCreate && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
-          <div className="bg-white w-full max-w-md rounded-xl p-6 relative">
+          <div className="bg-card w-full max-w-md rounded-xl p-6 relative">
             <button
               onClick={() => setShowCreate(false)}
               className="absolute top-3 right-3 text-gray-500 hover:text-gray-800"

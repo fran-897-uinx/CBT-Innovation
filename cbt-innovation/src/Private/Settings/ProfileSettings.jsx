@@ -36,7 +36,7 @@ export default function ProfileSettings() {
       </div>
 
       {/* Visibility */}
-      <section className="bg-white border rounded-xl p-4">
+      <section className="bg-white bg-background border rounded-xl p-4">
         <div className="flex items-center justify-between">
           <div>
             <h2 className="font-medium">Profile Visibility</h2>
@@ -61,75 +61,75 @@ export default function ProfileSettings() {
       </section>
 
       {/* Avatar */}
-      <section className="bg-white border rounded-xl p-4 space-y-4">
+      <section className="bg-white bg-background border rounded-xl p-4 space-y-4">
         <h2 className="font-medium">Profile Photo</h2>
         <div className="flex items-center gap-4">
-          <div className="w-20 h-20 rounded-full bg-gray-200 flex items-center justify-center">
+          <div className="w-20 h-20 rounded-full bg-gray-200 bg-card flex items-center justify-center">
             <Camera className="text-gray-500" />
           </div>
-          <button className="px-4 py-2 border rounded-lg text-sm hover:bg-gray-50">
+          <button className="px-4 py-2 border rounded-lg text-sm hover:bg-gray-50 card-hover:hover">
             Upload Avatar
           </button>
         </div>
       </section>
 
       {/* Basic Info */}
-      <section className="bg-white border rounded-xl p-4 space-y-4">
+      <section className="bg-white bg-background border rounded-xl p-4 space-y-4">
         <h2 className="font-medium">Basic Information</h2>
 
         <div>
           <label className="text-sm text-gray-600">Username</label>
-          <input className="w-full border rounded-lg p-3 text-sm" />
+          <input className="w-full border rounded-lg p-3 text-sm bg-card" />
         </div>
 
         <div>
           <label className="text-sm text-gray-600">Full name</label>
-          <input className="w-full border rounded-lg p-3 text-sm" />
+          <input className="w-full border rounded-lg p-3 text-sm bg-card" />
         </div>
 
         <div>
           <label className="text-sm text-gray-600">Email</label>
           <input
             disabled
-            className="w-full border rounded-lg p-3 text-sm bg-gray-100 cursor-not-allowed"
+            className="w-full border rounded-lg p-3 text-sm bg-gray-100 cursor-not-allowed "
           />
         </div>
       </section>
 
       {/* About */}
-      <section className="bg-white border rounded-xl p-4 space-y-4">
+      <section className="bg-white bg-background border rounded-xl p-4 space-y-4">
         <h2 className="font-medium">About You</h2>
 
         <textarea
           rows={3}
           placeholder="Short public bio"
-          className="w-full border rounded-lg p-3 text-sm resize-none"
+          className="w-full border rounded-lg p-3 text-sm resize-none bg-card"
         />
 
         <textarea
           rows={3}
           placeholder="Case of study / learning focus"
-          className="w-full border rounded-lg p-3 text-sm resize-none"
+          className="w-full border rounded-lg p-3 text-sm resize-none bg-card"
         />
       </section>
 
       {/* Location */}
-      <section className="bg-white border rounded-xl p-4 space-y-4">
+      <section className="bg-white bg-background border rounded-xl p-4 space-y-4">
         <h2 className="font-medium">Location</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <input
             placeholder="Country"
-            className="border rounded-lg p-3 text-sm"
+            className="border rounded-lg p-3 text-sm bg-card"
           />
           <input
             placeholder="State"
-            className="border rounded-lg p-3 text-sm"
+            className="border rounded-lg p-3 text-sm bg-card"
           />
         </div>
       </section>
 
       {/* Links */}
-      <section className="bg-white border rounded-xl p-4 space-y-4">
+      <section className="bg-white bg-background border rounded-xl p-4 space-y-4">
         <h2 className="font-medium">Social Links</h2>
 
         {[
@@ -166,19 +166,19 @@ export default function ProfileSettings() {
             </div>
             <input
               placeholder={item.label}
-              className="w-full border-t border-b border-r rounded-r-lg p-3 text-sm outline-none"
+              className="w-full border-t border-b bg-card border-r rounded-r-lg p-3 text-sm outline-none"
             />
           </div>
         ))}
       </section>
 
       {/* Security */}
-      <section className="bg-white border rounded-xl p-4 space-y-4">
+      <section className="bg-white bg-background border rounded-xl p-4 space-y-4">
         <h2 className="font-medium">Security</h2>
         <input
           type="password"
           placeholder="Confirm password to save changes"
-          className="w-full border rounded-lg p-3 text-sm"
+          className="w-full border rounded-lg p-3 text-sm bg-card"
         />
       </section>
 
