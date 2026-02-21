@@ -1,0 +1,5644 @@
+{
+  "n8n-actionNetwork": {
+    "prefix": "n8n-actionNetwork",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Action Network\",",
+      "  \"type\": \"n8n-nodes-base.actionNetwork\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Action Network node"
+  },
+  "n8n-activeCampaign": {
+    "prefix": "n8n-activeCampaign",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"ActiveCampaign\",",
+      "  \"type\": \"n8n-nodes-base.activeCampaign\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a ActiveCampaign node"
+  },
+  "n8n-activeCampaignTrigger": {
+    "prefix": "n8n-activeCampaignTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"ActiveCampaign Trigger\",",
+      "  \"type\": \"n8n-nodes-base.activeCampaignTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a ActiveCampaign Trigger node"
+  },
+  "n8n-acuitySchedulingTrigger": {
+    "prefix": "n8n-acuitySchedulingTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Acuity Scheduling Trigger\",",
+      "  \"type\": \"n8n-nodes-base.acuitySchedulingTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Acuity Scheduling Trigger node"
+  },
+  "n8n-adalo": {
+    "prefix": "n8n-adalo",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Adalo\",",
+      "  \"type\": \"n8n-nodes-base.adalo\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Adalo node"
+  },
+  "n8n-affinity": {
+    "prefix": "n8n-affinity",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Affinity\",",
+      "  \"type\": \"n8n-nodes-base.affinity\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Affinity node"
+  },
+  "n8n-affinityTrigger": {
+    "prefix": "n8n-affinityTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Affinity Trigger\",",
+      "  \"type\": \"n8n-nodes-base.affinityTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Affinity Trigger node"
+  },
+  "n8n-agileCrm": {
+    "prefix": "n8n-agileCrm",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Agile CRM\",",
+      "  \"type\": \"n8n-nodes-base.agileCrm\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Agile CRM node"
+  },
+  "n8n-aiTransform": {
+    "prefix": "n8n-aiTransform",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"AI Transform\",",
+      "  \"type\": \"n8n-nodes-base.aiTransform\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a AI Transform node"
+  },
+  "n8n-airtable": {
+    "prefix": "n8n-airtable",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Airtable\",",
+      "  \"type\": \"n8n-nodes-base.airtable\",",
+      "  \"typeVersion\": 2.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Airtable node"
+  },
+  "n8n-airtableTrigger": {
+    "prefix": "n8n-airtableTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Airtable Trigger\",",
+      "  \"type\": \"n8n-nodes-base.airtableTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Airtable Trigger node"
+  },
+  "n8n-airtop": {
+    "prefix": "n8n-airtop",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Airtop\",",
+      "  \"type\": \"n8n-nodes-base.airtop\",",
+      "  \"typeVersion\": 1.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Airtop node"
+  },
+  "n8n-amqp": {
+    "prefix": "n8n-amqp",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"AMQP Sender\",",
+      "  \"type\": \"n8n-nodes-base.amqp\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a AMQP Sender node"
+  },
+  "n8n-amqpTrigger": {
+    "prefix": "n8n-amqpTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"AMQP Trigger\",",
+      "  \"type\": \"n8n-nodes-base.amqpTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a AMQP Trigger node"
+  },
+  "n8n-apiTemplateIo": {
+    "prefix": "n8n-apiTemplateIo",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"APITemplate.io\",",
+      "  \"type\": \"n8n-nodes-base.apiTemplateIo\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a APITemplate.io node"
+  },
+  "n8n-asana": {
+    "prefix": "n8n-asana",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Asana\",",
+      "  \"type\": \"n8n-nodes-base.asana\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Asana node"
+  },
+  "n8n-asanaTrigger": {
+    "prefix": "n8n-asanaTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Asana Trigger\",",
+      "  \"type\": \"n8n-nodes-base.asanaTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Asana Trigger node"
+  },
+  "n8n-autopilot": {
+    "prefix": "n8n-autopilot",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Autopilot\",",
+      "  \"type\": \"n8n-nodes-base.autopilot\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Autopilot node"
+  },
+  "n8n-autopilotTrigger": {
+    "prefix": "n8n-autopilotTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Autopilot Trigger\",",
+      "  \"type\": \"n8n-nodes-base.autopilotTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Autopilot Trigger node"
+  },
+  "n8n-awsLambda": {
+    "prefix": "n8n-awsLambda",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"AWS Lambda\",",
+      "  \"type\": \"n8n-nodes-base.awsLambda\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a AWS Lambda node"
+  },
+  "n8n-awsSns": {
+    "prefix": "n8n-awsSns",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"AWS SNS\",",
+      "  \"type\": \"n8n-nodes-base.awsSns\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a AWS SNS node"
+  },
+  "n8n-awsSnsTrigger": {
+    "prefix": "n8n-awsSnsTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"AWS SNS Trigger\",",
+      "  \"type\": \"n8n-nodes-base.awsSnsTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a AWS SNS Trigger node"
+  },
+  "n8n-awsCertificateManager": {
+    "prefix": "n8n-awsCertificateManager",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"AWS Certificate Manager\",",
+      "  \"type\": \"n8n-nodes-base.awsCertificateManager\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a AWS Certificate Manager node"
+  },
+  "n8n-awsCognito": {
+    "prefix": "n8n-awsCognito",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"AWS Cognito\",",
+      "  \"type\": \"n8n-nodes-base.awsCognito\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a AWS Cognito node"
+  },
+  "n8n-awsComprehend": {
+    "prefix": "n8n-awsComprehend",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"AWS Comprehend\",",
+      "  \"type\": \"n8n-nodes-base.awsComprehend\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a AWS Comprehend node"
+  },
+  "n8n-awsDynamoDb": {
+    "prefix": "n8n-awsDynamoDb",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"AWS DynamoDB\",",
+      "  \"type\": \"n8n-nodes-base.awsDynamoDb\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a AWS DynamoDB node"
+  },
+  "n8n-awsElb": {
+    "prefix": "n8n-awsElb",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"AWS ELB\",",
+      "  \"type\": \"n8n-nodes-base.awsElb\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a AWS ELB node"
+  },
+  "n8n-awsIam": {
+    "prefix": "n8n-awsIam",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"AWS IAM\",",
+      "  \"type\": \"n8n-nodes-base.awsIam\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a AWS IAM node"
+  },
+  "n8n-awsRekognition": {
+    "prefix": "n8n-awsRekognition",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"AWS Rekognition\",",
+      "  \"type\": \"n8n-nodes-base.awsRekognition\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a AWS Rekognition node"
+  },
+  "n8n-awsS3": {
+    "prefix": "n8n-awsS3",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"AWS S3\",",
+      "  \"type\": \"n8n-nodes-base.awsS3\",",
+      "  \"typeVersion\": 2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a AWS S3 node"
+  },
+  "n8n-awsSes": {
+    "prefix": "n8n-awsSes",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"AWS SES\",",
+      "  \"type\": \"n8n-nodes-base.awsSes\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a AWS SES node"
+  },
+  "n8n-awsSqs": {
+    "prefix": "n8n-awsSqs",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"AWS SQS\",",
+      "  \"type\": \"n8n-nodes-base.awsSqs\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a AWS SQS node"
+  },
+  "n8n-awsTextract": {
+    "prefix": "n8n-awsTextract",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"AWS Textract\",",
+      "  \"type\": \"n8n-nodes-base.awsTextract\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a AWS Textract node"
+  },
+  "n8n-awsTranscribe": {
+    "prefix": "n8n-awsTranscribe",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"AWS Transcribe\",",
+      "  \"type\": \"n8n-nodes-base.awsTranscribe\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a AWS Transcribe node"
+  },
+  "n8n-bambooHr": {
+    "prefix": "n8n-bambooHr",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"BambooHR\",",
+      "  \"type\": \"n8n-nodes-base.bambooHr\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a BambooHR node"
+  },
+  "n8n-bannerbear": {
+    "prefix": "n8n-bannerbear",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Bannerbear\",",
+      "  \"type\": \"n8n-nodes-base.bannerbear\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Bannerbear node"
+  },
+  "n8n-baserow": {
+    "prefix": "n8n-baserow",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Baserow\",",
+      "  \"type\": \"n8n-nodes-base.baserow\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Baserow node"
+  },
+  "n8n-beeminder": {
+    "prefix": "n8n-beeminder",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Beeminder\",",
+      "  \"type\": \"n8n-nodes-base.beeminder\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Beeminder node"
+  },
+  "n8n-bitbucketTrigger": {
+    "prefix": "n8n-bitbucketTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Bitbucket Trigger\",",
+      "  \"type\": \"n8n-nodes-base.bitbucketTrigger\",",
+      "  \"typeVersion\": 1.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Bitbucket Trigger node"
+  },
+  "n8n-bitly": {
+    "prefix": "n8n-bitly",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Bitly\",",
+      "  \"type\": \"n8n-nodes-base.bitly\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Bitly node"
+  },
+  "n8n-bitwarden": {
+    "prefix": "n8n-bitwarden",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Bitwarden\",",
+      "  \"type\": \"n8n-nodes-base.bitwarden\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Bitwarden node"
+  },
+  "n8n-box": {
+    "prefix": "n8n-box",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Box\",",
+      "  \"type\": \"n8n-nodes-base.box\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Box node"
+  },
+  "n8n-boxTrigger": {
+    "prefix": "n8n-boxTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Box Trigger\",",
+      "  \"type\": \"n8n-nodes-base.boxTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Box Trigger node"
+  },
+  "n8n-Brandfetch": {
+    "prefix": "n8n-Brandfetch",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Brandfetch\",",
+      "  \"type\": \"n8n-nodes-base.Brandfetch\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Brandfetch node"
+  },
+  "n8n-sendInBlue": {
+    "prefix": "n8n-sendInBlue",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Brevo\",",
+      "  \"type\": \"n8n-nodes-base.sendInBlue\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Brevo node"
+  },
+  "n8n-sendInBlueTrigger": {
+    "prefix": "n8n-sendInBlueTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Brevo Trigger\",",
+      "  \"type\": \"n8n-nodes-base.sendInBlueTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Brevo Trigger node"
+  },
+  "n8n-bubble": {
+    "prefix": "n8n-bubble",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Bubble\",",
+      "  \"type\": \"n8n-nodes-base.bubble\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Bubble node"
+  },
+  "n8n-calTrigger": {
+    "prefix": "n8n-calTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Cal.com Trigger\",",
+      "  \"type\": \"n8n-nodes-base.calTrigger\",",
+      "  \"typeVersion\": 2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Cal.com Trigger node"
+  },
+  "n8n-calendlyTrigger": {
+    "prefix": "n8n-calendlyTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Calendly Trigger\",",
+      "  \"type\": \"n8n-nodes-base.calendlyTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Calendly Trigger node"
+  },
+  "n8n-chargebee": {
+    "prefix": "n8n-chargebee",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Chargebee\",",
+      "  \"type\": \"n8n-nodes-base.chargebee\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Chargebee node"
+  },
+  "n8n-chargebeeTrigger": {
+    "prefix": "n8n-chargebeeTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Chargebee Trigger\",",
+      "  \"type\": \"n8n-nodes-base.chargebeeTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Chargebee Trigger node"
+  },
+  "n8n-circleCi": {
+    "prefix": "n8n-circleCi",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"CircleCI\",",
+      "  \"type\": \"n8n-nodes-base.circleCi\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a CircleCI node"
+  },
+  "n8n-ciscoWebex": {
+    "prefix": "n8n-ciscoWebex",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Webex by Cisco\",",
+      "  \"type\": \"n8n-nodes-base.ciscoWebex\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Webex by Cisco node"
+  },
+  "n8n-ciscoWebexTrigger": {
+    "prefix": "n8n-ciscoWebexTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Webex by Cisco Trigger\",",
+      "  \"type\": \"n8n-nodes-base.ciscoWebexTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Webex by Cisco Trigger node"
+  },
+  "n8n-clearbit": {
+    "prefix": "n8n-clearbit",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Clearbit\",",
+      "  \"type\": \"n8n-nodes-base.clearbit\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Clearbit node"
+  },
+  "n8n-clickUp": {
+    "prefix": "n8n-clickUp",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"ClickUp\",",
+      "  \"type\": \"n8n-nodes-base.clickUp\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a ClickUp node"
+  },
+  "n8n-clickUpTrigger": {
+    "prefix": "n8n-clickUpTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"ClickUp Trigger\",",
+      "  \"type\": \"n8n-nodes-base.clickUpTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a ClickUp Trigger node"
+  },
+  "n8n-clockify": {
+    "prefix": "n8n-clockify",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Clockify\",",
+      "  \"type\": \"n8n-nodes-base.clockify\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Clockify node"
+  },
+  "n8n-clockifyTrigger": {
+    "prefix": "n8n-clockifyTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Clockify Trigger\",",
+      "  \"type\": \"n8n-nodes-base.clockifyTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Clockify Trigger node"
+  },
+  "n8n-cloudflare": {
+    "prefix": "n8n-cloudflare",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Cloudflare\",",
+      "  \"type\": \"n8n-nodes-base.cloudflare\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Cloudflare node"
+  },
+  "n8n-cockpit": {
+    "prefix": "n8n-cockpit",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Cockpit\",",
+      "  \"type\": \"n8n-nodes-base.cockpit\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Cockpit node"
+  },
+  "n8n-coda": {
+    "prefix": "n8n-coda",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Coda\",",
+      "  \"type\": \"n8n-nodes-base.coda\",",
+      "  \"typeVersion\": 1.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Coda node"
+  },
+  "n8n-code": {
+    "prefix": "n8n-code",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Code\",",
+      "  \"type\": \"n8n-nodes-base.code\",",
+      "  \"typeVersion\": 2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Code node"
+  },
+  "n8n-coinGecko": {
+    "prefix": "n8n-coinGecko",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"CoinGecko\",",
+      "  \"type\": \"n8n-nodes-base.coinGecko\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a CoinGecko node"
+  },
+  "n8n-compareDatasets": {
+    "prefix": "n8n-compareDatasets",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Compare Datasets\",",
+      "  \"type\": \"n8n-nodes-base.compareDatasets\",",
+      "  \"typeVersion\": 2.3,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Compare Datasets node"
+  },
+  "n8n-compression": {
+    "prefix": "n8n-compression",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Compression\",",
+      "  \"type\": \"n8n-nodes-base.compression\",",
+      "  \"typeVersion\": 1.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Compression node"
+  },
+  "n8n-contentful": {
+    "prefix": "n8n-contentful",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Contentful\",",
+      "  \"type\": \"n8n-nodes-base.contentful\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Contentful node"
+  },
+  "n8n-convertKit": {
+    "prefix": "n8n-convertKit",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"ConvertKit\",",
+      "  \"type\": \"n8n-nodes-base.convertKit\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a ConvertKit node"
+  },
+  "n8n-convertKitTrigger": {
+    "prefix": "n8n-convertKitTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"ConvertKit Trigger\",",
+      "  \"type\": \"n8n-nodes-base.convertKitTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a ConvertKit Trigger node"
+  },
+  "n8n-copper": {
+    "prefix": "n8n-copper",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Copper\",",
+      "  \"type\": \"n8n-nodes-base.copper\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Copper node"
+  },
+  "n8n-copperTrigger": {
+    "prefix": "n8n-copperTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Copper Trigger\",",
+      "  \"type\": \"n8n-nodes-base.copperTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Copper Trigger node"
+  },
+  "n8n-cortex": {
+    "prefix": "n8n-cortex",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Cortex\",",
+      "  \"type\": \"n8n-nodes-base.cortex\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Cortex node"
+  },
+  "n8n-crateDb": {
+    "prefix": "n8n-crateDb",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"CrateDB\",",
+      "  \"type\": \"n8n-nodes-base.crateDb\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a CrateDB node"
+  },
+  "n8n-cron": {
+    "prefix": "n8n-cron",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Cron\",",
+      "  \"type\": \"n8n-nodes-base.cron\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Cron node"
+  },
+  "n8n-crypto": {
+    "prefix": "n8n-crypto",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Crypto\",",
+      "  \"type\": \"n8n-nodes-base.crypto\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Crypto node"
+  },
+  "n8n-customerIo": {
+    "prefix": "n8n-customerIo",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Customer.io\",",
+      "  \"type\": \"n8n-nodes-base.customerIo\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Customer.io node"
+  },
+  "n8n-customerIoTrigger": {
+    "prefix": "n8n-customerIoTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Customer.io Trigger\",",
+      "  \"type\": \"n8n-nodes-base.customerIoTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Customer.io Trigger node"
+  },
+  "n8n-dataTable": {
+    "prefix": "n8n-dataTable",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Data table\",",
+      "  \"type\": \"n8n-nodes-base.dataTable\",",
+      "  \"typeVersion\": 1.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Data table node"
+  },
+  "n8n-dateTime": {
+    "prefix": "n8n-dateTime",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Date & Time\",",
+      "  \"type\": \"n8n-nodes-base.dateTime\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Date & Time node"
+  },
+  "n8n-undefined": {
+    "prefix": "n8n-undefined",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"undefined\",",
+      "  \"type\": \"n8n-nodes-base.undefined\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a undefined node"
+  },
+  "n8n-debugHelper": {
+    "prefix": "n8n-debugHelper",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"DebugHelper\",",
+      "  \"type\": \"n8n-nodes-base.debugHelper\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a DebugHelper node"
+  },
+  "n8n-deepL": {
+    "prefix": "n8n-deepL",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"DeepL\",",
+      "  \"type\": \"n8n-nodes-base.deepL\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a DeepL node"
+  },
+  "n8n-demio": {
+    "prefix": "n8n-demio",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Demio\",",
+      "  \"type\": \"n8n-nodes-base.demio\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Demio node"
+  },
+  "n8n-dhl": {
+    "prefix": "n8n-dhl",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"DHL\",",
+      "  \"type\": \"n8n-nodes-base.dhl\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a DHL node"
+  },
+  "n8n-discord": {
+    "prefix": "n8n-discord",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Discord\",",
+      "  \"type\": \"n8n-nodes-base.discord\",",
+      "  \"typeVersion\": 2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Discord node"
+  },
+  "n8n-discourse": {
+    "prefix": "n8n-discourse",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Discourse\",",
+      "  \"type\": \"n8n-nodes-base.discourse\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Discourse node"
+  },
+  "n8n-disqus": {
+    "prefix": "n8n-disqus",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Disqus\",",
+      "  \"type\": \"n8n-nodes-base.disqus\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Disqus node"
+  },
+  "n8n-drift": {
+    "prefix": "n8n-drift",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Drift\",",
+      "  \"type\": \"n8n-nodes-base.drift\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Drift node"
+  },
+  "n8n-dropbox": {
+    "prefix": "n8n-dropbox",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Dropbox\",",
+      "  \"type\": \"n8n-nodes-base.dropbox\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Dropbox node"
+  },
+  "n8n-dropcontact": {
+    "prefix": "n8n-dropcontact",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Dropcontact\",",
+      "  \"type\": \"n8n-nodes-base.dropcontact\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Dropcontact node"
+  },
+  "n8n-e2eTest": {
+    "prefix": "n8n-e2eTest",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"E2E Test\",",
+      "  \"type\": \"n8n-nodes-base.e2eTest\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a E2E Test node"
+  },
+  "n8n-erpNext": {
+    "prefix": "n8n-erpNext",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"ERPNext\",",
+      "  \"type\": \"n8n-nodes-base.erpNext\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a ERPNext node"
+  },
+  "n8n-editImage": {
+    "prefix": "n8n-editImage",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Edit Image\",",
+      "  \"type\": \"n8n-nodes-base.editImage\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Edit Image node"
+  },
+  "n8n-egoi": {
+    "prefix": "n8n-egoi",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"E-goi\",",
+      "  \"type\": \"n8n-nodes-base.egoi\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a E-goi node"
+  },
+  "n8n-elasticSecurity": {
+    "prefix": "n8n-elasticSecurity",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Elastic Security\",",
+      "  \"type\": \"n8n-nodes-base.elasticSecurity\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Elastic Security node"
+  },
+  "n8n-elasticsearch": {
+    "prefix": "n8n-elasticsearch",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Elasticsearch\",",
+      "  \"type\": \"n8n-nodes-base.elasticsearch\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Elasticsearch node"
+  },
+  "n8n-emailReadImap": {
+    "prefix": "n8n-emailReadImap",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Email Trigger (IMAP)\",",
+      "  \"type\": \"n8n-nodes-base.emailReadImap\",",
+      "  \"typeVersion\": 2.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Email Trigger (IMAP) node"
+  },
+  "n8n-emailSend": {
+    "prefix": "n8n-emailSend",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Send Email\",",
+      "  \"type\": \"n8n-nodes-base.emailSend\",",
+      "  \"typeVersion\": 2.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Send Email node"
+  },
+  "n8n-emelia": {
+    "prefix": "n8n-emelia",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Emelia\",",
+      "  \"type\": \"n8n-nodes-base.emelia\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Emelia node"
+  },
+  "n8n-emeliaTrigger": {
+    "prefix": "n8n-emeliaTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Emelia Trigger\",",
+      "  \"type\": \"n8n-nodes-base.emeliaTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Emelia Trigger node"
+  },
+  "n8n-errorTrigger": {
+    "prefix": "n8n-errorTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Error Trigger\",",
+      "  \"type\": \"n8n-nodes-base.errorTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Error Trigger node"
+  },
+  "n8n-eventbriteTrigger": {
+    "prefix": "n8n-eventbriteTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Eventbrite Trigger\",",
+      "  \"type\": \"n8n-nodes-base.eventbriteTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Eventbrite Trigger node"
+  },
+  "n8n-executeCommand": {
+    "prefix": "n8n-executeCommand",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Execute Command\",",
+      "  \"type\": \"n8n-nodes-base.executeCommand\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Execute Command node"
+  },
+  "n8n-executeWorkflow": {
+    "prefix": "n8n-executeWorkflow",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Execute Sub-workflow\",",
+      "  \"type\": \"n8n-nodes-base.executeWorkflow\",",
+      "  \"typeVersion\": 1.3,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Execute Sub-workflow node"
+  },
+  "n8n-executeWorkflowTrigger": {
+    "prefix": "n8n-executeWorkflowTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Execute Workflow Trigger\",",
+      "  \"type\": \"n8n-nodes-base.executeWorkflowTrigger\",",
+      "  \"typeVersion\": 1.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Execute Workflow Trigger node"
+  },
+  "n8n-executionData": {
+    "prefix": "n8n-executionData",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Execution Data\",",
+      "  \"type\": \"n8n-nodes-base.executionData\",",
+      "  \"typeVersion\": 1.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Execution Data node"
+  },
+  "n8n-facebookGraphApi": {
+    "prefix": "n8n-facebookGraphApi",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Facebook Graph API\",",
+      "  \"type\": \"n8n-nodes-base.facebookGraphApi\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Facebook Graph API node"
+  },
+  "n8n-facebookTrigger": {
+    "prefix": "n8n-facebookTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Facebook Trigger\",",
+      "  \"type\": \"n8n-nodes-base.facebookTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Facebook Trigger node"
+  },
+  "n8n-facebookLeadAdsTrigger": {
+    "prefix": "n8n-facebookLeadAdsTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Facebook Lead Ads Trigger\",",
+      "  \"type\": \"n8n-nodes-base.facebookLeadAdsTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Facebook Lead Ads Trigger node"
+  },
+  "n8n-figmaTrigger": {
+    "prefix": "n8n-figmaTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Figma Trigger (Beta)\",",
+      "  \"type\": \"n8n-nodes-base.figmaTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Figma Trigger (Beta) node"
+  },
+  "n8n-filemaker": {
+    "prefix": "n8n-filemaker",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"FileMaker\",",
+      "  \"type\": \"n8n-nodes-base.filemaker\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a FileMaker node"
+  },
+  "n8n-convertToFile": {
+    "prefix": "n8n-convertToFile",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Convert to File\",",
+      "  \"type\": \"n8n-nodes-base.convertToFile\",",
+      "  \"typeVersion\": 1.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Convert to File node"
+  },
+  "n8n-extractFromFile": {
+    "prefix": "n8n-extractFromFile",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Extract from File\",",
+      "  \"type\": \"n8n-nodes-base.extractFromFile\",",
+      "  \"typeVersion\": 1.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Extract from File node"
+  },
+  "n8n-readWriteFile": {
+    "prefix": "n8n-readWriteFile",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Read/Write Files from Disk\",",
+      "  \"type\": \"n8n-nodes-base.readWriteFile\",",
+      "  \"typeVersion\": 1.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Read/Write Files from Disk node"
+  },
+  "n8n-filter": {
+    "prefix": "n8n-filter",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Filter\",",
+      "  \"type\": \"n8n-nodes-base.filter\",",
+      "  \"typeVersion\": undefined,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Filter node"
+  },
+  "n8n-flow": {
+    "prefix": "n8n-flow",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Flow\",",
+      "  \"type\": \"n8n-nodes-base.flow\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Flow node"
+  },
+  "n8n-flowTrigger": {
+    "prefix": "n8n-flowTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Flow Trigger\",",
+      "  \"type\": \"n8n-nodes-base.flowTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Flow Trigger node"
+  },
+  "n8n-form": {
+    "prefix": "n8n-form",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"n8n Form\",",
+      "  \"type\": \"n8n-nodes-base.form\",",
+      "  \"typeVersion\": 2.5,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a n8n Form node"
+  },
+  "n8n-formTrigger": {
+    "prefix": "n8n-formTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"n8n Form Trigger\",",
+      "  \"type\": \"n8n-nodes-base.formTrigger\",",
+      "  \"typeVersion\": 2.5,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a n8n Form Trigger node"
+  },
+  "n8n-formIoTrigger": {
+    "prefix": "n8n-formIoTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Form.io Trigger\",",
+      "  \"type\": \"n8n-nodes-base.formIoTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Form.io Trigger node"
+  },
+  "n8n-formstackTrigger": {
+    "prefix": "n8n-formstackTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Formstack Trigger\",",
+      "  \"type\": \"n8n-nodes-base.formstackTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Formstack Trigger node"
+  },
+  "n8n-freshdesk": {
+    "prefix": "n8n-freshdesk",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Freshdesk\",",
+      "  \"type\": \"n8n-nodes-base.freshdesk\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Freshdesk node"
+  },
+  "n8n-freshservice": {
+    "prefix": "n8n-freshservice",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Freshservice\",",
+      "  \"type\": \"n8n-nodes-base.freshservice\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Freshservice node"
+  },
+  "n8n-freshworksCrm": {
+    "prefix": "n8n-freshworksCrm",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Freshworks CRM\",",
+      "  \"type\": \"n8n-nodes-base.freshworksCrm\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Freshworks CRM node"
+  },
+  "n8n-ftp": {
+    "prefix": "n8n-ftp",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"FTP\",",
+      "  \"type\": \"n8n-nodes-base.ftp\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a FTP node"
+  },
+  "n8n-function": {
+    "prefix": "n8n-function",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Function\",",
+      "  \"type\": \"n8n-nodes-base.function\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Function node"
+  },
+  "n8n-functionItem": {
+    "prefix": "n8n-functionItem",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Function Item\",",
+      "  \"type\": \"n8n-nodes-base.functionItem\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Function Item node"
+  },
+  "n8n-getResponse": {
+    "prefix": "n8n-getResponse",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"GetResponse\",",
+      "  \"type\": \"n8n-nodes-base.getResponse\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a GetResponse node"
+  },
+  "n8n-getResponseTrigger": {
+    "prefix": "n8n-getResponseTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"GetResponse Trigger\",",
+      "  \"type\": \"n8n-nodes-base.getResponseTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a GetResponse Trigger node"
+  },
+  "n8n-ghost": {
+    "prefix": "n8n-ghost",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Ghost\",",
+      "  \"type\": \"n8n-nodes-base.ghost\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Ghost node"
+  },
+  "n8n-git": {
+    "prefix": "n8n-git",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Git\",",
+      "  \"type\": \"n8n-nodes-base.git\",",
+      "  \"typeVersion\": 1.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Git node"
+  },
+  "n8n-github": {
+    "prefix": "n8n-github",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"GitHub\",",
+      "  \"type\": \"n8n-nodes-base.github\",",
+      "  \"typeVersion\": 1.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a GitHub node"
+  },
+  "n8n-githubTrigger": {
+    "prefix": "n8n-githubTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Github Trigger\",",
+      "  \"type\": \"n8n-nodes-base.githubTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Github Trigger node"
+  },
+  "n8n-gitlab": {
+    "prefix": "n8n-gitlab",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"GitLab\",",
+      "  \"type\": \"n8n-nodes-base.gitlab\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a GitLab node"
+  },
+  "n8n-gitlabTrigger": {
+    "prefix": "n8n-gitlabTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"GitLab Trigger\",",
+      "  \"type\": \"n8n-nodes-base.gitlabTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a GitLab Trigger node"
+  },
+  "n8n-goToWebinar": {
+    "prefix": "n8n-goToWebinar",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"GoToWebinar\",",
+      "  \"type\": \"n8n-nodes-base.goToWebinar\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a GoToWebinar node"
+  },
+  "n8n-gong": {
+    "prefix": "n8n-gong",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Gong\",",
+      "  \"type\": \"n8n-nodes-base.gong\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Gong node"
+  },
+  "n8n-googleAds": {
+    "prefix": "n8n-googleAds",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Google Ads\",",
+      "  \"type\": \"n8n-nodes-base.googleAds\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Google Ads node"
+  },
+  "n8n-googleAnalytics": {
+    "prefix": "n8n-googleAnalytics",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Google Analytics\",",
+      "  \"type\": \"n8n-nodes-base.googleAnalytics\",",
+      "  \"typeVersion\": 2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Google Analytics node"
+  },
+  "n8n-googleBigQuery": {
+    "prefix": "n8n-googleBigQuery",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Google BigQuery\",",
+      "  \"type\": \"n8n-nodes-base.googleBigQuery\",",
+      "  \"typeVersion\": 2.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Google BigQuery node"
+  },
+  "n8n-googleBooks": {
+    "prefix": "n8n-googleBooks",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Google Books\",",
+      "  \"type\": \"n8n-nodes-base.googleBooks\",",
+      "  \"typeVersion\": 2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Google Books node"
+  },
+  "n8n-googleBusinessProfile": {
+    "prefix": "n8n-googleBusinessProfile",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Google Business Profile\",",
+      "  \"type\": \"n8n-nodes-base.googleBusinessProfile\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Google Business Profile node"
+  },
+  "n8n-googleBusinessProfileTrigger": {
+    "prefix": "n8n-googleBusinessProfileTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Google Business Profile Trigger\",",
+      "  \"type\": \"n8n-nodes-base.googleBusinessProfileTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Google Business Profile Trigger node"
+  },
+  "n8n-googleCalendar": {
+    "prefix": "n8n-googleCalendar",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Google Calendar\",",
+      "  \"type\": \"n8n-nodes-base.googleCalendar\",",
+      "  \"typeVersion\": 1.3,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Google Calendar node"
+  },
+  "n8n-googleCalendarTrigger": {
+    "prefix": "n8n-googleCalendarTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Google Calendar Trigger\",",
+      "  \"type\": \"n8n-nodes-base.googleCalendarTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Google Calendar Trigger node"
+  },
+  "n8n-googleChat": {
+    "prefix": "n8n-googleChat",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Google Chat\",",
+      "  \"type\": \"n8n-nodes-base.googleChat\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Google Chat node"
+  },
+  "n8n-googleCloudNaturalLanguage": {
+    "prefix": "n8n-googleCloudNaturalLanguage",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Google Cloud Natural Language\",",
+      "  \"type\": \"n8n-nodes-base.googleCloudNaturalLanguage\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Google Cloud Natural Language node"
+  },
+  "n8n-googleCloudStorage": {
+    "prefix": "n8n-googleCloudStorage",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Google Cloud Storage\",",
+      "  \"type\": \"n8n-nodes-base.googleCloudStorage\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Google Cloud Storage node"
+  },
+  "n8n-googleContacts": {
+    "prefix": "n8n-googleContacts",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Google Contacts\",",
+      "  \"type\": \"n8n-nodes-base.googleContacts\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Google Contacts node"
+  },
+  "n8n-googleDocs": {
+    "prefix": "n8n-googleDocs",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Google Docs\",",
+      "  \"type\": \"n8n-nodes-base.googleDocs\",",
+      "  \"typeVersion\": 2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Google Docs node"
+  },
+  "n8n-googleDrive": {
+    "prefix": "n8n-googleDrive",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Google Drive\",",
+      "  \"type\": \"n8n-nodes-base.googleDrive\",",
+      "  \"typeVersion\": 3,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Google Drive node"
+  },
+  "n8n-googleDriveTrigger": {
+    "prefix": "n8n-googleDriveTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Google Drive Trigger\",",
+      "  \"type\": \"n8n-nodes-base.googleDriveTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Google Drive Trigger node"
+  },
+  "n8n-googleFirebaseCloudFirestore": {
+    "prefix": "n8n-googleFirebaseCloudFirestore",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Google Cloud Firestore\",",
+      "  \"type\": \"n8n-nodes-base.googleFirebaseCloudFirestore\",",
+      "  \"typeVersion\": 1.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Google Cloud Firestore node"
+  },
+  "n8n-googleFirebaseRealtimeDatabase": {
+    "prefix": "n8n-googleFirebaseRealtimeDatabase",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Google Cloud Realtime Database\",",
+      "  \"type\": \"n8n-nodes-base.googleFirebaseRealtimeDatabase\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Google Cloud Realtime Database node"
+  },
+  "n8n-gSuiteAdmin": {
+    "prefix": "n8n-gSuiteAdmin",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Google Workspace Admin\",",
+      "  \"type\": \"n8n-nodes-base.gSuiteAdmin\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Google Workspace Admin node"
+  },
+  "n8n-gmail": {
+    "prefix": "n8n-gmail",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Gmail\",",
+      "  \"type\": \"n8n-nodes-base.gmail\",",
+      "  \"typeVersion\": 2.2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Gmail node"
+  },
+  "n8n-gmailTrigger": {
+    "prefix": "n8n-gmailTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Gmail Trigger\",",
+      "  \"type\": \"n8n-nodes-base.gmailTrigger\",",
+      "  \"typeVersion\": 1.3,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Gmail Trigger node"
+  },
+  "n8n-googlePerspective": {
+    "prefix": "n8n-googlePerspective",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Google Perspective\",",
+      "  \"type\": \"n8n-nodes-base.googlePerspective\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Google Perspective node"
+  },
+  "n8n-googleSheets": {
+    "prefix": "n8n-googleSheets",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Google Sheets\",",
+      "  \"type\": \"n8n-nodes-base.googleSheets\",",
+      "  \"typeVersion\": 4.7,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Google Sheets node"
+  },
+  "n8n-googleSheetsTrigger": {
+    "prefix": "n8n-googleSheetsTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Google Sheets Trigger\",",
+      "  \"type\": \"n8n-nodes-base.googleSheetsTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Google Sheets Trigger node"
+  },
+  "n8n-googleSlides": {
+    "prefix": "n8n-googleSlides",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Google Slides\",",
+      "  \"type\": \"n8n-nodes-base.googleSlides\",",
+      "  \"typeVersion\": 2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Google Slides node"
+  },
+  "n8n-googleTasks": {
+    "prefix": "n8n-googleTasks",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Google Tasks\",",
+      "  \"type\": \"n8n-nodes-base.googleTasks\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Google Tasks node"
+  },
+  "n8n-googleTranslate": {
+    "prefix": "n8n-googleTranslate",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Google Translate\",",
+      "  \"type\": \"n8n-nodes-base.googleTranslate\",",
+      "  \"typeVersion\": 2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Google Translate node"
+  },
+  "n8n-youTube": {
+    "prefix": "n8n-youTube",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"YouTube\",",
+      "  \"type\": \"n8n-nodes-base.youTube\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a YouTube node"
+  },
+  "n8n-gotify": {
+    "prefix": "n8n-gotify",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Gotify\",",
+      "  \"type\": \"n8n-nodes-base.gotify\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Gotify node"
+  },
+  "n8n-grafana": {
+    "prefix": "n8n-grafana",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Grafana\",",
+      "  \"type\": \"n8n-nodes-base.grafana\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Grafana node"
+  },
+  "n8n-graphql": {
+    "prefix": "n8n-graphql",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"GraphQL\",",
+      "  \"type\": \"n8n-nodes-base.graphql\",",
+      "  \"typeVersion\": 1.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a GraphQL node"
+  },
+  "n8n-grist": {
+    "prefix": "n8n-grist",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Grist\",",
+      "  \"type\": \"n8n-nodes-base.grist\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Grist node"
+  },
+  "n8n-gumroadTrigger": {
+    "prefix": "n8n-gumroadTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Gumroad Trigger\",",
+      "  \"type\": \"n8n-nodes-base.gumroadTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Gumroad Trigger node"
+  },
+  "n8n-hackerNews": {
+    "prefix": "n8n-hackerNews",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Hacker News\",",
+      "  \"type\": \"n8n-nodes-base.hackerNews\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Hacker News node"
+  },
+  "n8n-haloPSA": {
+    "prefix": "n8n-haloPSA",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"HaloPSA\",",
+      "  \"type\": \"n8n-nodes-base.haloPSA\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a HaloPSA node"
+  },
+  "n8n-harvest": {
+    "prefix": "n8n-harvest",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Harvest\",",
+      "  \"type\": \"n8n-nodes-base.harvest\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Harvest node"
+  },
+  "n8n-helpScout": {
+    "prefix": "n8n-helpScout",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Help Scout\",",
+      "  \"type\": \"n8n-nodes-base.helpScout\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Help Scout node"
+  },
+  "n8n-helpScoutTrigger": {
+    "prefix": "n8n-helpScoutTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Help Scout Trigger\",",
+      "  \"type\": \"n8n-nodes-base.helpScoutTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Help Scout Trigger node"
+  },
+  "n8n-highLevel": {
+    "prefix": "n8n-highLevel",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"HighLevel\",",
+      "  \"type\": \"n8n-nodes-base.highLevel\",",
+      "  \"typeVersion\": 2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a HighLevel node"
+  },
+  "n8n-homeAssistant": {
+    "prefix": "n8n-homeAssistant",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Home Assistant\",",
+      "  \"type\": \"n8n-nodes-base.homeAssistant\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Home Assistant node"
+  },
+  "n8n-html": {
+    "prefix": "n8n-html",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"HTML\",",
+      "  \"type\": \"n8n-nodes-base.html\",",
+      "  \"typeVersion\": 1.2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a HTML node"
+  },
+  "n8n-htmlExtract": {
+    "prefix": "n8n-htmlExtract",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"HTML Extract\",",
+      "  \"type\": \"n8n-nodes-base.htmlExtract\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a HTML Extract node"
+  },
+  "n8n-httpRequest": {
+    "prefix": "n8n-httpRequest",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"HTTP Request\",",
+      "  \"type\": \"n8n-nodes-base.httpRequest\",",
+      "  \"typeVersion\": undefined,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a HTTP Request node"
+  },
+  "n8n-hubspot": {
+    "prefix": "n8n-hubspot",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"HubSpot\",",
+      "  \"type\": \"n8n-nodes-base.hubspot\",",
+      "  \"typeVersion\": undefined,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a HubSpot node"
+  },
+  "n8n-hubspotTrigger": {
+    "prefix": "n8n-hubspotTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"HubSpot Trigger\",",
+      "  \"type\": \"n8n-nodes-base.hubspotTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a HubSpot Trigger node"
+  },
+  "n8n-humanticAi": {
+    "prefix": "n8n-humanticAi",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Humantic AI\",",
+      "  \"type\": \"n8n-nodes-base.humanticAi\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Humantic AI node"
+  },
+  "n8n-hunter": {
+    "prefix": "n8n-hunter",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Hunter\",",
+      "  \"type\": \"n8n-nodes-base.hunter\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Hunter node"
+  },
+  "n8n-iCal": {
+    "prefix": "n8n-iCal",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"iCalendar\",",
+      "  \"type\": \"n8n-nodes-base.iCal\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a iCalendar node"
+  },
+  "n8n-if": {
+    "prefix": "n8n-if",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"If\",",
+      "  \"type\": \"n8n-nodes-base.if\",",
+      "  \"typeVersion\": undefined,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a If node"
+  },
+  "n8n-intercom": {
+    "prefix": "n8n-intercom",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Intercom\",",
+      "  \"type\": \"n8n-nodes-base.intercom\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Intercom node"
+  },
+  "n8n-interval": {
+    "prefix": "n8n-interval",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Interval\",",
+      "  \"type\": \"n8n-nodes-base.interval\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Interval node"
+  },
+  "n8n-invoiceNinja": {
+    "prefix": "n8n-invoiceNinja",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Invoice Ninja\",",
+      "  \"type\": \"n8n-nodes-base.invoiceNinja\",",
+      "  \"typeVersion\": 2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Invoice Ninja node"
+  },
+  "n8n-invoiceNinjaTrigger": {
+    "prefix": "n8n-invoiceNinjaTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Invoice Ninja Trigger\",",
+      "  \"type\": \"n8n-nodes-base.invoiceNinjaTrigger\",",
+      "  \"typeVersion\": 2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Invoice Ninja Trigger node"
+  },
+  "n8n-itemLists": {
+    "prefix": "n8n-itemLists",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Item Lists\",",
+      "  \"type\": \"n8n-nodes-base.itemLists\",",
+      "  \"typeVersion\": 3.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Item Lists node"
+  },
+  "n8n-iterable": {
+    "prefix": "n8n-iterable",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Iterable\",",
+      "  \"type\": \"n8n-nodes-base.iterable\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Iterable node"
+  },
+  "n8n-jenkins": {
+    "prefix": "n8n-jenkins",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Jenkins\",",
+      "  \"type\": \"n8n-nodes-base.jenkins\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Jenkins node"
+  },
+  "n8n-jinaAi": {
+    "prefix": "n8n-jinaAi",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Jina AI\",",
+      "  \"type\": \"n8n-nodes-base.jinaAi\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Jina AI node"
+  },
+  "n8n-jira": {
+    "prefix": "n8n-jira",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Jira Software\",",
+      "  \"type\": \"n8n-nodes-base.jira\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Jira Software node"
+  },
+  "n8n-jiraTrigger": {
+    "prefix": "n8n-jiraTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Jira Trigger\",",
+      "  \"type\": \"n8n-nodes-base.jiraTrigger\",",
+      "  \"typeVersion\": 1.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Jira Trigger node"
+  },
+  "n8n-jotFormTrigger": {
+    "prefix": "n8n-jotFormTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Jotform Trigger\",",
+      "  \"type\": \"n8n-nodes-base.jotFormTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Jotform Trigger node"
+  },
+  "n8n-jwt": {
+    "prefix": "n8n-jwt",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"JWT\",",
+      "  \"type\": \"n8n-nodes-base.jwt\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a JWT node"
+  },
+  "n8n-kafka": {
+    "prefix": "n8n-kafka",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Kafka\",",
+      "  \"type\": \"n8n-nodes-base.kafka\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Kafka node"
+  },
+  "n8n-kafkaTrigger": {
+    "prefix": "n8n-kafkaTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Kafka Trigger\",",
+      "  \"type\": \"n8n-nodes-base.kafkaTrigger\",",
+      "  \"typeVersion\": 1.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Kafka Trigger node"
+  },
+  "n8n-keap": {
+    "prefix": "n8n-keap",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Keap\",",
+      "  \"type\": \"n8n-nodes-base.keap\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Keap node"
+  },
+  "n8n-keapTrigger": {
+    "prefix": "n8n-keapTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Keap Trigger\",",
+      "  \"type\": \"n8n-nodes-base.keapTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Keap Trigger node"
+  },
+  "n8n-koBoToolbox": {
+    "prefix": "n8n-koBoToolbox",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"KoBoToolbox\",",
+      "  \"type\": \"n8n-nodes-base.koBoToolbox\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a KoBoToolbox node"
+  },
+  "n8n-koBoToolboxTrigger": {
+    "prefix": "n8n-koBoToolboxTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"KoBoToolbox Trigger\",",
+      "  \"type\": \"n8n-nodes-base.koBoToolboxTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a KoBoToolbox Trigger node"
+  },
+  "n8n-ldap": {
+    "prefix": "n8n-ldap",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Ldap\",",
+      "  \"type\": \"n8n-nodes-base.ldap\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Ldap node"
+  },
+  "n8n-lemlist": {
+    "prefix": "n8n-lemlist",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Lemlist\",",
+      "  \"type\": \"n8n-nodes-base.lemlist\",",
+      "  \"typeVersion\": 2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Lemlist node"
+  },
+  "n8n-lemlistTrigger": {
+    "prefix": "n8n-lemlistTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Lemlist Trigger\",",
+      "  \"type\": \"n8n-nodes-base.lemlistTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Lemlist Trigger node"
+  },
+  "n8n-line": {
+    "prefix": "n8n-line",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Line\",",
+      "  \"type\": \"n8n-nodes-base.line\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Line node"
+  },
+  "n8n-linear": {
+    "prefix": "n8n-linear",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Linear\",",
+      "  \"type\": \"n8n-nodes-base.linear\",",
+      "  \"typeVersion\": 1.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Linear node"
+  },
+  "n8n-linearTrigger": {
+    "prefix": "n8n-linearTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Linear Trigger\",",
+      "  \"type\": \"n8n-nodes-base.linearTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Linear Trigger node"
+  },
+  "n8n-lingvaNex": {
+    "prefix": "n8n-lingvaNex",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"LingvaNex\",",
+      "  \"type\": \"n8n-nodes-base.lingvaNex\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a LingvaNex node"
+  },
+  "n8n-linkedIn": {
+    "prefix": "n8n-linkedIn",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"LinkedIn\",",
+      "  \"type\": \"n8n-nodes-base.linkedIn\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a LinkedIn node"
+  },
+  "n8n-localFileTrigger": {
+    "prefix": "n8n-localFileTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Local File Trigger\",",
+      "  \"type\": \"n8n-nodes-base.localFileTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Local File Trigger node"
+  },
+  "n8n-loneScale": {
+    "prefix": "n8n-loneScale",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"LoneScale\",",
+      "  \"type\": \"n8n-nodes-base.loneScale\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a LoneScale node"
+  },
+  "n8n-loneScaleTrigger": {
+    "prefix": "n8n-loneScaleTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"LoneScale Trigger\",",
+      "  \"type\": \"n8n-nodes-base.loneScaleTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a LoneScale Trigger node"
+  },
+  "n8n-mqtt": {
+    "prefix": "n8n-mqtt",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"MQTT\",",
+      "  \"type\": \"n8n-nodes-base.mqtt\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a MQTT node"
+  },
+  "n8n-mqttTrigger": {
+    "prefix": "n8n-mqttTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"MQTT Trigger\",",
+      "  \"type\": \"n8n-nodes-base.mqttTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a MQTT Trigger node"
+  },
+  "n8n-magento2": {
+    "prefix": "n8n-magento2",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Magento 2\",",
+      "  \"type\": \"n8n-nodes-base.magento2\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Magento 2 node"
+  },
+  "n8n-mailcheck": {
+    "prefix": "n8n-mailcheck",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Mailcheck\",",
+      "  \"type\": \"n8n-nodes-base.mailcheck\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Mailcheck node"
+  },
+  "n8n-mailchimp": {
+    "prefix": "n8n-mailchimp",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Mailchimp\",",
+      "  \"type\": \"n8n-nodes-base.mailchimp\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Mailchimp node"
+  },
+  "n8n-mailchimpTrigger": {
+    "prefix": "n8n-mailchimpTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Mailchimp Trigger\",",
+      "  \"type\": \"n8n-nodes-base.mailchimpTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Mailchimp Trigger node"
+  },
+  "n8n-mailerLite": {
+    "prefix": "n8n-mailerLite",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"MailerLite\",",
+      "  \"type\": \"n8n-nodes-base.mailerLite\",",
+      "  \"typeVersion\": 2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a MailerLite node"
+  },
+  "n8n-mailerLiteTrigger": {
+    "prefix": "n8n-mailerLiteTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"MailerLite Trigger\",",
+      "  \"type\": \"n8n-nodes-base.mailerLiteTrigger\",",
+      "  \"typeVersion\": 2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a MailerLite Trigger node"
+  },
+  "n8n-mailgun": {
+    "prefix": "n8n-mailgun",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Mailgun\",",
+      "  \"type\": \"n8n-nodes-base.mailgun\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Mailgun node"
+  },
+  "n8n-mailjet": {
+    "prefix": "n8n-mailjet",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Mailjet\",",
+      "  \"type\": \"n8n-nodes-base.mailjet\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Mailjet node"
+  },
+  "n8n-mailjetTrigger": {
+    "prefix": "n8n-mailjetTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Mailjet Trigger\",",
+      "  \"type\": \"n8n-nodes-base.mailjetTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Mailjet Trigger node"
+  },
+  "n8n-mandrill": {
+    "prefix": "n8n-mandrill",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Mandrill\",",
+      "  \"type\": \"n8n-nodes-base.mandrill\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Mandrill node"
+  },
+  "n8n-manualTrigger": {
+    "prefix": "n8n-manualTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Manual Trigger\",",
+      "  \"type\": \"n8n-nodes-base.manualTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Manual Trigger node"
+  },
+  "n8n-markdown": {
+    "prefix": "n8n-markdown",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Markdown\",",
+      "  \"type\": \"n8n-nodes-base.markdown\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Markdown node"
+  },
+  "n8n-marketstack": {
+    "prefix": "n8n-marketstack",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Marketstack\",",
+      "  \"type\": \"n8n-nodes-base.marketstack\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Marketstack node"
+  },
+  "n8n-matrix": {
+    "prefix": "n8n-matrix",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Matrix\",",
+      "  \"type\": \"n8n-nodes-base.matrix\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Matrix node"
+  },
+  "n8n-mattermost": {
+    "prefix": "n8n-mattermost",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Mattermost\",",
+      "  \"type\": \"n8n-nodes-base.mattermost\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Mattermost node"
+  },
+  "n8n-mautic": {
+    "prefix": "n8n-mautic",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Mautic\",",
+      "  \"type\": \"n8n-nodes-base.mautic\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Mautic node"
+  },
+  "n8n-mauticTrigger": {
+    "prefix": "n8n-mauticTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Mautic Trigger\",",
+      "  \"type\": \"n8n-nodes-base.mauticTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Mautic Trigger node"
+  },
+  "n8n-medium": {
+    "prefix": "n8n-medium",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Medium\",",
+      "  \"type\": \"n8n-nodes-base.medium\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Medium node"
+  },
+  "n8n-merge": {
+    "prefix": "n8n-merge",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Merge\",",
+      "  \"type\": \"n8n-nodes-base.merge\",",
+      "  \"typeVersion\": 3.2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Merge node"
+  },
+  "n8n-messageBird": {
+    "prefix": "n8n-messageBird",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"MessageBird\",",
+      "  \"type\": \"n8n-nodes-base.messageBird\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a MessageBird node"
+  },
+  "n8n-metabase": {
+    "prefix": "n8n-metabase",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Metabase\",",
+      "  \"type\": \"n8n-nodes-base.metabase\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Metabase node"
+  },
+  "n8n-azureCosmosDb": {
+    "prefix": "n8n-azureCosmosDb",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Azure Cosmos DB\",",
+      "  \"type\": \"n8n-nodes-base.azureCosmosDb\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Azure Cosmos DB node"
+  },
+  "n8n-microsoftDynamicsCrm": {
+    "prefix": "n8n-microsoftDynamicsCrm",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Microsoft Dynamics CRM\",",
+      "  \"type\": \"n8n-nodes-base.microsoftDynamicsCrm\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Microsoft Dynamics CRM node"
+  },
+  "n8n-microsoftEntra": {
+    "prefix": "n8n-microsoftEntra",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Microsoft Entra ID\",",
+      "  \"type\": \"n8n-nodes-base.microsoftEntra\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Microsoft Entra ID node"
+  },
+  "n8n-microsoftExcel": {
+    "prefix": "n8n-microsoftExcel",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Microsoft Excel 365\",",
+      "  \"type\": \"n8n-nodes-base.microsoftExcel\",",
+      "  \"typeVersion\": 2.2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Microsoft Excel 365 node"
+  },
+  "n8n-microsoftGraphSecurity": {
+    "prefix": "n8n-microsoftGraphSecurity",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Microsoft Graph Security\",",
+      "  \"type\": \"n8n-nodes-base.microsoftGraphSecurity\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Microsoft Graph Security node"
+  },
+  "n8n-microsoftOneDrive": {
+    "prefix": "n8n-microsoftOneDrive",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Microsoft OneDrive\",",
+      "  \"type\": \"n8n-nodes-base.microsoftOneDrive\",",
+      "  \"typeVersion\": 1.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Microsoft OneDrive node"
+  },
+  "n8n-microsoftOneDriveTrigger": {
+    "prefix": "n8n-microsoftOneDriveTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Microsoft OneDrive Trigger\",",
+      "  \"type\": \"n8n-nodes-base.microsoftOneDriveTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Microsoft OneDrive Trigger node"
+  },
+  "n8n-microsoftOutlook": {
+    "prefix": "n8n-microsoftOutlook",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Microsoft Outlook\",",
+      "  \"type\": \"n8n-nodes-base.microsoftOutlook\",",
+      "  \"typeVersion\": 2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Microsoft Outlook node"
+  },
+  "n8n-microsoftOutlookTrigger": {
+    "prefix": "n8n-microsoftOutlookTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Microsoft Outlook Trigger\",",
+      "  \"type\": \"n8n-nodes-base.microsoftOutlookTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Microsoft Outlook Trigger node"
+  },
+  "n8n-microsoftSharePoint": {
+    "prefix": "n8n-microsoftSharePoint",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Microsoft SharePoint\",",
+      "  \"type\": \"n8n-nodes-base.microsoftSharePoint\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Microsoft SharePoint node"
+  },
+  "n8n-microsoftSql": {
+    "prefix": "n8n-microsoftSql",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Microsoft SQL\",",
+      "  \"type\": \"n8n-nodes-base.microsoftSql\",",
+      "  \"typeVersion\": 1.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Microsoft SQL node"
+  },
+  "n8n-azureStorage": {
+    "prefix": "n8n-azureStorage",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Azure Storage\",",
+      "  \"type\": \"n8n-nodes-base.azureStorage\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Azure Storage node"
+  },
+  "n8n-microsoftTeams": {
+    "prefix": "n8n-microsoftTeams",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Microsoft Teams\",",
+      "  \"type\": \"n8n-nodes-base.microsoftTeams\",",
+      "  \"typeVersion\": 2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Microsoft Teams node"
+  },
+  "n8n-microsoftTeamsTrigger": {
+    "prefix": "n8n-microsoftTeamsTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Microsoft Teams Trigger\",",
+      "  \"type\": \"n8n-nodes-base.microsoftTeamsTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Microsoft Teams Trigger node"
+  },
+  "n8n-microsoftToDo": {
+    "prefix": "n8n-microsoftToDo",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Microsoft To Do\",",
+      "  \"type\": \"n8n-nodes-base.microsoftToDo\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Microsoft To Do node"
+  },
+  "n8n-mindee": {
+    "prefix": "n8n-mindee",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Mindee\",",
+      "  \"type\": \"n8n-nodes-base.mindee\",",
+      "  \"typeVersion\": 3,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Mindee node"
+  },
+  "n8n-misp": {
+    "prefix": "n8n-misp",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"MISP\",",
+      "  \"type\": \"n8n-nodes-base.misp\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a MISP node"
+  },
+  "n8n-mistralAi": {
+    "prefix": "n8n-mistralAi",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Mistral AI\",",
+      "  \"type\": \"n8n-nodes-base.mistralAi\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Mistral AI node"
+  },
+  "n8n-mocean": {
+    "prefix": "n8n-mocean",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Mocean\",",
+      "  \"type\": \"n8n-nodes-base.mocean\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Mocean node"
+  },
+  "n8n-mondayCom": {
+    "prefix": "n8n-mondayCom",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Monday.com\",",
+      "  \"type\": \"n8n-nodes-base.mondayCom\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Monday.com node"
+  },
+  "n8n-mongoDb": {
+    "prefix": "n8n-mongoDb",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"MongoDB\",",
+      "  \"type\": \"n8n-nodes-base.mongoDb\",",
+      "  \"typeVersion\": 1.2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a MongoDB node"
+  },
+  "n8n-monicaCrm": {
+    "prefix": "n8n-monicaCrm",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Monica CRM\",",
+      "  \"type\": \"n8n-nodes-base.monicaCrm\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Monica CRM node"
+  },
+  "n8n-moveBinaryData": {
+    "prefix": "n8n-moveBinaryData",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Convert to/from binary data\",",
+      "  \"type\": \"n8n-nodes-base.moveBinaryData\",",
+      "  \"typeVersion\": 1.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Convert to/from binary data node"
+  },
+  "n8n-msg91": {
+    "prefix": "n8n-msg91",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"MSG91\",",
+      "  \"type\": \"n8n-nodes-base.msg91\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a MSG91 node"
+  },
+  "n8n-mySql": {
+    "prefix": "n8n-mySql",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"MySQL\",",
+      "  \"type\": \"n8n-nodes-base.mySql\",",
+      "  \"typeVersion\": 2.5,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a MySQL node"
+  },
+  "n8n-n8n": {
+    "prefix": "n8n-n8n",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"n8n\",",
+      "  \"type\": \"n8n-nodes-base.n8n\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a n8n node"
+  },
+  "n8n-n8nTrainingCustomerDatastore": {
+    "prefix": "n8n-n8nTrainingCustomerDatastore",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Customer Datastore (n8n training)\",",
+      "  \"type\": \"n8n-nodes-base.n8nTrainingCustomerDatastore\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Customer Datastore (n8n training) node"
+  },
+  "n8n-n8nTrainingCustomerMessenger": {
+    "prefix": "n8n-n8nTrainingCustomerMessenger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Customer Messenger (n8n training)\",",
+      "  \"type\": \"n8n-nodes-base.n8nTrainingCustomerMessenger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Customer Messenger (n8n training) node"
+  },
+  "n8n-n8nTrigger": {
+    "prefix": "n8n-n8nTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"n8n Trigger\",",
+      "  \"type\": \"n8n-nodes-base.n8nTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a n8n Trigger node"
+  },
+  "n8n-nasa": {
+    "prefix": "n8n-nasa",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"NASA\",",
+      "  \"type\": \"n8n-nodes-base.nasa\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a NASA node"
+  },
+  "n8n-netlify": {
+    "prefix": "n8n-netlify",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Netlify\",",
+      "  \"type\": \"n8n-nodes-base.netlify\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Netlify node"
+  },
+  "n8n-netlifyTrigger": {
+    "prefix": "n8n-netlifyTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Netlify Trigger\",",
+      "  \"type\": \"n8n-nodes-base.netlifyTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Netlify Trigger node"
+  },
+  "n8n-citrixAdc": {
+    "prefix": "n8n-citrixAdc",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Netscaler ADC\",",
+      "  \"type\": \"n8n-nodes-base.citrixAdc\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Netscaler ADC node"
+  },
+  "n8n-nextCloud": {
+    "prefix": "n8n-nextCloud",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Nextcloud\",",
+      "  \"type\": \"n8n-nodes-base.nextCloud\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Nextcloud node"
+  },
+  "n8n-noOp": {
+    "prefix": "n8n-noOp",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"No Operation, do nothing\",",
+      "  \"type\": \"n8n-nodes-base.noOp\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a No Operation, do nothing node"
+  },
+  "n8n-nocoDb": {
+    "prefix": "n8n-nocoDb",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"NocoDB\",",
+      "  \"type\": \"n8n-nodes-base.nocoDb\",",
+      "  \"typeVersion\": 3,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a NocoDB node"
+  },
+  "n8n-notion": {
+    "prefix": "n8n-notion",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Notion\",",
+      "  \"type\": \"n8n-nodes-base.notion\",",
+      "  \"typeVersion\": 2.2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Notion node"
+  },
+  "n8n-notionTrigger": {
+    "prefix": "n8n-notionTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Notion Trigger\",",
+      "  \"type\": \"n8n-nodes-base.notionTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Notion Trigger node"
+  },
+  "n8n-npm": {
+    "prefix": "n8n-npm",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Npm\",",
+      "  \"type\": \"n8n-nodes-base.npm\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Npm node"
+  },
+  "n8n-odoo": {
+    "prefix": "n8n-odoo",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Odoo\",",
+      "  \"type\": \"n8n-nodes-base.odoo\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Odoo node"
+  },
+  "n8n-okta": {
+    "prefix": "n8n-okta",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Okta\",",
+      "  \"type\": \"n8n-nodes-base.okta\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Okta node"
+  },
+  "n8n-oneSimpleApi": {
+    "prefix": "n8n-oneSimpleApi",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"One Simple API\",",
+      "  \"type\": \"n8n-nodes-base.oneSimpleApi\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a One Simple API node"
+  },
+  "n8n-onfleet": {
+    "prefix": "n8n-onfleet",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Onfleet\",",
+      "  \"type\": \"n8n-nodes-base.onfleet\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Onfleet node"
+  },
+  "n8n-onfleetTrigger": {
+    "prefix": "n8n-onfleetTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Onfleet Trigger\",",
+      "  \"type\": \"n8n-nodes-base.onfleetTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Onfleet Trigger node"
+  },
+  "n8n-openAi": {
+    "prefix": "n8n-openAi",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"OpenAI\",",
+      "  \"type\": \"n8n-nodes-base.openAi\",",
+      "  \"typeVersion\": 1.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a OpenAI node"
+  },
+  "n8n-openThesaurus": {
+    "prefix": "n8n-openThesaurus",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"OpenThesaurus\",",
+      "  \"type\": \"n8n-nodes-base.openThesaurus\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a OpenThesaurus node"
+  },
+  "n8n-openWeatherMap": {
+    "prefix": "n8n-openWeatherMap",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"OpenWeatherMap\",",
+      "  \"type\": \"n8n-nodes-base.openWeatherMap\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a OpenWeatherMap node"
+  },
+  "n8n-oracleDatabase": {
+    "prefix": "n8n-oracleDatabase",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Oracle Database\",",
+      "  \"type\": \"n8n-nodes-base.oracleDatabase\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Oracle Database node"
+  },
+  "n8n-orbit": {
+    "prefix": "n8n-orbit",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Orbit\",",
+      "  \"type\": \"n8n-nodes-base.orbit\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Orbit node"
+  },
+  "n8n-oura": {
+    "prefix": "n8n-oura",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Oura\",",
+      "  \"type\": \"n8n-nodes-base.oura\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Oura node"
+  },
+  "n8n-paddle": {
+    "prefix": "n8n-paddle",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Paddle\",",
+      "  \"type\": \"n8n-nodes-base.paddle\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Paddle node"
+  },
+  "n8n-pagerDuty": {
+    "prefix": "n8n-pagerDuty",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"PagerDuty\",",
+      "  \"type\": \"n8n-nodes-base.pagerDuty\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a PagerDuty node"
+  },
+  "n8n-payPal": {
+    "prefix": "n8n-payPal",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"PayPal\",",
+      "  \"type\": \"n8n-nodes-base.payPal\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a PayPal node"
+  },
+  "n8n-payPalTrigger": {
+    "prefix": "n8n-payPalTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"PayPal Trigger\",",
+      "  \"type\": \"n8n-nodes-base.payPalTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a PayPal Trigger node"
+  },
+  "n8n-peekalink": {
+    "prefix": "n8n-peekalink",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Peekalink\",",
+      "  \"type\": \"n8n-nodes-base.peekalink\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Peekalink node"
+  },
+  "n8n-perplexity": {
+    "prefix": "n8n-perplexity",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Perplexity\",",
+      "  \"type\": \"n8n-nodes-base.perplexity\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Perplexity node"
+  },
+  "n8n-phantombuster": {
+    "prefix": "n8n-phantombuster",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Phantombuster\",",
+      "  \"type\": \"n8n-nodes-base.phantombuster\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Phantombuster node"
+  },
+  "n8n-philipsHue": {
+    "prefix": "n8n-philipsHue",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Philips Hue\",",
+      "  \"type\": \"n8n-nodes-base.philipsHue\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Philips Hue node"
+  },
+  "n8n-pipedrive": {
+    "prefix": "n8n-pipedrive",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Pipedrive\",",
+      "  \"type\": \"n8n-nodes-base.pipedrive\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Pipedrive node"
+  },
+  "n8n-pipedriveTrigger": {
+    "prefix": "n8n-pipedriveTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Pipedrive Trigger\",",
+      "  \"type\": \"n8n-nodes-base.pipedriveTrigger\",",
+      "  \"typeVersion\": 1.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Pipedrive Trigger node"
+  },
+  "n8n-plivo": {
+    "prefix": "n8n-plivo",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Plivo\",",
+      "  \"type\": \"n8n-nodes-base.plivo\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Plivo node"
+  },
+  "n8n-postBin": {
+    "prefix": "n8n-postBin",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"PostBin\",",
+      "  \"type\": \"n8n-nodes-base.postBin\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a PostBin node"
+  },
+  "n8n-postHog": {
+    "prefix": "n8n-postHog",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"PostHog\",",
+      "  \"type\": \"n8n-nodes-base.postHog\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a PostHog node"
+  },
+  "n8n-postgres": {
+    "prefix": "n8n-postgres",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Postgres\",",
+      "  \"type\": \"n8n-nodes-base.postgres\",",
+      "  \"typeVersion\": 2.6,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Postgres node"
+  },
+  "n8n-postgresTrigger": {
+    "prefix": "n8n-postgresTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Postgres Trigger\",",
+      "  \"type\": \"n8n-nodes-base.postgresTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Postgres Trigger node"
+  },
+  "n8n-postmarkTrigger": {
+    "prefix": "n8n-postmarkTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Postmark Trigger\",",
+      "  \"type\": \"n8n-nodes-base.postmarkTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Postmark Trigger node"
+  },
+  "n8n-profitWell": {
+    "prefix": "n8n-profitWell",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"ProfitWell\",",
+      "  \"type\": \"n8n-nodes-base.profitWell\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a ProfitWell node"
+  },
+  "n8n-pushbullet": {
+    "prefix": "n8n-pushbullet",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Pushbullet\",",
+      "  \"type\": \"n8n-nodes-base.pushbullet\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Pushbullet node"
+  },
+  "n8n-pushcut": {
+    "prefix": "n8n-pushcut",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Pushcut\",",
+      "  \"type\": \"n8n-nodes-base.pushcut\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Pushcut node"
+  },
+  "n8n-pushcutTrigger": {
+    "prefix": "n8n-pushcutTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Pushcut Trigger\",",
+      "  \"type\": \"n8n-nodes-base.pushcutTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Pushcut Trigger node"
+  },
+  "n8n-pushover": {
+    "prefix": "n8n-pushover",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Pushover\",",
+      "  \"type\": \"n8n-nodes-base.pushover\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Pushover node"
+  },
+  "n8n-questDb": {
+    "prefix": "n8n-questDb",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"QuestDB\",",
+      "  \"type\": \"n8n-nodes-base.questDb\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a QuestDB node"
+  },
+  "n8n-quickbase": {
+    "prefix": "n8n-quickbase",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Quick Base\",",
+      "  \"type\": \"n8n-nodes-base.quickbase\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Quick Base node"
+  },
+  "n8n-quickbooks": {
+    "prefix": "n8n-quickbooks",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"QuickBooks Online\",",
+      "  \"type\": \"n8n-nodes-base.quickbooks\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a QuickBooks Online node"
+  },
+  "n8n-quickChart": {
+    "prefix": "n8n-quickChart",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"QuickChart\",",
+      "  \"type\": \"n8n-nodes-base.quickChart\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a QuickChart node"
+  },
+  "n8n-rabbitmq": {
+    "prefix": "n8n-rabbitmq",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"RabbitMQ\",",
+      "  \"type\": \"n8n-nodes-base.rabbitmq\",",
+      "  \"typeVersion\": 1.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a RabbitMQ node"
+  },
+  "n8n-rabbitmqTrigger": {
+    "prefix": "n8n-rabbitmqTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"RabbitMQ Trigger\",",
+      "  \"type\": \"n8n-nodes-base.rabbitmqTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a RabbitMQ Trigger node"
+  },
+  "n8n-raindrop": {
+    "prefix": "n8n-raindrop",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Raindrop\",",
+      "  \"type\": \"n8n-nodes-base.raindrop\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Raindrop node"
+  },
+  "n8n-readBinaryFile": {
+    "prefix": "n8n-readBinaryFile",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Read Binary File\",",
+      "  \"type\": \"n8n-nodes-base.readBinaryFile\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Read Binary File node"
+  },
+  "n8n-readBinaryFiles": {
+    "prefix": "n8n-readBinaryFiles",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Read Binary Files\",",
+      "  \"type\": \"n8n-nodes-base.readBinaryFiles\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Read Binary Files node"
+  },
+  "n8n-readPDF": {
+    "prefix": "n8n-readPDF",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Read PDF\",",
+      "  \"type\": \"n8n-nodes-base.readPDF\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Read PDF node"
+  },
+  "n8n-reddit": {
+    "prefix": "n8n-reddit",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Reddit\",",
+      "  \"type\": \"n8n-nodes-base.reddit\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Reddit node"
+  },
+  "n8n-redis": {
+    "prefix": "n8n-redis",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Redis\",",
+      "  \"type\": \"n8n-nodes-base.redis\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Redis node"
+  },
+  "n8n-redisTrigger": {
+    "prefix": "n8n-redisTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Redis Trigger\",",
+      "  \"type\": \"n8n-nodes-base.redisTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Redis Trigger node"
+  },
+  "n8n-renameKeys": {
+    "prefix": "n8n-renameKeys",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Rename Keys\",",
+      "  \"type\": \"n8n-nodes-base.renameKeys\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Rename Keys node"
+  },
+  "n8n-respondToWebhook": {
+    "prefix": "n8n-respondToWebhook",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Respond to Webhook\",",
+      "  \"type\": \"n8n-nodes-base.respondToWebhook\",",
+      "  \"typeVersion\": 1.5,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Respond to Webhook node"
+  },
+  "n8n-rocketchat": {
+    "prefix": "n8n-rocketchat",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"RocketChat\",",
+      "  \"type\": \"n8n-nodes-base.rocketchat\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a RocketChat node"
+  },
+  "n8n-rssFeedRead": {
+    "prefix": "n8n-rssFeedRead",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"RSS Read\",",
+      "  \"type\": \"n8n-nodes-base.rssFeedRead\",",
+      "  \"typeVersion\": 1.2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a RSS Read node"
+  },
+  "n8n-rssFeedReadTrigger": {
+    "prefix": "n8n-rssFeedReadTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"RSS Feed Trigger\",",
+      "  \"type\": \"n8n-nodes-base.rssFeedReadTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a RSS Feed Trigger node"
+  },
+  "n8n-rundeck": {
+    "prefix": "n8n-rundeck",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Rundeck\",",
+      "  \"type\": \"n8n-nodes-base.rundeck\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Rundeck node"
+  },
+  "n8n-s3": {
+    "prefix": "n8n-s3",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"S3\",",
+      "  \"type\": \"n8n-nodes-base.s3\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a S3 node"
+  },
+  "n8n-salesforce": {
+    "prefix": "n8n-salesforce",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Salesforce\",",
+      "  \"type\": \"n8n-nodes-base.salesforce\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Salesforce node"
+  },
+  "n8n-salesforceTrigger": {
+    "prefix": "n8n-salesforceTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Salesforce Trigger\",",
+      "  \"type\": \"n8n-nodes-base.salesforceTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Salesforce Trigger node"
+  },
+  "n8n-salesmate": {
+    "prefix": "n8n-salesmate",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Salesmate\",",
+      "  \"type\": \"n8n-nodes-base.salesmate\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Salesmate node"
+  },
+  "n8n-scheduleTrigger": {
+    "prefix": "n8n-scheduleTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Schedule Trigger\",",
+      "  \"type\": \"n8n-nodes-base.scheduleTrigger\",",
+      "  \"typeVersion\": 1.3,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Schedule Trigger node"
+  },
+  "n8n-seaTable": {
+    "prefix": "n8n-seaTable",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"SeaTable\",",
+      "  \"type\": \"n8n-nodes-base.seaTable\",",
+      "  \"typeVersion\": 2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a SeaTable node"
+  },
+  "n8n-seaTableTrigger": {
+    "prefix": "n8n-seaTableTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"SeaTable Trigger\",",
+      "  \"type\": \"n8n-nodes-base.seaTableTrigger\",",
+      "  \"typeVersion\": undefined,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a SeaTable Trigger node"
+  },
+  "n8n-securityScorecard": {
+    "prefix": "n8n-securityScorecard",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"SecurityScorecard\",",
+      "  \"type\": \"n8n-nodes-base.securityScorecard\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a SecurityScorecard node"
+  },
+  "n8n-segment": {
+    "prefix": "n8n-segment",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Segment\",",
+      "  \"type\": \"n8n-nodes-base.segment\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Segment node"
+  },
+  "n8n-sendGrid": {
+    "prefix": "n8n-sendGrid",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"SendGrid\",",
+      "  \"type\": \"n8n-nodes-base.sendGrid\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a SendGrid node"
+  },
+  "n8n-sendy": {
+    "prefix": "n8n-sendy",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Sendy\",",
+      "  \"type\": \"n8n-nodes-base.sendy\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Sendy node"
+  },
+  "n8n-sentryIo": {
+    "prefix": "n8n-sentryIo",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Sentry.io\",",
+      "  \"type\": \"n8n-nodes-base.sentryIo\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Sentry.io node"
+  },
+  "n8n-serviceNow": {
+    "prefix": "n8n-serviceNow",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"ServiceNow\",",
+      "  \"type\": \"n8n-nodes-base.serviceNow\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a ServiceNow node"
+  },
+  "n8n-set": {
+    "prefix": "n8n-set",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Edit Fields (Set)\",",
+      "  \"type\": \"n8n-nodes-base.set\",",
+      "  \"typeVersion\": 3.4,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Edit Fields (Set) node"
+  },
+  "n8n-shopify": {
+    "prefix": "n8n-shopify",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Shopify\",",
+      "  \"type\": \"n8n-nodes-base.shopify\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Shopify node"
+  },
+  "n8n-shopifyTrigger": {
+    "prefix": "n8n-shopifyTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Shopify Trigger\",",
+      "  \"type\": \"n8n-nodes-base.shopifyTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Shopify Trigger node"
+  },
+  "n8n-signl4": {
+    "prefix": "n8n-signl4",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"SIGNL4\",",
+      "  \"type\": \"n8n-nodes-base.signl4\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a SIGNL4 node"
+  },
+  "n8n-simulate": {
+    "prefix": "n8n-simulate",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Simulate\",",
+      "  \"type\": \"n8n-nodes-base.simulate\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Simulate node"
+  },
+  "n8n-simulateTrigger": {
+    "prefix": "n8n-simulateTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Simulate Trigger\",",
+      "  \"type\": \"n8n-nodes-base.simulateTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Simulate Trigger node"
+  },
+  "n8n-slack": {
+    "prefix": "n8n-slack",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Slack\",",
+      "  \"type\": \"n8n-nodes-base.slack\",",
+      "  \"typeVersion\": undefined,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Slack node"
+  },
+  "n8n-slackTrigger": {
+    "prefix": "n8n-slackTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Slack Trigger\",",
+      "  \"type\": \"n8n-nodes-base.slackTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Slack Trigger node"
+  },
+  "n8n-sms77": {
+    "prefix": "n8n-sms77",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"seven\",",
+      "  \"type\": \"n8n-nodes-base.sms77\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a seven node"
+  },
+  "n8n-snowflake": {
+    "prefix": "n8n-snowflake",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Snowflake\",",
+      "  \"type\": \"n8n-nodes-base.snowflake\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Snowflake node"
+  },
+  "n8n-splitInBatches": {
+    "prefix": "n8n-splitInBatches",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Loop Over Items (Split in Batches)\",",
+      "  \"type\": \"n8n-nodes-base.splitInBatches\",",
+      "  \"typeVersion\": 3,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Loop Over Items (Split in Batches) node"
+  },
+  "n8n-splunk": {
+    "prefix": "n8n-splunk",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Splunk\",",
+      "  \"type\": \"n8n-nodes-base.splunk\",",
+      "  \"typeVersion\": 2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Splunk node"
+  },
+  "n8n-spotify": {
+    "prefix": "n8n-spotify",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Spotify\",",
+      "  \"type\": \"n8n-nodes-base.spotify\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Spotify node"
+  },
+  "n8n-spreadsheetFile": {
+    "prefix": "n8n-spreadsheetFile",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Spreadsheet File\",",
+      "  \"type\": \"n8n-nodes-base.spreadsheetFile\",",
+      "  \"typeVersion\": undefined,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Spreadsheet File node"
+  },
+  "n8n-sseTrigger": {
+    "prefix": "n8n-sseTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"SSE Trigger\",",
+      "  \"type\": \"n8n-nodes-base.sseTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a SSE Trigger node"
+  },
+  "n8n-ssh": {
+    "prefix": "n8n-ssh",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"SSH\",",
+      "  \"type\": \"n8n-nodes-base.ssh\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a SSH node"
+  },
+  "n8n-stackby": {
+    "prefix": "n8n-stackby",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Stackby\",",
+      "  \"type\": \"n8n-nodes-base.stackby\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Stackby node"
+  },
+  "n8n-stickyNote": {
+    "prefix": "n8n-stickyNote",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Sticky Note\",",
+      "  \"type\": \"n8n-nodes-base.stickyNote\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Sticky Note node"
+  },
+  "n8n-stopAndError": {
+    "prefix": "n8n-stopAndError",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Stop and Error\",",
+      "  \"type\": \"n8n-nodes-base.stopAndError\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Stop and Error node"
+  },
+  "n8n-storyblok": {
+    "prefix": "n8n-storyblok",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Storyblok\",",
+      "  \"type\": \"n8n-nodes-base.storyblok\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Storyblok node"
+  },
+  "n8n-strapi": {
+    "prefix": "n8n-strapi",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Strapi\",",
+      "  \"type\": \"n8n-nodes-base.strapi\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Strapi node"
+  },
+  "n8n-strava": {
+    "prefix": "n8n-strava",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Strava\",",
+      "  \"type\": \"n8n-nodes-base.strava\",",
+      "  \"typeVersion\": 1.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Strava node"
+  },
+  "n8n-stravaTrigger": {
+    "prefix": "n8n-stravaTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Strava Trigger\",",
+      "  \"type\": \"n8n-nodes-base.stravaTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Strava Trigger node"
+  },
+  "n8n-stripe": {
+    "prefix": "n8n-stripe",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Stripe\",",
+      "  \"type\": \"n8n-nodes-base.stripe\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Stripe node"
+  },
+  "n8n-stripeTrigger": {
+    "prefix": "n8n-stripeTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Stripe Trigger\",",
+      "  \"type\": \"n8n-nodes-base.stripeTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Stripe Trigger node"
+  },
+  "n8n-supabase": {
+    "prefix": "n8n-supabase",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Supabase\",",
+      "  \"type\": \"n8n-nodes-base.supabase\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Supabase node"
+  },
+  "n8n-surveyMonkeyTrigger": {
+    "prefix": "n8n-surveyMonkeyTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"SurveyMonkey Trigger\",",
+      "  \"type\": \"n8n-nodes-base.surveyMonkeyTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a SurveyMonkey Trigger node"
+  },
+  "n8n-switch": {
+    "prefix": "n8n-switch",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Switch\",",
+      "  \"type\": \"n8n-nodes-base.switch\",",
+      "  \"typeVersion\": undefined,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Switch node"
+  },
+  "n8n-syncroMsp": {
+    "prefix": "n8n-syncroMsp",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"SyncroMSP\",",
+      "  \"type\": \"n8n-nodes-base.syncroMsp\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a SyncroMSP node"
+  },
+  "n8n-taiga": {
+    "prefix": "n8n-taiga",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Taiga\",",
+      "  \"type\": \"n8n-nodes-base.taiga\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Taiga node"
+  },
+  "n8n-taigaTrigger": {
+    "prefix": "n8n-taigaTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Taiga Trigger\",",
+      "  \"type\": \"n8n-nodes-base.taigaTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Taiga Trigger node"
+  },
+  "n8n-tapfiliate": {
+    "prefix": "n8n-tapfiliate",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Tapfiliate\",",
+      "  \"type\": \"n8n-nodes-base.tapfiliate\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Tapfiliate node"
+  },
+  "n8n-telegram": {
+    "prefix": "n8n-telegram",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Telegram\",",
+      "  \"type\": \"n8n-nodes-base.telegram\",",
+      "  \"typeVersion\": 1.2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Telegram node"
+  },
+  "n8n-telegramTrigger": {
+    "prefix": "n8n-telegramTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Telegram Trigger\",",
+      "  \"type\": \"n8n-nodes-base.telegramTrigger\",",
+      "  \"typeVersion\": 1.2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Telegram Trigger node"
+  },
+  "n8n-theHive": {
+    "prefix": "n8n-theHive",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"TheHive\",",
+      "  \"type\": \"n8n-nodes-base.theHive\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a TheHive node"
+  },
+  "n8n-theHiveTrigger": {
+    "prefix": "n8n-theHiveTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"TheHive Trigger\",",
+      "  \"type\": \"n8n-nodes-base.theHiveTrigger\",",
+      "  \"typeVersion\": 2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a TheHive Trigger node"
+  },
+  "n8n-theHiveProject": {
+    "prefix": "n8n-theHiveProject",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"TheHive 5\",",
+      "  \"type\": \"n8n-nodes-base.theHiveProject\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a TheHive 5 node"
+  },
+  "n8n-theHiveProjectTrigger": {
+    "prefix": "n8n-theHiveProjectTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"TheHive 5 Trigger\",",
+      "  \"type\": \"n8n-nodes-base.theHiveProjectTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a TheHive 5 Trigger node"
+  },
+  "n8n-timeSaved": {
+    "prefix": "n8n-timeSaved",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Track Time Saved\",",
+      "  \"type\": \"n8n-nodes-base.timeSaved\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Track Time Saved node"
+  },
+  "n8n-timescaleDb": {
+    "prefix": "n8n-timescaleDb",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"TimescaleDB\",",
+      "  \"type\": \"n8n-nodes-base.timescaleDb\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a TimescaleDB node"
+  },
+  "n8n-todoist": {
+    "prefix": "n8n-todoist",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Todoist\",",
+      "  \"type\": \"n8n-nodes-base.todoist\",",
+      "  \"typeVersion\": 2.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Todoist node"
+  },
+  "n8n-togglTrigger": {
+    "prefix": "n8n-togglTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Toggl Trigger\",",
+      "  \"type\": \"n8n-nodes-base.togglTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Toggl Trigger node"
+  },
+  "n8n-totp": {
+    "prefix": "n8n-totp",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"TOTP\",",
+      "  \"type\": \"n8n-nodes-base.totp\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a TOTP node"
+  },
+  "n8n-aggregate": {
+    "prefix": "n8n-aggregate",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Aggregate\",",
+      "  \"type\": \"n8n-nodes-base.aggregate\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Aggregate node"
+  },
+  "n8n-limit": {
+    "prefix": "n8n-limit",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Limit\",",
+      "  \"type\": \"n8n-nodes-base.limit\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Limit node"
+  },
+  "n8n-removeDuplicates": {
+    "prefix": "n8n-removeDuplicates",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Remove Duplicates\",",
+      "  \"type\": \"n8n-nodes-base.removeDuplicates\",",
+      "  \"typeVersion\": 2,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Remove Duplicates node"
+  },
+  "n8n-sort": {
+    "prefix": "n8n-sort",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Sort\",",
+      "  \"type\": \"n8n-nodes-base.sort\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Sort node"
+  },
+  "n8n-splitOut": {
+    "prefix": "n8n-splitOut",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Split Out\",",
+      "  \"type\": \"n8n-nodes-base.splitOut\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Split Out node"
+  },
+  "n8n-summarize": {
+    "prefix": "n8n-summarize",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Summarize\",",
+      "  \"type\": \"n8n-nodes-base.summarize\",",
+      "  \"typeVersion\": 1.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Summarize node"
+  },
+  "n8n-travisCi": {
+    "prefix": "n8n-travisCi",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"TravisCI\",",
+      "  \"type\": \"n8n-nodes-base.travisCi\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a TravisCI node"
+  },
+  "n8n-trello": {
+    "prefix": "n8n-trello",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Trello\",",
+      "  \"type\": \"n8n-nodes-base.trello\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Trello node"
+  },
+  "n8n-trelloTrigger": {
+    "prefix": "n8n-trelloTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Trello Trigger\",",
+      "  \"type\": \"n8n-nodes-base.trelloTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Trello Trigger node"
+  },
+  "n8n-twake": {
+    "prefix": "n8n-twake",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Twake\",",
+      "  \"type\": \"n8n-nodes-base.twake\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Twake node"
+  },
+  "n8n-twilio": {
+    "prefix": "n8n-twilio",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Twilio\",",
+      "  \"type\": \"n8n-nodes-base.twilio\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Twilio node"
+  },
+  "n8n-twilioTrigger": {
+    "prefix": "n8n-twilioTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Twilio Trigger\",",
+      "  \"type\": \"n8n-nodes-base.twilioTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Twilio Trigger node"
+  },
+  "n8n-twist": {
+    "prefix": "n8n-twist",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Twist\",",
+      "  \"type\": \"n8n-nodes-base.twist\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Twist node"
+  },
+  "n8n-twitter": {
+    "prefix": "n8n-twitter",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"X (Formerly Twitter)\",",
+      "  \"type\": \"n8n-nodes-base.twitter\",",
+      "  \"typeVersion\": undefined,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a X (Formerly Twitter) node"
+  },
+  "n8n-typeformTrigger": {
+    "prefix": "n8n-typeformTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Typeform Trigger\",",
+      "  \"type\": \"n8n-nodes-base.typeformTrigger\",",
+      "  \"typeVersion\": 1.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Typeform Trigger node"
+  },
+  "n8n-uproc": {
+    "prefix": "n8n-uproc",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"uProc\",",
+      "  \"type\": \"n8n-nodes-base.uproc\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a uProc node"
+  },
+  "n8n-unleashedSoftware": {
+    "prefix": "n8n-unleashedSoftware",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Unleashed Software\",",
+      "  \"type\": \"n8n-nodes-base.unleashedSoftware\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Unleashed Software node"
+  },
+  "n8n-uplead": {
+    "prefix": "n8n-uplead",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Uplead\",",
+      "  \"type\": \"n8n-nodes-base.uplead\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Uplead node"
+  },
+  "n8n-uptimeRobot": {
+    "prefix": "n8n-uptimeRobot",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"UptimeRobot\",",
+      "  \"type\": \"n8n-nodes-base.uptimeRobot\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a UptimeRobot node"
+  },
+  "n8n-urlScanIo": {
+    "prefix": "n8n-urlScanIo",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"urlscan.io\",",
+      "  \"type\": \"n8n-nodes-base.urlScanIo\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a urlscan.io node"
+  },
+  "n8n-venafiTlsProtectDatacenter": {
+    "prefix": "n8n-venafiTlsProtectDatacenter",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Venafi TLS Protect Datacenter\",",
+      "  \"type\": \"n8n-nodes-base.venafiTlsProtectDatacenter\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Venafi TLS Protect Datacenter node"
+  },
+  "n8n-venafiTlsProtectDatacenterTrigger": {
+    "prefix": "n8n-venafiTlsProtectDatacenterTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Venafi TLS Protect Datacenter Trigger\",",
+      "  \"type\": \"n8n-nodes-base.venafiTlsProtectDatacenterTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Venafi TLS Protect Datacenter Trigger node"
+  },
+  "n8n-venafiTlsProtectCloud": {
+    "prefix": "n8n-venafiTlsProtectCloud",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Venafi TLS Protect Cloud\",",
+      "  \"type\": \"n8n-nodes-base.venafiTlsProtectCloud\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Venafi TLS Protect Cloud node"
+  },
+  "n8n-venafiTlsProtectCloudTrigger": {
+    "prefix": "n8n-venafiTlsProtectCloudTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Venafi TLS Protect Cloud Trigger\",",
+      "  \"type\": \"n8n-nodes-base.venafiTlsProtectCloudTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Venafi TLS Protect Cloud Trigger node"
+  },
+  "n8n-vero": {
+    "prefix": "n8n-vero",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Vero\",",
+      "  \"type\": \"n8n-nodes-base.vero\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Vero node"
+  },
+  "n8n-vonage": {
+    "prefix": "n8n-vonage",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Vonage\",",
+      "  \"type\": \"n8n-nodes-base.vonage\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Vonage node"
+  },
+  "n8n-wait": {
+    "prefix": "n8n-wait",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Wait\",",
+      "  \"type\": \"n8n-nodes-base.wait\",",
+      "  \"typeVersion\": 1.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Wait node"
+  },
+  "n8n-webflowTrigger": {
+    "prefix": "n8n-webflowTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Webflow Trigger\",",
+      "  \"type\": \"n8n-nodes-base.webflowTrigger\",",
+      "  \"typeVersion\": undefined,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Webflow Trigger node"
+  },
+  "n8n-webflow": {
+    "prefix": "n8n-webflow",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Webflow\",",
+      "  \"type\": \"n8n-nodes-base.webflow\",",
+      "  \"typeVersion\": undefined,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Webflow node"
+  },
+  "n8n-webhook": {
+    "prefix": "n8n-webhook",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Webhook\",",
+      "  \"type\": \"n8n-nodes-base.webhook\",",
+      "  \"typeVersion\": 2.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Webhook node"
+  },
+  "n8n-wekan": {
+    "prefix": "n8n-wekan",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Wekan\",",
+      "  \"type\": \"n8n-nodes-base.wekan\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Wekan node"
+  },
+  "n8n-whatsApp": {
+    "prefix": "n8n-whatsApp",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"WhatsApp Business Cloud\",",
+      "  \"type\": \"n8n-nodes-base.whatsApp\",",
+      "  \"typeVersion\": 1.1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a WhatsApp Business Cloud node"
+  },
+  "n8n-whatsAppTrigger": {
+    "prefix": "n8n-whatsAppTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"WhatsApp Trigger\",",
+      "  \"type\": \"n8n-nodes-base.whatsAppTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a WhatsApp Trigger node"
+  },
+  "n8n-wise": {
+    "prefix": "n8n-wise",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Wise\",",
+      "  \"type\": \"n8n-nodes-base.wise\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Wise node"
+  },
+  "n8n-wiseTrigger": {
+    "prefix": "n8n-wiseTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Wise Trigger\",",
+      "  \"type\": \"n8n-nodes-base.wiseTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Wise Trigger node"
+  },
+  "n8n-wooCommerce": {
+    "prefix": "n8n-wooCommerce",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"WooCommerce\",",
+      "  \"type\": \"n8n-nodes-base.wooCommerce\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a WooCommerce node"
+  },
+  "n8n-wooCommerceTrigger": {
+    "prefix": "n8n-wooCommerceTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"WooCommerce Trigger\",",
+      "  \"type\": \"n8n-nodes-base.wooCommerceTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a WooCommerce Trigger node"
+  },
+  "n8n-wordpress": {
+    "prefix": "n8n-wordpress",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Wordpress\",",
+      "  \"type\": \"n8n-nodes-base.wordpress\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Wordpress node"
+  },
+  "n8n-workableTrigger": {
+    "prefix": "n8n-workableTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Workable Trigger\",",
+      "  \"type\": \"n8n-nodes-base.workableTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Workable Trigger node"
+  },
+  "n8n-workflowTrigger": {
+    "prefix": "n8n-workflowTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Workflow Trigger\",",
+      "  \"type\": \"n8n-nodes-base.workflowTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Workflow Trigger node"
+  },
+  "n8n-writeBinaryFile": {
+    "prefix": "n8n-writeBinaryFile",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Write Binary File\",",
+      "  \"type\": \"n8n-nodes-base.writeBinaryFile\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Write Binary File node"
+  },
+  "n8n-wufooTrigger": {
+    "prefix": "n8n-wufooTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Wufoo Trigger\",",
+      "  \"type\": \"n8n-nodes-base.wufooTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Wufoo Trigger node"
+  },
+  "n8n-xero": {
+    "prefix": "n8n-xero",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Xero\",",
+      "  \"type\": \"n8n-nodes-base.xero\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Xero node"
+  },
+  "n8n-xml": {
+    "prefix": "n8n-xml",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"XML\",",
+      "  \"type\": \"n8n-nodes-base.xml\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a XML node"
+  },
+  "n8n-yourls": {
+    "prefix": "n8n-yourls",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Yourls\",",
+      "  \"type\": \"n8n-nodes-base.yourls\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Yourls node"
+  },
+  "n8n-zammad": {
+    "prefix": "n8n-zammad",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Zammad\",",
+      "  \"type\": \"n8n-nodes-base.zammad\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Zammad node"
+  },
+  "n8n-zendesk": {
+    "prefix": "n8n-zendesk",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Zendesk\",",
+      "  \"type\": \"n8n-nodes-base.zendesk\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Zendesk node"
+  },
+  "n8n-zendeskTrigger": {
+    "prefix": "n8n-zendeskTrigger",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Zendesk Trigger\",",
+      "  \"type\": \"n8n-nodes-base.zendeskTrigger\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Zendesk Trigger node"
+  },
+  "n8n-zohoCrm": {
+    "prefix": "n8n-zohoCrm",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Zoho CRM\",",
+      "  \"type\": \"n8n-nodes-base.zohoCrm\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Zoho CRM node"
+  },
+  "n8n-zoom": {
+    "prefix": "n8n-zoom",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Zoom\",",
+      "  \"type\": \"n8n-nodes-base.zoom\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Zoom node"
+  },
+  "n8n-zulip": {
+    "prefix": "n8n-zulip",
+    "body": [
+      "{",
+      "  \"parameters\": {},",
+      "  \"name\": \"Zulip\",",
+      "  \"type\": \"n8n-nodes-base.zulip\",",
+      "  \"typeVersion\": 1,",
+      "  \"position\": [0, 0]",
+      "}"
+    ],
+    "description": "Insert a Zulip node"
+  }
+}
