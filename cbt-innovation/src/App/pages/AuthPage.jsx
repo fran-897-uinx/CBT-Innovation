@@ -16,7 +16,6 @@ import { useNavigate } from "react-router-dom";
 const AuthPage = () => {
   const [activeModal, setActiveModal] = useState(null); // 'login' or 'signup'
   const [showPassword, setShowPassword] = useState(false);
-  const Role = ["Tutor", "Student", "School Representative", "Proctor"];
 
   const AuthModal = ({ type }) => {
     const isLogin = type === "login";

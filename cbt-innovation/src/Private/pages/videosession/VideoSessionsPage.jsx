@@ -23,8 +23,7 @@ export default function VideoSessionPage() {
   const [role] = useState("host");
 
   // Derived values
-  const visibleUsers = participants.slice(0, 4);
-  const remainingCount = participants.length - visibleUsers.length;
+  const remainingCount = participants.length;
 
   // Handlers
   const toggleMic = () => setMicOn(!micOn);
@@ -41,7 +40,7 @@ export default function VideoSessionPage() {
   };
 
   return (
-    <div className="h-screen bg-black text-white flex flex-col relative">
+    <div className="h-screen bg-black text-white flex flex-col relative mb-12">
       {/* ===== TOP BAR ===== */}
       <div className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-4 py-3 bg-black/60 backdrop-blur caption-bottom">
         <span className="text-sm font-semibold">Live Video Session</span>
@@ -76,8 +75,8 @@ export default function VideoSessionPage() {
 
       {/* ===== ACTIVE USERS (BOTTOM LEFT) ===== */}
       {callActive && (
-        <div className="absolute bottom-24 left-4 flex items-center gap-2 z-20">
-          {visibleUsers.map((user) => (
+        <div className="absolute bottom-24 left-4 flex items-center gap-2 ">
+          {/* {visibleUsers.map((user) => (
             <div
               key={user.id}
               className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-sm font-semibold"
@@ -85,14 +84,14 @@ export default function VideoSessionPage() {
             >
               {user.name[0]}
             </div>
-          ))}
+          ))} */}
 
           {remainingCount > 0 && (
             <div
-              className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-xs font-semibold"
+              className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-xs font-semibold z-0"
               title={`${remainingCount} more`}
             >
-              +{remainingCount}
+              {remainingCount}
             </div>
           )}
         </div>
@@ -100,7 +99,7 @@ export default function VideoSessionPage() {
 
       {/* ===== CONTROLS ===== */}
       {callActive && (
-        <div className="p-2 flex justify-end gap-4 bg-gray-900">
+        <div className="p-2 flex justify-end gap-4 bg-gray-900 sticky bottom-0">
           <button
             onClick={toggleMic}
             className={`p-2 rounded-full ${
