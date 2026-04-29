@@ -41,7 +41,7 @@ CBT-Innovation/
 │   │   ├── Library/       # Learning materials
 │   │   ├── VideoSession/  # Video sessions
 │   │   ├── News/         # News & updates
-│   │   ├── backend/      # Django project settings
+│   │   ├── config/       # Django project settings
 │   │   ├── manage.py    # Django CLI
 │   │   └── ERD.svg      # Database diagram
 │   │
