@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 
-export const useCourseStore = create((set) => ({
+export const useCourseStore = create((set, get) => ({
   courses: [],
   wishlist: [],
   filters: {},
@@ -19,9 +19,7 @@ export const useCourseStore = create((set) => ({
     wishlist: state.wishlist.filter((c) => c.id !== courseId) 
   })),
   
-  isInWishlist: (courseId) => {
-    return (state) => state.wishlist.some((c) => c.id === courseId);
-  },
+  isInWishlist: (courseId) => get().wishlist.some((c) => c.id === courseId),
   
   clearFilters: () => set({ filters: {} }),
 }));

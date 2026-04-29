@@ -18,19 +18,25 @@ export const useThemeStore = create(
         
         setTheme: (theme) => set({ theme: normalizeTheme(theme) }),
         
-        toggleMode: () => set((state) => ({ 
-          theme: { 
-            ...normalizeTheme(state.theme), 
-            mode: state.theme.mode === 'light' ? 'dark' : 'light' 
-          }
-        })),
+        toggleMode: () => set((state) => {
+          const normalized = normalizeTheme(state.theme);
+          return {
+            theme: {
+              ...normalized,
+              mode: normalized.mode === 'light' ? 'dark' : 'light',
+            },
+          };
+        }),
         
-        toggleBackground: () => set((state) => ({ 
-          theme: { 
-            ...normalizeTheme(state.theme), 
-            background: state.theme.background === 'solid' ? 'gradient' : 'solid' 
-          }
-        })),
+        toggleBackground: () => set((state) => {
+          const normalized = normalizeTheme(state.theme);
+          return {
+            theme: {
+              ...normalized,
+              background: normalized.background === 'solid' ? 'gradient' : 'solid',
+            },
+          };
+        }),
       };
     },
     {
