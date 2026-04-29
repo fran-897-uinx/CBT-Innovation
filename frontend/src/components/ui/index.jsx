@@ -192,6 +192,29 @@ export function Skeleton({ className }) {
   );
 }
 
+export function Progressbar({ value, showLabel = true, size = 'md' }) {
+  const sizes = {
+    sm: 'h-1',
+    md: 'h-2',
+    lg: 'h-3',
+  };
+
+  return (
+    <div className="w-full">
+      <div className={clsx('flex justify-between text-xs mb-1', !showLabel && 'sr-only')}>
+        <span>Progress</span>
+        <span>{value}%</span>
+      </div>
+      <div className={clsx('bg-gray-200 dark:bg-gray-700 rounded-full', sizes[size])}>
+        <div 
+          className={clsx('bg-gray-900 dark:bg-gray-100 rounded-full transition-all', sizes[size])} 
+          style={{ width: `${value}%` }}
+        />
+      </div>
+    </div>
+  );
+}
+
 export function Divider({ label, className }) {
   if (label) {
     return (
