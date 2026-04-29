@@ -4,6 +4,20 @@ TestprepAcademy is a modern digital learning platform designed for **exam prepar
 
 ---
 
+## 📂 Project Structure
+
+```
+CBT-Innovation/
+├── backend/           # Server-side
+│   ├── django/    # Django API (Python)
+│   └── live-streaming/ # NestJS (placeholder)
+├── frontend/        # Client-side (React)
+├── docs/          # Documentation
+└── README.md     # This file
+```
+
+---
+
 ## 🚀 Overview
 
 TestprepAcademy connects **students, tutors, and directors** in one ecosystem:
@@ -104,6 +118,63 @@ To build a **scalable, interactive learning ecosystem**.
 ---
 
 ## 📌 Future Improvements
+
+---
+
+## 🛠️ Tech Stack
+
+| Component | Technology |
+|-----------|-------------|
+| Frontend | React + Vite + Tailwind CSS |
+| Backend (API) | Django (Python) |
+| Backend (Live Streaming) | NestJS (Node.js) |
+
+---
+
+## 🏃‍♂️ Quick Start
+
+### Frontend
+
+```bash
+cd frontend
+pnpm install
+pnpm dev
+```
+
+### Django Backend
+
+```bash
+cd backend/django
+python -m venv venv
+source venv/bin/activate
+pip install django djangorestframework
+python manage.py migrate
+python manage.py runserver
+```
+
+---
+
+## 📚 Documentation
+
+- [Frontend Guide](./frontend/README.md)
+- [Backend Guide](./backend/README.md)
+- [Refactor Docs](./docs/refactor.md)
+- [Database ERD](./docs/ERD.svg)
+
+---
+
+## 🤝 Contributing
+
+1. Create a branch for your feature
+2. Make changes following project conventions
+3. Test locally
+4. Submit a pull request
+
+---
+
+## 📄 License
+
+MIT License - See [LICENSE](./LICENSE)
 - AI learning assistant  
 - Analytics dashboard  
 - Mobile app  
