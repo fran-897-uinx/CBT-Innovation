@@ -6,7 +6,7 @@ export default function Progressbar({ value }) {
                 <span>{value}%</span>
             </div>
             <div className="h-2 bg-gray-200 rounded-full">
-                <div className="h-2 gray-900 rounded-full transition-all" style={{width: `${value}%`}}/>
+                <div className="h-2 bg-gray-900 rounded-full transition-all" style={{width: `${value}%`}}/>
 
             </div>
         </>
