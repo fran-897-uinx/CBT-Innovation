@@ -43,7 +43,7 @@ CBT-Innovation/
 │   │   ├── News/         # News & updates
 │   │   ├── config/       # Django project settings
 │   │   ├── manage.py    # Django CLI
-│   │   └── ERD.svg      # Database diagram
+│   │   └── dbconfig.md # Database configuration
 │   │
 │   └── live-streaming/    # NestJS backend (placeholder)
 │
@@ -149,7 +149,7 @@ python manage.py runserver
 | `frontend/package.json` | Frontend dependencies |
 | `frontend/vite.config.js` | Vite configuration |
 | `backend/django/manage.py` | Django CLI |
-| `backend/django/backend/settings.py` | Django settings |
+| `backend/django/config/settings.py` | Django settings |
 | `frontend/public/config/api.json` | External API config |
 
 ---
@@ -167,5 +167,5 @@ python manage.py runserver
 
 For questions about the project structure or codebase, refer to:
 - Main `README.md` for project overview
-- Django `backend/django/backend/settings.py` for configuration
+- Django `backend/django/config/settings.py` for configuration
 - Frontend `frontend/src/App.jsx` for routing
