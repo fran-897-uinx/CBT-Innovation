@@ -1,39 +1,17 @@
-import { useEffect, useState } from "react";
-import { ThemeContext } from "./theme.context";
+import { useThemeStore } from '../store';
 import { DEFAULT_THEME } from "./theme.constants";
+import { useEffect } from "react";
 
 export function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState(() => {
-    const saved = localStorage.getItem("theme");
-    return saved ? JSON.parse(saved) : DEFAULT_THEME;
-  });
+  const { theme, setTheme } = useThemeStore();
+  const themeMode = theme?.mode || DEFAULT_THEME.mode;
+  const themeBackground = theme?.background || DEFAULT_THEME.background;
 
   useEffect(() => {
     const root = document.documentElement;
+    root.setAttribute("data-theme", themeMode);
+    root.setAttribute("data-bg", themeBackground);
+  }, [themeMode, themeBackground]);
 
-    root.setAttribute("data-theme", theme.mode);
-    root.setAttribute("data-bg", theme.background);
-
-    localStorage.setItem("theme", JSON.stringify(theme));
-  }, [theme]);
-
-  const toggleMode = () =>
-    setTheme((prev) => ({
-      ...prev,
-      mode: prev.mode === "light" ? "dark" : "light",
-    }));
-
-  const toggleBackground = () =>
-    setTheme((prev) => ({
-      ...prev,
-      background: prev.background === "solid" ? "gradient" : "solid",
-    }));
-
-  return (
-    <ThemeContext.Provider
-      value={{ theme, setTheme, toggleMode, toggleBackground }}
-    >
-      {children}
-    </ThemeContext.Provider>
-  );
+  return children;
 }
